@@ -1,539 +1,702 @@
-# AI Integration at XJTLU — Project Research Plans
+# AI Integration at XJTLU: Experimental Study Designs
 
-This document presents three candidate experimental study designs for the project topic **AI Integration at XJTLU**. Each plan includes a title, introduction, and full answers to the nine design questions.
+This document focuses on **AI Integration at XJTLU**. The two study designs examine:
 
----
+- Whether using AI changes students' performance on realistic learning tasks.
+- Whether different forms of AI support produce different outcomes.
+- Whether AI improves the quality of students' work and learning, rather than only making tasks faster or easier.
 
-# Plan 1: AI-Assisted Task Decomposition at XJTLU
+The two designs are structured around the nine questions proposed by the instructor:
 
-## Introduction
-
-This study investigates whether AI-generated task decomposition drafts help XJTLU students produce better task plans, and whether personalizing those drafts adds further value. When students face an unfamiliar task, they often do not know where to start. AI can provide a draft structure, but it is unclear whether this draft improves the quality of students' plans, and whether students benefit more when they personalize the AI draft themselves.
-
-**Research Question:**
-
-When XJTLU students face an unfamiliar task, how do the **source of task decomposition** (self-generated vs. AI-generated draft) and **personalization** (no editing vs. editing) affect the **quality of their task plan** and their **perceived helpfulness**?
-
----
-
-## 1. Do you need a formative study? Why (not)?
-
-**Yes, we need a formative study.**
-
-Reasons:
-
-- AI integration at XJTLU is broad. We need to understand how students currently decompose unfamiliar tasks and whether they already use AI for this.
-- A formative study helps us:
-  - Identify what kinds of tasks XJTLU students find hard to start.
-  - Understand whether students trust AI-generated task breakdowns.
-  - Refine our task materials and questionnaire items.
-- Method: short survey + a few interviews with XJTLU students.
-- If we skip this, our task may not represent real student needs.
+1. Whether a formative study is needed.
+2. Who the participants are and what tasks they will complete.
+3. The two independent variables.
+4. Whether the variables are between-subjects, within-subjects, or mixed, and how many conditions there are.
+5. The dependent variables and how they will be measured.
+6. The baseline condition.
+7. The experimental procedure and duration.
+8. A figure showing the experimental conditions.
+9. A figure showing the experimental procedure.
 
 ---
 
-## 2. Who will be your participants and what kind of tasks would you let them do?
+# Study 1: The Effect of AI Planning Support on the Quality of Complex XJTLU Tasks
 
-**Participants:**
+## Study Design
 
-- XJTLU undergraduate students
-- At least 20 per condition, 4 conditions, 80+ total
-- Randomly assigned to one condition
+This study investigates whether AI helps XJTLU students complete a realistic campus-planning task, and whether the usefulness of AI changes as task complexity increases.
 
-**Tasks:**
+Participants will not simply copy an AI-generated answer and submit it. Every participant must:
 
-Participants receive an unfamiliar task, such as:
+1. Read the task materials independently.
+2. Write their own understanding of the requirements and an initial plan.
+3. Use either AI support or a non-AI support method during a fixed support stage.
+4. Produce a final plan based on the support they received.
+5. Submit both the initial plan and final plan, together with a short decision record.
 
-- "Plan a campus AI-themed awareness campaign"
-- "Design a revision plan for a course"
-- "Write an outline for a survey report on AI use at XJTLU"
+The study therefore compares a complete human task-planning process rather than comparing direct submission with an artificial “editing” instruction.
 
-They then:
+## Task Materials
 
-- Condition 1: Decompose the task themselves, no editing
-- Condition 2: Decompose themselves, then edit their own plan
-- Condition 3: Read an AI-generated decomposition draft, no editing
-- Condition 4: Read an AI-generated draft, then personalize/edit it
+Participants will complete two tasks with the same general format but different levels of complexity. Both tasks require them to design an AI-literacy activity for XJTLU students. They use the same output requirements, time limits, and scoring criteria.
 
-Finally, they submit their task plan and complete a questionnaire.
+### Simple Task: Design an XJTLU Student AI Workshop
 
-**Duration:** 10–15 minutes.
+- Target group: first-year undergraduate students.
+- Duration of the workshop: 90 minutes.
+- Number of participants: approximately 30.
+- Required elements: learning objectives, activity schedule, required resources, and evaluation methods.
+- Main constraints: approximately four.
+
+### Complex Task: Design an XJTLU Student AI-Literacy Programme
+
+- Target group: first-year students from different schools or departments.
+- Programme duration: four weeks.
+- Number of participants: approximately 120.
+- Stakeholders: students, teachers, the library, and school administrators.
+- Required considerations: academic integrity, privacy, budget, disciplinary differences, and outcome evaluation.
+- Main constraints: approximately eight to ten interrelated constraints.
+
+Task complexity will not be manipulated only by making one task longer. It will be manipulated through the number of constraints, number of stakeholders, and dependencies between requirements. A small pilot study will be used to confirm that the complex task is actually more difficult.
+
+**Research questions:**
+
+1. Compared with no AI support, does AI planning support improve the quality of the final task plan?
+2. Is the benefit of AI greater for the complex task than for the simple task?
+3. Does AI improve task quality, or does it mainly reduce completion time and perceived workload?
+4. Can students evaluate which AI suggestions should be adopted, modified, or rejected?
 
 ---
 
-## 3. If you were asked to design a study about AI integration at XJTLU with two independent variables - what would you select?
+## 1. Do We Need a Formative Study? Why?
 
-**IV1: Source of Task Decomposition**
+**Yes.**
 
-- Level 1: Self-generated
-- Level 2: AI-generated draft
+The formative study is needed to check whether the tasks are realistic, understandable, and appropriately difficult. It should not be used to prove that AI is effective.
 
-**IV2: Personalization**
+The formative study should examine:
 
-- Level 1: No editing
-- Level 2: Editing / personalizing
+- Whether XJTLU students consider the AI-literacy planning task realistic.
+- Whether the simple and complex tasks produce different levels of difficulty.
+- Whether the task constraints and deliverables are clear.
+- Whether the scoring rubric can distinguish between lower- and higher-quality plans.
+- Whether the AI-use instructions are clear.
 
-These two variables directly reflect how AI is integrated into students' planning process: whether AI provides a draft, and whether the student makes it their own.
+We would conduct a pilot study with approximately 8-12 students:
+
+1. Ask them to complete both tasks.
+2. Record completion time and the quality of their initial and final plans.
+3. Ask which requirements they found most difficult.
+4. Revise the task materials and scoring rubric based on their feedback.
 
 ---
 
-## 4. For the two variables, will they be between-group, within-group, or mixed? How many conditions are there?
+## 2. Who Are the Participants and What Tasks Will They Complete?
 
-**Design: 2 × 2 between-group design**
+### Participants
 
-- IV1 is between-group: each participant experiences only one source.
-- IV2 is between-group: each participant experiences only one personalization level.
+- XJTLU undergraduate students or taught postgraduate students.
+- Participants' year of study, discipline, AI-use frequency, and previous AI training will be recorded.
+- A realistic target is 48-64 participants for the formal study.
 
-**Number of conditions: 4**
+The study uses a mixed design. AI support is a between-subjects variable, while task complexity is a within-subjects variable.
 
-| Condition | Source | Personalization |
+Each participant will complete:
+
+- One simple task.
+- One complex task.
+
+Task order will be counterbalanced. Half of the participants will complete the simple task first, and the other half will complete the complex task first. The two task versions should also be different but equivalent in wording and structure, so that participants do not simply repeat the same plan.
+
+### No-AI Condition
+
+Participants may use the task brief, paper, or a standard text editor. They may not use generative AI, search engines, or automated writing tools.
+
+They will:
+
+1. Read the task brief.
+2. Write a requirements list and an initial plan.
+3. Use a standard human checklist to review the plan.
+4. Submit the final plan.
+5. Explain what they changed and why.
+
+### AI-Support Condition
+
+Participants may use an experiment-provided AI assistant. They may not copy a complete AI-generated answer as their final plan. AI support is limited to three functions:
+
+1. Organising the task requirements and stakeholders.
+2. Suggesting possible steps, risks, or evaluation indicators.
+3. Critiquing the participant's initial plan and identifying possible omissions.
+
+Participants must:
+
+1. Write their own understanding and initial plan before using AI.
+2. Save the AI interaction record.
+3. Complete a decision table showing which AI suggestions they adopted, modified, or rejected.
+4. Evaluate at least three AI suggestions and explain the reason for each decision. They are not forced to reject any suggestion; adoption, modification, and rejection may all be reasonable outcomes.
+
+This means that the AI condition measures how students integrate AI into their own planning process, rather than whether they are willing to submit an AI-generated answer.
+
+---
+
+## 3. What Two Independent Variables Would You Select?
+
+### Independent Variable 1: Planning Support Method
+
+- Level 1: No AI support, using a human checklist.
+- Level 2: AI support, using the experiment-provided AI assistant.
+
+This is a between-subjects variable. Each participant experiences only one support method because prior AI use could influence performance in a later no-AI condition.
+
+### Independent Variable 2: Task Complexity
+
+- Level 1: Simple task.
+- Level 2: Complex task.
+
+This is a within-subjects variable. Every participant completes one task at each complexity level, allowing performance to be compared within the same participant.
+
+Together, these variables allow us to examine:
+
+- Whether AI is generally helpful.
+- Whether complex tasks benefit more from AI support.
+- Whether there is an interaction between AI support and task complexity.
+
+---
+
+## 4. Are the Variables Between-Subjects, Within-Subjects, or Mixed? How Many Conditions Are There?
+
+**Recommended design: a 2 × 2 mixed design.**
+
+| Variable | Design type | Levels |
 |---|---|---|
-| 1 | Self-generated | No editing |
-| 2 | Self-generated | Editing |
-| 3 | AI-generated draft | No editing |
-| 4 | AI-generated draft | Editing |
+| Planning support method | Between-subjects | No AI; AI support |
+| Task complexity | Within-subjects | Simple; complex |
 
-**Why between-group:**
+There are four combinations of conditions:
 
-- Avoids learning effects: once participants see an AI draft, they cannot unsee it.
-- Avoids carryover effects between conditions.
-- Shorter and simpler for each participant.
+| Condition | Support method | Task complexity |
+|---|---|---|
+| 1 | No AI | Simple task |
+| 2 | No AI | Complex task |
+| 3 | AI support | Simple task |
+| 4 | AI support | Complex task |
+
+However, each participant belongs to only one support-method group and completes both complexity conditions:
+
+- Group A: No AI + simple task; no AI + complex task.
+- Group B: AI support + simple task; AI support + complex task.
+
+### Why Not Use a Pure Between-Subjects Design?
+
+If each participant completed only one task, individual differences in planning ability would have a strong influence on the results. Asking every participant to complete one simple and one complex task reduces this source of variability.
+
+### Why Is AI Support Between-Subjects?
+
+If the same participant first uses AI and then is asked to work without AI, the strategies, experience, and knowledge gained from AI use may carry over into the no-AI condition. This would contaminate the comparison.
 
 ---
 
-## 5. What do you care about AI integration at XJTLU? What are the dependent variables and what would you measure?
+## 5. What Do You Care About? What Are the Dependent Variables?
 
-We care about whether AI genuinely improves students' ability to structure unfamiliar tasks, and whether personalization matters.
+The study examines whether AI helps students complete a realistic planning task while preserving their own judgement and participation.
 
-**Core Dependent Variable:**
+### Primary Dependent Variable: Final Plan Quality
 
-- **Task plan quality** — rated by independent coders on:
-  - Completeness of steps
-  - Logical order
-  - Feasibility / executability
+Two independent raters who do not know the experimental condition will score the anonymised initial and final plans.
 
-**Secondary Dependent Variables:**
+| Dimension | Scoring focus | Score |
+|---|---|---|
+| Requirement understanding | Whether the participant identifies the task goals and constraints correctly | 1-5 |
+| Plan completeness | Whether the plan covers objectives, activities, resources, risks, and evaluation | 1-5 |
+| Logic and prioritisation | Whether the sequence is reasonable and important issues are prioritised | 1-5 |
+| Feasibility | Whether the plan could be implemented at XJTLU | 1-5 |
+| Contextual fit | Whether the plan considers different students, schools, and campus conditions | 1-5 |
+| Critical judgement | Whether the participant identifies problems in the initial plan or AI suggestions | 1-5 |
 
-| DV | Measurement |
+### Secondary Dependent Variables
+
+| Dependent variable | Measurement |
 |---|---|
-| Task plan quality (core) | Rated by independent coders |
-| Perceived helpfulness | Questionnaire |
-| Perceived ease of use | Questionnaire |
-| Willingness to adopt | Questionnaire |
-| Satisfaction | Questionnaire |
-| Cognitive load | NASA-TLX (short version) |
+| Initial-plan quality | Independent-rater score |
+| Final-plan quality | Independent-rater score |
+| Plan improvement | Final-plan score minus initial-plan score |
+| Completion time | Automatically recorded or recorded by the researcher |
+| Cognitive workload | Short NASA-TLX |
+| Quality of AI-suggestion decisions | Raters evaluate whether adoption, modification, or rejection was justified |
+| AI reliance | Degree to which participants accept AI suggestions without evaluation |
+| Perceived helpfulness | Seven-point Likert scale |
 
-If only one DV can be chosen, use **task plan quality**.
+The study should not examine only the final plan. It should compare:
 
----
+1. Initial-plan quality.
+2. Final-plan quality.
+3. Improvement from the initial plan to the final plan.
+4. Time required to produce the final plan.
 
-## 6. What makes a good baseline condition for your project?
-
-**Baseline: Condition 1 — Self-generated, no editing.**
-
-Reasons:
-
-- It represents the traditional way students plan tasks without AI.
-- It allows clean comparison:
-  - Condition 1 vs. 3: Does an AI draft help?
-  - Condition 1 vs. 4: Does AI draft + personalization help most?
-  - Condition 3 vs. 4: Does editing an AI draft add value?
-- It is realistic and familiar to all participants.
+This makes it possible to assess whether AI genuinely helps students improve their planning, rather than simply generating text for them.
 
 ---
 
-## 7. How would you design the experimental procedure? How long will the study last?
+## 6. What Is a Good Baseline Condition?
 
-**Procedure:**
+**Baseline condition: no AI support plus a human checklist.**
 
-1. Recruitment and informed consent
-2. Random assignment to one of 4 conditions
-3. Read task description (2 min)
-4. Task decomposition phase (5–8 min)
-   - Condition 1: Write steps yourself
-   - Condition 2: Write steps, then edit
-   - Condition 3: Read AI draft, submit
-   - Condition 4: Read AI draft, then edit
-5. Submit task plan
-6. Questionnaire (3 min)
-7. Debrief and reward
+This is more appropriate than giving the no-AI group no support at all, because the AI group also receives a structured form of task support. The human checklist should contain general questions but should not provide task-specific answers:
 
-**Total duration:** 10–15 minutes.
+- Have I identified all the task objectives?
+- Have I considered the target users and stakeholders?
+- Can the proposed activities be completed within the available time and budget?
+- Have I considered risks and evaluation methods?
+
+This baseline represents planning without AI while ensuring that the AI group does not receive an unfair advantage simply because it has a structured review framework.
+
+Key comparisons are:
+
+- AI support versus no AI for the simple task.
+- AI support versus no AI for the complex task.
+- Complex-task performance versus simple-task performance.
+- The interaction between AI support and task complexity.
 
 ---
 
-## 8. Can you visualize the experimental conditions using figures?
+## 7. How Will You Design the Procedure? How Long Will It Last?
+
+### Procedure
+
+1. Recruit participants and obtain informed consent.
+2. Complete a background questionnaire covering discipline, year of study, and AI experience.
+3. Randomly assign participants to the no-AI group or AI-support group.
+4. Provide common instructions and a short practice example.
+5. Complete the first task:
+   - Read the task brief: 3 minutes.
+   - Write the requirements list and initial plan: 7 minutes.
+   - Use the human checklist or AI support: 8 minutes.
+   - Write the final plan and decision record: 7 minutes.
+6. Complete a task-level workload questionnaire: 3 minutes.
+7. Take a short break: 2 minutes.
+8. Complete the second task at the other complexity level using the same time limits.
+9. Complete the final questionnaire and finish the study.
+
+### Duration
+
+- Approximately 25 minutes per task.
+- Approximately 60 minutes including instructions, the break, and questionnaires.
+
+The AI and no-AI groups must receive the same total amount of time. The AI group must not receive extra time simply because AI can generate text quickly.
+
+### Planned Comparisons
+
+The main analysis will compare the two support-method groups on final-plan quality for both task-complexity levels. Initial-plan quality can be used as a baseline or covariate, while the change from initial plan to final plan can be analysed as a secondary outcome.
+
+The study should also test the interaction between support method and task complexity:
+
+- If the AI group performs better on both tasks, AI may provide a general benefit.
+- If the AI group performs significantly better only on the complex task, AI may be especially useful for high-complexity planning.
+- If AI reduces time without improving quality, AI may mainly improve efficiency rather than planning quality.
+- If the AI group produces a higher final score but no greater improvement from initial to final plan, the advantage may reflect faster text production rather than deeper planning improvement.
+
+---
+
+## 8. Can You Visualise the Experimental Conditions?
 
 ```mermaid
 graph TD
-    A[Source of Task Decomposition] --> B[Self-generated]
-    A --> C[AI-generated draft]
+    A[Randomly assign support method] --> B[No-AI group]
+    A --> C[AI-support group]
 
-    B --> D[Condition 1<br/>No editing]
-    B --> E[Condition 2<br/>Editing]
+    B --> D1[Simple task<br/>Human checklist]
+    B --> D2[Complex task<br/>Human checklist]
 
-    C --> F[Condition 3<br/>No editing]
-    C --> G[Condition 4<br/>Editing]
+    C --> E1[Simple task<br/>AI organises requirements,<br/>suggests risks, critiques initial plan]
+    C --> E2[Complex task<br/>AI organises requirements,<br/>suggests risks, critiques initial plan]
 ```
 
-| Condition | Source | Personalization |
+| Support method | Simple task | Complex task |
 |---|---|---|
-| 1 | Self-generated | No editing |
-| 2 | Self-generated | Editing |
-| 3 | AI-generated draft | No editing |
-| 4 | AI-generated draft | Editing |
+| No AI | Human checklist | Human checklist |
+| AI support | AI planning support | AI planning support |
 
 ---
 
-## 9. Can you illustrate your experimental procedure using a figure?
+## 9. Can You Visualise the Experimental Procedure?
 
 ```mermaid
 flowchart TD
-    A[Recruitment] --> B[Informed Consent]
-    B --> C[Random Assignment]
-    C --> D[Task Decomposition Phase]
-
-    D --> E1[Self-generated]
-    D --> E2[AI-generated draft]
-
-    E1 --> F1[No editing]
-    E1 --> F2[Editing]
-    E2 --> F3[No editing]
-    E2 --> F4[Editing]
-
-    F1 --> G[Submit Task Plan]
+    A[Informed consent and background questionnaire] --> B[Randomly assign support method]
+    B --> C[Common practice example]
+    C --> D[Task 1: one complexity level]
+    D --> E1[Read task brief]
+    E1 --> E2[Independently write requirements and initial plan]
+    E2 --> E3{Support method}
+    E3 --> F1[Human checklist]
+    E3 --> F2[AI planning support]
+    F1 --> G[Write final plan and decision record]
     F2 --> G
-    F3 --> G
-    F4 --> G
-
-    G --> H[Questionnaire]
-    H --> I[Debrief & Reward]
+    G --> H[Submit initial plan, final plan, and process materials]
+    H --> I[Task-level questionnaire]
+    I --> J[Task 2: the other complexity level]
+    J --> K[Repeat the same procedure]
+    K --> L[Final questionnaire and completion]
 ```
 
 ---
 
-# Plan 2: AI-Assisted Revision Framework at XJTLU
+# Study 2: The Effect of AI-Supported PowerPoint Learning on Knowledge Gain and Retention
 
-## Introduction
+## Study Design
 
-This study examines how the **structure** and **detail level** of an AI-generated revision framework affect XJTLU students' perceived quality and willingness to adopt it. Many students use AI to summarize course content, but it is unclear what format of AI-generated revision framework is most useful: a simple linear checklist or a networked concept map, and whether more detail helps or overwhelms.
+This study directly examines whether AI helps students learn the content of PowerPoint lecture materials. It does not treat the visual format of a summary as the main research question.
 
-**Research Question:**
+Participants will study two lecture decks related to AI integration at XJTLU within fixed time limits and then complete knowledge tests. The study compares:
 
-How do the **structure type** (linear checklist vs. networked concept map) and **detail level** (summary vs. detailed) of an AI-generated revision framework affect students' **perceived systematicity** and **adoption intention**?
+- Reading the PowerPoint without AI.
+- Using AI to extract an outline from the PowerPoint.
+- Using AI to extract an outline and support active retrieval practice.
+
+This allows us to compare both AI use versus no AI use and different levels of AI integration.
+
+## Learning Materials
+
+Two topic-different but difficulty-matched PowerPoint decks will be prepared.
+
+### Deck A: Generative AI in University Learning
+
+The deck covers:
+
+- Basic ideas about how generative AI works.
+- Common uses of AI in learning.
+- Output verification and hallucination.
+
+### Deck B: Responsible AI Use at XJTLU
+
+The deck covers:
+
+- Academic integrity.
+- Privacy and data security.
+- Transparency and responsible AI use.
+
+Each deck should contain approximately 12-15 slides and a similar number of core knowledge points.
+
+## Learning-Material Complexity
+
+Each deck can be prepared in two versions:
+
+- Low-complexity version: relationships between concepts are direct, examples are limited, and the structure is straightforward.
+- High-complexity version: concepts involve more conditions, exceptions, and interrelationships, requiring learners to integrate several pieces of information.
+
+Complexity should not be created only by adding more words. It should be manipulated through the relationships between information and the amount of integration or reasoning required. A pilot study must confirm that the high-complexity version is actually more difficult to understand.
+
+To avoid confounding deck topic with complexity, the mapping should be counterbalanced:
+
+- Half of the participants study Deck A in the low-complexity version and Deck B in the high-complexity version.
+- The other half study Deck A in the high-complexity version and Deck B in the low-complexity version.
+
+Deck order should also be counterbalanced. Half of the participants study Deck A first, and the other half study Deck B first.
+
+## AI-Support Conditions
+
+To avoid differences in participants' prompting ability, the study should use a standardised AI interface and fixed functions. The AI outlines and retrieval questions should be generated and checked in advance by the researchers rather than generated separately for each participant.
+
+### No-AI Condition
+
+- Participants may read the PowerPoint and take ordinary notes.
+- They may not use generative AI.
+
+### AI Outline Condition
+
+- AI provides a structured outline based on the same PowerPoint.
+- The outline includes topics, subtopics, and key conceptual relationships.
+- AI does not provide answers to the knowledge test or additional explanations.
+- Participants may read the PowerPoint and the fixed AI outline within the same time limit.
+
+### AI Active-Learning Condition
+
+- AI provides the same type of structured outline.
+- AI also provides knowledge-check questions.
+- Participants must attempt to answer the questions before viewing AI feedback.
+- AI does not complete the final knowledge test for the participant.
+
+The study does not treat “reading an AI output and submitting it” as learning. Participants must read the original lecture material, process the content, and complete an independent knowledge test.
+
+**Research questions:**
+
+1. Does an AI-generated outline produce higher knowledge-test scores than reading the PowerPoint without AI?
+2. Is AI-supported active learning more effective than outline extraction alone?
+3. Is AI more helpful for high-complexity PowerPoint material than for low-complexity material?
+4. Can AI improve delayed knowledge retention as well as immediate test performance?
 
 ---
 
-## 1. Do you need a formative study? Why (not)?
+## 1. Do We Need a Formative Study? Why?
 
 **Yes.**
 
-- To understand how XJTLU students currently organize revision.
-- To see whether they already use AI to build revision frameworks.
-- To identify what they value in a revision framework (structure, detail, examples).
-- Method: short survey + a few interviews.
+The formative study should test the PowerPoint materials, AI outputs, and knowledge tests together. This is necessary to ensure that the final study measures learning rather than differences in material length or item difficulty.
 
-Without this, our framework materials may not reflect real student preferences.
+The formative study should check:
 
----
+- Whether the two decks contain similar numbers of core knowledge points.
+- Whether the high-complexity versions require more integration and reasoning.
+- Whether the AI outlines are accurate and do not introduce additional knowledge.
+- Whether the AI-generated retrieval questions cover the core knowledge rather than irrelevant details.
+- Whether the pre-test and post-test items have adequate difficulty and discrimination.
+- Whether students can complete the learning task within the time limit.
 
-## 2. Who will be your participants and what kind of tasks would you let them do?
+We would conduct a pilot with approximately 10-15 students:
 
-**Participants:**
-
-- XJTLU undergraduate students
-- 20+ per condition, 4 conditions, 80+ total
-- Random assignment
-
-**Tasks:**
-
-1. Read an AI-generated revision framework for a course topic.
-2. Review it for 3–5 minutes.
-3. Complete a questionnaire on perceived systematicity, usefulness, adoption intention, and satisfaction.
-4. Optional: add missing knowledge points.
-
-**Duration:** 8–10 minutes.
+1. Measure the time required to study each deck.
+2. Ask them to complete a pre-test, immediate post-test, and delayed test.
+3. Interview them about clarity and difficulty.
+4. Revise the decks and knowledge tests based on the results.
 
 ---
 
-## 3. If you were asked to design a study about AI integration at XJTLU with two independent variables - what would you select?
+## 2. Who Are the Participants and What Tasks Will They Complete?
 
-**IV1: Structure Type**
+### Participants
 
-- Level 1: Linear checklist (chapter-by-chapter list)
-- Level 2: Networked concept map (showing relationships)
+- XJTLU undergraduate students.
+- Students who have already completed systematic training on the same topics should ideally be excluded, or their prior knowledge should be measured and controlled statistically.
+- A realistic target is 60-90 participants for the formal study.
 
-**IV2: Detail Level**
+### Participant Tasks
 
-- Level 1: Summary (titles and keywords only)
-- Level 2: Detailed (explanations and examples)
+1. Complete a learning pre-test.
+2. Study the first PowerPoint within a fixed time.
+3. Use the assigned learning-support method.
+4. Complete an immediate knowledge test for the first deck.
+5. Take a short break and study the second PowerPoint.
+6. Complete an immediate knowledge test for the second deck.
+7. Complete questionnaires on cognitive workload and learning strategy.
+8. Complete a delayed knowledge test 24 hours or one week later.
+
+### Knowledge-Test Design
+
+The knowledge questionnaire must measure actual learning rather than asking only whether participants feel that they learned.
+
+Each PowerPoint should have an equivalent knowledge test containing:
+
+- Factual-recognition items testing key concepts.
+- Conceptual-understanding items testing relationships between concepts.
+- Scenario-based application items situated in an XJTLU learning context.
+- Transfer items requiring the learner to apply principles to a new case.
+
+Example conceptual-understanding item:
+
+> Why should students not judge the accuracy of an AI answer solely from the answer itself?
+
+Example scenario-based application item:
+
+> A student wants AI to revise part of a course assignment. Which action is most consistent with responsible AI use?
+
+Example transfer item:
+
+> A student enters interview records containing personal information into a public AI tool. What is the main risk, and how should the student improve the procedure?
+
+Each test should contain approximately 12-15 items. The pre-test and post-test should use different but equivalent items so that participants are not simply remembering the test questions.
 
 ---
 
-## 4. For the two variables, will they be between-group, within-group, or mixed? How many conditions are there?
+## 3. What Two Independent Variables Would You Select?
 
-**Design: 2 × 2 between-group**
+### Independent Variable 1: Learning-Support Method
 
-**Conditions: 4**
+Three levels are recommended:
 
-| Condition | Structure | Detail |
+- Level 1: No AI; read the PowerPoint and take ordinary notes.
+- Level 2: AI outline; use an AI-generated outline to organise the PowerPoint information.
+- Level 3: AI outline plus active retrieval practice and feedback.
+
+This is a between-subjects variable. Each participant experiences only one learning-support method, because seeing an AI outline could influence later performance in a no-AI condition.
+
+### Independent Variable 2: PowerPoint Complexity
+
+- Level 1: Low-complexity PowerPoint.
+- Level 2: High-complexity PowerPoint.
+
+This is a within-subjects variable. Each participant studies one low-complexity deck and one high-complexity deck, with deck topic and order counterbalanced.
+
+---
+
+## 4. Are the Variables Between-Subjects, Within-Subjects, or Mixed? How Many Conditions Are There?
+
+**Recommended design: a 3 × 2 mixed design.**
+
+| Variable | Design type | Levels |
 |---|---|---|
-| 1 | Linear | Summary |
-| 2 | Linear | Detailed |
-| 3 | Networked | Summary |
-| 4 | Networked | Detailed |
+| Learning-support method | Between-subjects | No AI; AI outline; AI active learning |
+| PowerPoint complexity | Within-subjects | Low complexity; high complexity |
 
-**Why between-group:** avoids carryover and keeps each session short.
+There are six combinations of conditions:
+
+| Condition | Learning-support method | PowerPoint complexity |
+|---|---|---|
+| 1 | No AI | Low complexity |
+| 2 | No AI | High complexity |
+| 3 | AI outline | Low complexity |
+| 4 | AI outline | High complexity |
+| 5 | AI active learning | Low complexity |
+| 6 | AI active learning | High complexity |
+
+Each participant belongs to only one learning-support group but studies both complexity levels.
+
+### Why Use This Design?
+
+- No AI versus AI outline directly tests whether AI helps students organise and understand the PowerPoint.
+- AI outline versus AI active learning compares passive information organisation with active learning support.
+- Low complexity versus high complexity tests whether AI is more valuable when the learning material is harder.
+- The support-method × complexity interaction tests whether the effect of AI depends on material complexity.
+
+If the available sample or time is limited, the design can be simplified to two learning-support conditions:
+
+- No AI.
+- AI outline.
+
+This produces a 2 × 2 mixed design. It is easier to implement and analyse, but it cannot compare different forms of AI use.
 
 ---
 
-## 5. What do you care about AI integration at XJTLU? What are the dependent variables and what would you measure?
+## 5. What Do You Care About? What Are the Dependent Variables?
 
-We care about whether AI-generated revision frameworks are perceived as useful and systematic enough to adopt.
+The study examines whether AI genuinely helps students acquire, retain, and apply knowledge from lecture materials.
 
-**Core DV:**
+### Primary Dependent Variable
 
-- **Perceived systematicity** — how complete and well-organized the framework feels.
+**Knowledge-test performance.**
 
-**Secondary DVs:**
+The main outcomes are:
 
-| DV | Measurement |
+- Immediate post-test score.
+- Learning gain from pre-test to immediate post-test.
+- Delayed post-test score.
+- Performance on scenario-based application and transfer items.
+
+### Secondary Dependent Variables
+
+| Dependent variable | Measurement |
 |---|---|
-| Perceived systematicity (core) | Questionnaire |
-| Perceived usefulness | Questionnaire |
-| Adoption intention | Questionnaire |
-| Satisfaction | Questionnaire |
-| Cognitive load | NASA-TLX (short version) |
+| Study time | System recording with the same maximum time for all conditions |
+| Knowledge retention | Delayed post-test after 24 hours or one week |
+| Cognitive workload | Short NASA-TLX |
+| Perceived difficulty | Seven-point scale |
+| Learning engagement | Whether participants read the material and completed the AI checks |
+| Quality of AI use | Whether participants checked the outline and corrected AI errors |
+| Learning strategy | Whether participants self-tested or only read the summary |
+| Perceived usefulness and adoption intention | Secondary seven-point scales |
+
+Perceived usefulness and adoption intention may be measured, but they must remain secondary outcomes rather than substitutes for the knowledge test.
+
+### Planned Comparisons
+
+The main analysis will compare the three learning-support groups on immediate and delayed post-test performance while controlling for pre-test knowledge. The following outcomes should also be examined:
+
+- Learning gain: immediate post-test minus pre-test.
+- Knowledge retention: delayed post-test performance.
+- Complexity difference: high-complexity score minus low-complexity score.
+- The interaction between learning-support method and PowerPoint complexity.
+
+Possible interpretations include:
+
+- If the AI-outline group scores higher than the no-AI group, AI may help students organise the lecture material.
+- If the AI active-learning group scores higher than the AI-outline group, retrieval practice and feedback may be more effective than summary generation alone.
+- If AI improves immediate scores but not delayed scores, it may support short-term performance without improving long-term learning.
+- If AI produces a benefit only for high-complexity material, its value may depend on learning-material complexity.
 
 ---
 
-## 6. What makes a good baseline condition for your project?
+## 6. What Is a Good Baseline Condition?
 
-**Baseline: Condition 1 — Linear + Summary.**
+**Baseline condition: read the PowerPoint and take ordinary notes without AI.**
 
-- It is the simplest, most traditional form of revision outline.
-- It allows comparison:
-  - Does adding detail help?
-  - Does a networked structure help?
-  - Does the combination help most?
+This condition most directly represents how students study the lecture material without AI.
 
----
+It allows three core comparisons:
 
-## 7. How would you design the experimental procedure? How long will the study last?
+- AI outline versus no AI: Does AI help students organise the PowerPoint content?
+- AI active learning versus no AI: Does deeper AI integration improve learning?
+- AI active learning versus AI outline: Are retrieval and feedback more effective than summary generation alone?
 
-**Procedure:**
+All conditions should:
 
-1. Recruitment and consent
-2. Random assignment
-3. Read revision framework (3–5 min)
-4. Questionnaire (3 min)
-5. Optional: add missing points (2 min)
-6. Debrief
-
-**Total:** 8–10 minutes.
+- Study the same or difficulty-matched PowerPoint materials.
+- Use the same learning time.
+- Complete equivalent pre-tests, immediate post-tests, and delayed post-tests.
 
 ---
 
-## 8. Can you visualize the experimental conditions using figures?
+## 7. How Will You Design the Procedure? How Long Will It Last?
+
+### Single-Session Procedure
+
+1. Informed consent and background questionnaire: 5 minutes.
+2. Overall pre-test: 5 minutes.
+3. Random assignment to one learning-support method.
+4. Study the first PowerPoint: 12 minutes.
+5. Complete the immediate knowledge test: 8 minutes.
+6. Take a short break: 3 minutes.
+7. Study the second PowerPoint at the other complexity level: 12 minutes.
+8. Complete the second immediate knowledge test: 8 minutes.
+9. Complete the cognitive-workload and learning-strategy questionnaire: 5 minutes.
+
+The single session will last approximately 55-60 minutes.
+
+### Delayed Test
+
+If feasible, participants will complete a delayed post-test 24 hours or one week later. This should take approximately 10 minutes.
+
+The delayed test is important because an AI-generated summary may improve immediate recognition without improving long-term memory or transfer.
+
+### Time Control
+
+Time limits are essential:
+
+- Each PowerPoint has a fixed 12-minute study period.
+- Each knowledge test has a fixed 8-minute period.
+- The AI groups do not receive extra study time because AI can generate an outline quickly.
+- The study records whether participants opened and used the AI outline and whether they completed the retrieval questions.
+
+---
+
+## 8. Can You Visualise the Experimental Conditions?
 
 ```mermaid
 graph TD
-    A[Structure Type] --> B[Linear Checklist]
-    A --> C[Networked Concept Map]
+    A[Learning-support method] --> B[No AI]
+    A --> C[AI outline]
+    A --> D[AI active learning]
 
-    B --> D[Condition 1<br/>Summary]
-    B --> E[Condition 2<br/>Detailed]
+    B --> B1[Low-complexity PowerPoint]
+    B --> B2[High-complexity PowerPoint]
 
-    C --> F[Condition 3<br/>Summary]
-    C --> G[Condition 4<br/>Detailed]
+    C --> C1[Low-complexity PowerPoint]
+    C --> C2[High-complexity PowerPoint]
+
+    D --> D1[Low-complexity PowerPoint]
+    D --> D2[High-complexity PowerPoint]
 ```
 
-| Condition | Structure | Detail |
+| Learning-support method | Low-complexity PowerPoint | High-complexity PowerPoint |
 |---|---|---|
-| 1 | Linear | Summary |
-| 2 | Linear | Detailed |
-| 3 | Networked | Summary |
-| 4 | Networked | Detailed |
+| No AI | PowerPoint plus ordinary notes | PowerPoint plus ordinary notes |
+| AI outline | PowerPoint plus a structured AI outline | PowerPoint plus a structured AI outline |
+| AI active learning | PowerPoint plus outline and retrieval feedback | PowerPoint plus outline and retrieval feedback |
 
 ---
 
-## 9. Can you illustrate your experimental procedure using a figure?
+## 9. Can You Visualise the Experimental Procedure?
 
 ```mermaid
 flowchart TD
-    A[Recruitment] --> B[Informed Consent]
-    B --> C[Random Assignment]
-    C --> D[Read Revision Framework]
-    D --> E[Questionnaire]
-    E --> F[Optional: Add Missing Points]
-    F --> G[Debrief]
+    A[Informed consent and background questionnaire] --> B[Pre-test]
+    B --> C[Randomly assign learning-support method]
+    C --> D[Study first PowerPoint<br/>fixed 12 minutes]
+    D --> E[Immediate knowledge test<br/>fixed 8 minutes]
+    E --> F[Short break]
+    F --> G[Study second PowerPoint<br/>the other complexity level]
+    G --> H[Immediate knowledge test<br/>fixed 8 minutes]
+    H --> I[Cognitive-workload and learning-strategy questionnaire]
+    I --> J{Delayed test included?}
+    J --> K[Knowledge-retention test<br/>after 24 hours or one week]
+    J --> L[End]
+    K --> L
 ```
-
----
-
-# Plan 3: AI Encouragement and Self-Regulated Learning at XJTLU
-
-## Introduction
-
-This study examines how the **tone** and **specificity** of AI encouragement affect XJTLU students' willingness to study independently. AI tools often provide encouraging messages, but it is unclear whether an encouraging tone actually motivates students, and whether generic encouragement or progress-based encouragement is more effective.
-
-**Research Question:**
-
-How do the **tone** (encouraging vs. neutral) and **specificity** (generic vs. progress-based) of AI encouragement affect students' **self-regulated learning intention**?
-
----
-
-## 1. Do you need a formative study? Why (not)?
-
-**Yes.**
-
-- To understand what kind of encouragement XJTLU students respond to.
-- To check whether AI encouragement feels authentic or artificial.
-- Method: short survey + interviews.
-
----
-
-## 2. Who will be your participants and what kind of tasks would you let them do?
-
-**Participants:**
-
-- XJTLU undergraduates
-- 20+ per condition, 4 conditions, 80+ total
-
-**Tasks:**
-
-1. Read a short learning scenario.
-2. Receive AI encouragement (tone and specificity vary by condition).
-3. Complete a questionnaire on motivation, intention, and emotion.
-
-**Duration:** 5 minutes.
-
----
-
-## 3. If you were asked to design a study about AI integration at XJTLU with two independent variables - what would you select?
-
-**IV1: Tone**
-
-- Level 1: Encouraging
-- Level 2: Neutral
-
-**IV2: Specificity**
-
-- Level 1: Generic
-- Level 2: Progress-based
-
----
-
-## 4. For the two variables, will they be between-group, within-group, or mixed? How many conditions are there?
-
-**Design: 2 × 2 between-group**
-
-**Conditions: 4**
-
-| Condition | Tone | Specificity |
-|---|---|---|
-| 1 | Encouraging | Generic |
-| 2 | Encouraging | Progress-based |
-| 3 | Neutral | Generic |
-| 4 | Neutral | Progress-based |
-
----
-
-## 5. What do you care about AI integration at XJTLU? What are the dependent variables and what would you measure?
-
-**Core DV:**
-
-- **Self-regulated learning intention** — willingness to continue studying independently.
-
-**Secondary DVs:**
-
-| DV | Measurement |
-|---|---|
-| Self-regulated learning intention (core) | Questionnaire |
-| Motivation | Questionnaire |
-| Emotion | Questionnaire |
-| Trust in AI | Questionnaire |
-| Satisfaction | Questionnaire |
-
----
-
-## 6. What makes a good baseline condition for your project?
-
-**Baseline: Condition 3 — Neutral + Generic.**
-
-- It represents minimal AI encouragement.
-- Allows comparison with encouraging and progress-based conditions.
-
----
-
-## 7. How would you design the experimental procedure? How long will the study last?
-
-**Procedure:**
-
-1. Recruitment and consent
-2. Random assignment
-3. Read scenario (1 min)
-4. Read AI encouragement (1 min)
-5. Questionnaire (3 min)
-6. Debrief
-
-**Total:** 5 minutes.
-
----
-
-## 8. Can you visualize the experimental conditions using figures?
-
-```mermaid
-graph TD
-    A[Tone] --> B[Encouraging]
-    A --> C[Neutral]
-
-    B --> D[Condition 1<br/>Generic]
-    B --> E[Condition 2<br/>Progress-based]
-
-    C --> F[Condition 3<br/>Generic]
-    C --> G[Condition 4<br/>Progress-based]
-```
-
-| Condition | Tone | Specificity |
-|---|---|---|
-| 1 | Encouraging | Generic |
-| 2 | Encouraging | Progress-based |
-| 3 | Neutral | Generic |
-| 4 | Neutral | Progress-based |
-
----
-
-## 9. Can you illustrate your experimental procedure using a figure?
-
-```mermaid
-flowchart TD
-    A[Recruitment] --> B[Informed Consent]
-    B --> C[Random Assignment]
-    C --> D[Read Scenario]
-    D --> E[Read AI Encouragement]
-    E --> F[Questionnaire]
-    F --> G[Debrief]
-```
-
----
-
-# Comparison of the Three Plans
-
-| Plan | Core DV | Task | Duration | Recommendation |
-|---|---|---|---|---|
-| 1: Task Decomposition | Task plan quality | Decompose a task | 10–15 min | Most recommended |
-| 2: Revision Framework | Perceived systematicity | Read a revision framework | 8–10 min | Recommended |
-| 3: AI Encouragement | Self-regulated learning intention | Read AI encouragement | 5 min | General |
-
----
-
-# Team
-
-- [Member 1]
-- [Member 2]
-- [Member 3]
-
-# Course
-
-AI Integration at XJTLU — Project Website
