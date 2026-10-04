@@ -24,21 +24,20 @@ The two designs are structured around the nine questions proposed by the instruc
 
 ## Study Design
 
-This study investigates whether AI helps XJTLU students plan realistic student-club activities, and whether the usefulness of AI changes when planning moves from one activity to a multi-club weekly schedule.
+This study investigates whether access to AI assistance improves students' ability to produce a complete and feasible student-club activity plan. The experimental comparison is deliberately simple:
 
-Participants will not simply copy an AI-generated answer and submit it. Every participant must:
+- One group plans independently without AI.
+- One group may use AI during planning.
+- Both groups receive the same task information, the same time limit, and the same output template.
+- Both final plans are scored against the same researcher-developed reference checklist.
 
-1. Read the task materials independently.
-2. Write their own understanding of the requirements and an initial plan.
-3. Use either AI support or a non-AI support method during a fixed support stage.
-4. Produce a final plan based on the support they received.
-5. Submit both the initial plan and final plan, together with a short decision record.
+The AI condition does not require one particular way of using AI. Participants may ask AI for ideas, ask it to identify requirements, request a complete draft, or combine these forms of assistance. However, the participant remains responsible for checking the output and submitting only a plan they consider appropriate. This reflects realistic AI integration more closely than forcing every participant to follow an artificial editing procedure.
 
-The study therefore compares a complete planning process rather than comparing direct submission with an artificial “editing” instruction.
+The experiment therefore tests whether AI access improves the final result under a realistic but controlled time limit.
 
 ## Task Materials
 
-Participants will act as student-club managers at XJTLU. They will complete two scheduling tasks with the same general output format but different levels of planning complexity. The tasks are designed to be understandable without specialist knowledge and to resemble a realistic campus-management activity.
+Participants will act as student-club managers at XJTLU. They will complete two scheduling tasks with the same output format but different levels of planning complexity. The tasks are designed to be understandable without specialist knowledge and to resemble realistic campus-management activities.
 
 ### Simple Task: Plan a One-Day Activity for One Club
 
@@ -57,9 +56,9 @@ They must produce:
 
 - The activity time.
 - The selected location.
-- A short activity schedule.
-- The required resources.
-- A brief check showing that the plan satisfies the stated requirements.
+- The activity schedule.
+- The staff and equipment requirements.
+- A final plan that satisfies the information in the task brief.
 
 This task mainly requires the participant to satisfy explicit time, location, capacity, and resource requirements.
 
@@ -81,19 +80,36 @@ They must produce:
 - A weekly schedule for all clubs.
 - Time and location assignments for each activity.
 - Staff and equipment allocations.
-- A list of constraints that were satisfied.
 - A list of conflicts or trade-offs, if any, and an explanation of how they were resolved.
 
 Unlike the simple task, the participant must decide how to allocate time, locations, staff, and equipment while avoiding conflicts. The task therefore involves constraint management and trade-offs rather than only checking whether one activity meets a fixed set of requirements.
 
 Both tasks should use the same answer template, time limit, and scoring dimensions. Complexity is manipulated through the number of activities, shared resources, interdependent constraints, and decisions that must be made. A pilot study will confirm that the weekly multi-club task is more difficult than the single-club task.
 
+## Reference Checklist for Scoring
+
+Before the experiment, the researchers will prepare one common reference-checklist framework, with task-specific items for the single-club and multi-club tasks. The checklist is based only on the requirements stated in the task brief. It is not generated separately for different participants.
+
+The checklist will include objectively scorable items such as:
+
+- Every required activity is included.
+- Every activity has a valid time slot.
+- Each room is suitable for the expected number of participants.
+- Room opening hours and room availability are respected.
+- Required staff members are available.
+- Required equipment is available.
+- No club, room, staff member, or shared equipment is double-booked.
+- All activity-specific constraints are satisfied.
+- Any unavoidable conflict is explicitly identified and handled.
+
+The reference checklist is the common standard for both conditions and both task types. Participants do not need to reproduce the wording of the checklist; they need to produce a plan that satisfies the requirements in the task brief. The final score is the number or proportion of checklist items correctly satisfied, with additional quality points for justified conflict resolution where relevant.
+
 **Research questions:**
 
-1. Compared with a fixed human checklist, does AI-generated checklist and audit support improve the quality of the final club-activity plan?
+1. Does access to AI assistance improve the number of reference-checklist requirements satisfied?
 2. Is the benefit of AI greater for multi-club weekly scheduling than for single-club daily planning?
-3. Does AI improve constraint satisfaction and allocation quality, or does it mainly reduce completion time and perceived workload?
-4. Can students use AI auditing as a support tool while retaining responsibility for the final schedule?
+3. Does AI improve plan completeness and constraint satisfaction within the same time limit?
+4. Do participants in the AI condition use AI as a source of ideas, a complete draft, a checking tool, or a combination of these?
 
 ---
 
@@ -108,15 +124,15 @@ The formative study should examine:
 - Whether XJTLU students understand the role of a student-club manager and consider the scheduling tasks realistic.
 - Whether the single-club daily task and the multi-club weekly task produce different levels of difficulty.
 - Whether the task constraints and deliverables are clear.
-- Whether the scoring rubric can distinguish between lower- and higher-quality schedules.
-- Whether participants understand the difference between a checklist and an AI audit.
+- Whether the reference checklist contains all necessary requirements and no irrelevant requirements.
+- Whether the scoring procedure can distinguish between lower- and higher-quality schedules.
 
 We would conduct a pilot study with approximately 8-12 students:
 
 1. Ask them to complete both tasks.
-2. Record completion time and the quality of their initial and final plans.
+2. Record completion time and the quality of their submitted plans.
 3. Ask which requirements they found most difficult.
-4. Revise the task materials and scoring rubric based on their feedback.
+4. Revise the task materials, reference checklist, and scoring procedure based on their feedback.
 
 ---
 
@@ -128,7 +144,7 @@ We would conduct a pilot study with approximately 8-12 students:
 - Participants' year of study, discipline, AI-use frequency, and previous AI training will be recorded.
 - A realistic target is 48-64 participants for the formal study.
 
-The study uses a mixed design. AI support is a between-subjects variable, while task complexity is a within-subjects variable.
+The study uses a mixed design. AI access is a between-subjects variable, while planning complexity is a within-subjects variable.
 
 Each participant will complete:
 
@@ -144,40 +160,42 @@ Participants may use the task brief, paper, or a standard text editor. They may 
 They will:
 
 1. Read the task brief.
-2. Write an initial schedule and a list of the requirements they believe must be checked.
-3. Use the same fixed human checklist provided by the researcher to audit the schedule.
-4. Correct any problems they identify.
-5. Submit the final schedule and a short record of the checks they completed.
+2. Produce the activity plan using their own reasoning.
+3. Review the completed plan before submission.
+4. Submit the plan as their final answer.
 
-### AI-Support Condition
+They are not given a separate task-specific checklist during planning. The researcher-developed reference checklist is used later for scoring.
 
-Participants may use an experiment-provided AI assistant. They may not ask AI to produce and submit the complete final schedule. AI support is limited to two clearly defined functions:
+### AI-Available Condition
 
-1. Generating a checklist from the task brief, including the time, location, capacity, staff, equipment, and conflict requirements that should be checked.
-2. Auditing the participant's own draft schedule against that checklist and identifying possible violations, omissions, or conflicts.
+Participants receive access to the same task brief and may use the experiment-provided AI assistant during the planning period. They may use AI in any of the following realistic ways:
 
-The AI must also refer back to the original task brief during the audit. It may reorganise or clarify the stated requirements, but it must not invent new requirements or judge the schedule using criteria that are absent from the task brief.
+- Ask for planning ideas.
+- Ask AI to organise the requirements.
+- Ask AI to propose a schedule.
+- Ask AI to generate a complete draft.
+- Ask AI to check, explain, or improve their own plan.
 
 Participants must:
 
-1. Write an initial schedule before asking AI to audit it.
-2. Save the AI interaction record.
-3. Review the AI-generated checklist before using it.
-4. Decide which AI audit findings are valid, invalid, or require further checking.
-5. Submit the final schedule and a short record of which audit findings they accepted, corrected, or rejected.
+1. Use the same task brief as the no-AI group.
+2. Work within exactly the same time limit.
+3. Review the AI output and decide whether it is suitable.
+4. Submit only a plan that they personally approve as their final answer.
+5. Save the AI interaction record so that the type and amount of AI assistance can be analysed.
 
-The AI condition therefore measures whether students can use AI to construct and audit a planning checklist while retaining responsibility for the schedule. AI is used as a planning-support and verification tool, not as an automatic schedule generator.
+The AI-available condition measures AI integration as access to a planning partner. It does not assume that every participant will use AI in the same way. AI can provide ideas or a complete draft, but the participant must make the final submission decision.
 
 ---
 
 ## 3. What Two Independent Variables Would You Select?
 
-### Independent Variable 1: Planning-Support Method
+### Independent Variable 1: AI Access
 
-- Level 1: Fixed human checklist, without AI.
-- Level 2: AI-generated checklist plus AI audit of the participant's own draft.
+- Level 1: No AI access.
+- Level 2: AI access during planning.
 
-This is a between-subjects variable. Each participant experiences only one support method because prior AI use could influence performance in a later no-AI condition.
+This is a between-subjects variable. Each participant experiences only one access condition because using AI first could influence performance in a later no-AI condition.
 
 ### Independent Variable 2: Planning Complexity
 
@@ -188,9 +206,9 @@ This is a within-subjects variable. Every participant completes one task at each
 
 Together, these variables allow us to examine:
 
-- Whether AI is generally helpful.
-- Whether complex tasks benefit more from AI support.
-- Whether there is an interaction between AI support and task complexity.
+- Whether access to AI is generally helpful.
+- Whether complex scheduling tasks benefit more from AI access.
+- Whether there is an interaction between AI access and planning complexity.
 
 ---
 
@@ -200,94 +218,87 @@ Together, these variables allow us to examine:
 
 | Variable | Design type | Levels |
 |---|---|---|
-| Planning support method | Between-subjects | No AI; AI support |
+| AI access | Between-subjects | No AI access; AI access |
 | Planning complexity | Within-subjects | Single-club daily planning; multi-club weekly scheduling |
 
 There are four combinations of conditions:
 
-| Condition | Support method | Task complexity |
+| Condition | AI access | Planning complexity |
 |---|---|---|
-| 1 | Fixed human checklist | Single-club daily planning |
-| 2 | Fixed human checklist | Multi-club weekly scheduling |
-| 3 | AI checklist and audit | Single-club daily planning |
-| 4 | AI checklist and audit | Multi-club weekly scheduling |
+| 1 | No AI access | Single-club daily planning |
+| 2 | No AI access | Multi-club weekly scheduling |
+| 3 | AI access | Single-club daily planning |
+| 4 | AI access | Multi-club weekly scheduling |
 
 However, each participant belongs to only one support-method group and completes both complexity conditions:
 
-- Group A: Fixed human checklist + single-club task; fixed human checklist + multi-club task.
-- Group B: AI checklist and audit + single-club task; AI checklist and audit + multi-club task.
+- Group A: No AI access + single-club task; no AI access + multi-club task.
+- Group B: AI access + single-club task; AI access + multi-club task.
 
 ### Why Not Use a Pure Between-Subjects Design?
 
 If each participant completed only one scheduling task, individual differences in planning ability would have a strong influence on the results. Asking every participant to complete one single-club task and one multi-club task reduces this source of variability.
 
-### Why Is AI Support Between-Subjects?
+### Why Is AI Access Between-Subjects?
 
-If the same participant first uses an AI checklist and audit and then is asked to use only the fixed human checklist, the experience of seeing AI identify constraints may carry over into the no-AI condition. This would contaminate the comparison.
+If the same participant first uses AI and then is asked to work without AI, the strategies, ideas, and experience gained from AI use may carry over into the no-AI condition. This would contaminate the comparison.
 
 ---
 
 ## 5. What Do You Care About? What Are the Dependent Variables?
 
-The study examines whether AI helps students create and verify realistic activity schedules while preserving their own judgement and responsibility.
+The study examines whether access to AI helps students produce schedules that satisfy more of the task requirements while preserving the participant's responsibility for the final answer.
 
-### Primary Dependent Variable: Final Plan Quality
+### Primary Dependent Variable: Reference-Checklist Score
 
-Two independent raters who do not know the experimental condition will score the anonymised initial and final plans.
+The researcher-developed reference checklist is the same for both conditions. Two independent raters who do not know the experimental condition will score the anonymised final plans against this checklist.
 
 | Dimension | Scoring focus | Score |
 |---|---|---|
-| Requirement coverage | Whether all stated time, location, capacity, staff, equipment, and conflict requirements are addressed | 1-5 |
-| Constraint satisfaction | Whether the schedule satisfies the explicit constraints | 1-5 |
-| Allocation quality | Whether time, locations, staff, and equipment are allocated appropriately | 1-5 |
-| Feasibility | Whether the schedule could be implemented at XJTLU | 1-5 |
-| Conflict management | Whether conflicts and trade-offs are identified and resolved appropriately | 1-5 |
-| Verification quality | Whether the participant correctly evaluates the checklist or AI audit findings | 1-5 |
+| Requirement coverage | Number or proportion of required checklist items satisfied | 0-1 per item |
+| Constraint satisfaction | Number or proportion of explicit constraints satisfied | 0-1 per item |
+| Resource allocation | Whether time, locations, staff, and equipment are assigned without invalid overlaps | 0-1 per item |
+| Feasibility | Whether the submitted schedule can actually be implemented | 0-1 per item |
+| Conflict handling | Whether unavoidable conflicts are identified and handled in a justified way | 0-1 or rubric score |
+
+The primary score will be the total number or proportion of reference-checklist items satisfied. A higher score means that the final plan matches more of the requirements in the task brief.
 
 ### Secondary Dependent Variables
 
 | Dependent variable | Measurement |
 |---|---|
-| Initial-plan quality | Independent-rater score |
-| Final-plan quality | Independent-rater score |
-| Plan improvement | Final-plan score minus initial-plan score |
 | Completion time | Automatically recorded or recorded by the researcher |
 | Cognitive workload | Short NASA-TLX |
-| Quality of audit decisions | Raters evaluate whether accepted, corrected, or rejected audit findings were justified |
-| AI reliance | Degree to which participants accept AI audit findings without checking them |
 | Perceived helpfulness | Seven-point Likert scale |
+| AI-use pattern | Coded from the interaction record: ideas, requirement organisation, draft generation, checking, or mixed use |
+| Human approval judgement | Participant's rating of whether the final plan is suitable and complete |
+| AI reliance | Degree to which participants accept AI output without checking it |
 
-The study should not examine only the final plan. It should compare:
-
-1. Initial-plan quality.
-2. Final-plan quality.
-3. Improvement from the initial plan to the final plan.
-4. Time required to produce the final plan.
-
-This makes it possible to assess whether AI genuinely helps students detect and resolve scheduling constraints, rather than simply generating text for them.
+The main outcome is the final reference-checklist score. Completion time and workload show whether any quality difference is accompanied by an efficiency difference. The AI interaction record shows how participants used AI, but AI-use pattern is exploratory rather than a second manipulated variable.
 
 ---
 
 ## 6. What Is a Good Baseline Condition?
 
-**Baseline condition: fixed human checklist without AI.**
+**Baseline condition: no AI access.**
 
-This is more appropriate than giving the no-AI group no support at all, because the AI group also receives structured checklist support. The fixed human checklist should contain the same categories of checks that the AI is expected to identify, but it should be prepared in advance and should not generate an automatic audit:
+The no-AI condition is the most direct baseline because participants must independently interpret the task brief and produce their own schedule. The researcher-developed reference checklist is not a support tool that differs between conditions. It is the common scoring standard applied after submission.
 
-- Does every activity have a valid time slot?
-- Is the selected room suitable for the expected number of participants?
-- Are the required staff and equipment available?
-- Are there conflicts involving the same club, room, staff member, or equipment?
-- Have all stated requirements been checked?
+This creates a clean comparison:
 
-This baseline represents planning without AI while ensuring that both groups are asked to perform the same kinds of checks. The experimental difference is whether the checklist is fixed and used manually or generated and applied through an AI audit. In both conditions, the original task brief remains the authoritative source of requirements.
+- Both groups receive the same task brief.
+- Both groups use the same answer template.
+- Both groups have the same time limit.
+- Both groups must personally approve and submit their final plan.
+- Both groups are scored against the same reference checklist.
+- The only manipulated difference is whether AI assistance is available during planning.
 
 Key comparisons are:
 
-- AI checklist and audit versus the fixed human checklist for the single-club task.
-- AI checklist and audit versus the fixed human checklist for the multi-club task.
+- AI access versus no AI access for the single-club task.
+- AI access versus no AI access for the multi-club task.
 - Multi-club scheduling versus single-club planning.
-- The interaction between support method and planning complexity.
+- The interaction between AI access and planning complexity.
 
 ---
 
@@ -297,13 +308,11 @@ Key comparisons are:
 
 1. Recruit participants and obtain informed consent.
 2. Complete a background questionnaire covering discipline, year of study, and AI experience.
-3. Randomly assign participants to the no-AI group or AI-support group.
+3. Randomly assign participants to the no-AI group or AI-available group.
 4. Provide common instructions and a short practice example.
 5. Complete the first task:
    - Read the task brief: 3 minutes.
-   - Write the initial schedule: 7 minutes.
-   - Use the fixed human checklist or ask AI to generate and audit a checklist: 8 minutes.
-   - Correct the schedule and write the verification record: 7 minutes.
+   - Plan and write the schedule: 20 minutes.
 6. Complete a task-level workload questionnaire: 3 minutes.
 7. Take a short break: 2 minutes.
 8. Complete the second task at the other complexity level using the same time limits.
@@ -314,18 +323,18 @@ Key comparisons are:
 - Approximately 25 minutes per task.
 - Approximately 60 minutes including instructions, the break, and questionnaires.
 
-The AI and no-AI groups must receive the same total amount of time. The AI group must not receive extra time simply because AI can generate a checklist or audit quickly. The AI interface should log the prompts, generated checklist, audit findings, and participant decisions.
+The AI and no-AI groups must receive the same total amount of time. The AI group must not receive extra time simply because AI can generate text quickly. The AI interface should log prompts, outputs, and the time at which AI was used.
 
 ### Planned Comparisons
 
-The main analysis will compare the two support-method groups on final-schedule quality for both planning-complexity levels. Initial-schedule quality can be used as a baseline or covariate, while the change from initial schedule to final schedule can be analysed as a secondary outcome.
+The main analysis will compare the two access groups on the final reference-checklist score for both planning-complexity levels. The score should be calculated as the number or proportion of checklist items satisfied. Completion time and workload will be analysed as secondary outcomes.
 
-The study should also test the interaction between support method and task complexity:
+The study should also test the interaction between AI access and planning complexity:
 
-- If the AI group produces fewer constraint violations on both tasks, AI may provide a general verification benefit.
+- If the AI group satisfies more checklist items on both tasks, access to AI may provide a general planning benefit.
 - If the AI group performs significantly better only on the multi-club task, AI may be especially useful when schedules contain interdependent constraints.
-- If AI reduces time without improving schedule quality, AI may mainly improve efficiency rather than planning performance.
-- If the AI group improves more from the initial schedule to the final schedule, AI may be helping participants detect and correct problems rather than merely producing a schedule.
+- If AI reduces time without improving the checklist score, AI may mainly improve perceived efficiency rather than planning quality.
+- If the AI group has a higher checklist score despite using AI in different ways, the result would support the value of AI access as an integrated planning resource rather than one fixed AI function.
 
 ---
 
@@ -333,20 +342,20 @@ The study should also test the interaction between support method and task compl
 
 ```mermaid
 graph TD
-    A[Randomly assign support method] --> B[Fixed human checklist group]
-    A --> C[AI checklist and audit group]
+    A[Randomly assign AI access] --> B[No-AI group]
+    A --> C[AI-available group]
 
-    B --> D1[Single-club daily plan<br/>Fixed human checklist]
-    B --> D2[Multi-club weekly schedule<br/>Fixed human checklist]
+    B --> D1[Single-club daily plan<br/>Independent planning]
+    B --> D2[Multi-club weekly schedule<br/>Independent planning]
 
-    C --> E1[Single-club daily plan<br/>AI generates checklist and audits draft]
-    C --> E2[Multi-club weekly schedule<br/>AI generates checklist and audits draft]
+    C --> E1[Single-club daily plan<br/>AI may provide ideas or a draft]
+    C --> E2[Multi-club weekly schedule<br/>AI may provide ideas or a draft]
 ```
 
-| Support method | Single-club daily plan | Multi-club weekly schedule |
+| AI access | Single-club daily plan | Multi-club weekly schedule |
 |---|---|---|
-| Fixed human checklist | Manual checking | Manual checking |
-| AI checklist and audit | AI-generated checklist and audit | AI-generated checklist and audit |
+| No AI access | Independent planning | Independent planning |
+| AI access | Participant-approved AI-assisted plan | Participant-approved AI-assisted plan |
 
 ---
 
@@ -354,17 +363,17 @@ graph TD
 
 ```mermaid
 flowchart TD
-    A[Informed consent and background questionnaire] --> B[Randomly assign support method]
+    A[Informed consent and background questionnaire] --> B[Randomly assign AI access]
     B --> C[Common practice example]
     C --> D[Task 1: one planning-complexity level]
     D --> E1[Read task brief]
-    E1 --> E2[Independently write requirements and initial plan]
-    E2 --> E3{Support method}
-    E3 --> F1[Apply fixed human checklist]
-    E3 --> F2[Generate checklist and audit draft with AI]
-    F1 --> G[Correct schedule and write verification record]
+    E1 --> E2[Plan and write the schedule]
+    E2 --> E3{AI access condition}
+    E3 --> F1[Plan independently]
+    E3 --> F2[Use AI for ideas, checking, or a complete draft]
+    F1 --> G[Review and personally approve final schedule]
     F2 --> G
-    G --> H[Submit initial schedule, final schedule, and process materials]
+    G --> H[Submit final schedule and process record]
     H --> I[Task-level questionnaire]
     I --> J[Task 2: the other planning-complexity level]
     J --> K[Repeat the same procedure]
