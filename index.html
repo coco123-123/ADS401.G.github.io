@@ -19,6 +19,33 @@
     @media(max-width:420px){.wrap{width:calc(100% - 32px)}.brand{gap:8px}.brand-mark{width:30px;height:30px;font-size:13px}.brand strong{font-size:14px}.quiet-button{padding:7px 9px;font-size:12px}.nav-shell{gap:10px}.nav-tools{gap:5px}.hero h1{font-size:34px}.eyebrow{font-size:12px;gap:10px}.eyebrow span{padding-left:10px}.diagram{padding:21px 16px}.diagram-groups{gap:10px}.diagram-group{padding:17px 8px}.diagram-group strong{font-size:15px}.diagram-task{font-size:12px}.diagram-task strong{font-size:12px}.condition{padding:22px}.procedure{gap:24px 20px}.procedure h4{font-size:15px}.filter button{padding:6px 12px}.material-panel{padding:20px}.panel-heading{gap:10px}.panel-heading h3{font-size:19px}.scoring-list{grid-template-columns:1fr}.measure-list div{grid-template-columns:95px 1fr}.reflection-sheet{padding:22px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.button:hover{transform:none}}
     @media print{ :root{--bg:oklch(1 0 0);--surface:oklch(.96 0 0);--panel:oklch(1 0 0);--ink:oklch(.2 0 0);--muted:oklch(.4 0 0);--line:oklch(.8 0 0);--accent:oklch(0 0 0);--tint:oklch(.95 0 0);--on-accent:oklch(1 0 0);color-scheme:light}body{font-size:11pt}.wrap{width:100%}.header,.hero-actions,.nav-tools,.filter,.material-tabs,.material-footer,.data-action,.closing .button,.toast,.skip{display:none!important}.hero{padding:20px 0}.hero-grid{gap:25px}.hero h1{font-size:30pt}.section{padding:25px 0;scroll-margin:0}.section-intro{margin-bottom:20px}h2{font-size:22pt}h3{font-size:16pt}.materials-layout{display:block}.material-panel,.material-panel[hidden]{display:block!important;margin-bottom:18px;min-height:0}.task[hidden]{display:block}.task-body{display:block!important}.task:not([open])>*:not(summary){display:block!important}.task-top{margin-top:25px}.condition,.diagram,.material-panel,.reflection-sheet,.data-status,.task{break-inside:avoid}.footer{padding-top:20px}.study-strip{margin-top:25px}.footer-top a{display:none}.section-subheading{margin-top:25px}.closing{margin-top:25px}.material-panel p,.material-panel li{font-size:10pt}@page{size:A4;margin:16mm}}
+
+    /* Refinement limited to the screenshot's introductory area. */
+    #top.hero{padding-top:52px;padding-bottom:44px}
+    #top .hero-grid{grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+    #top .hero-copy h1{font-size:40px;font-weight:600;line-height:1.5;letter-spacing:0;max-width:none;text-wrap:initial}
+    #top .hero-copy h1>span{display:block}
+    #top .eyebrow{font-size:13px;margin-bottom:16px}
+    #top .hero-copy>p{font-size:15px;margin-top:20px;line-height:1.95;max-width:34em}
+    #top .hero-actions{margin-top:24px;gap:24px}
+    #top .hero-actions a{font-size:14px;font-weight:400;line-height:1.8;background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:4px 0;color:var(--ink);transform:none}
+    #top .hero-actions .button>span{display:none}
+    #top .hero-actions a:hover{border-color:var(--ink)}
+    #top .diagram{background:transparent;border-radius:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}
+    #top .diagram figcaption{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:20px}
+    #top .diagram-start{font-size:16px;font-weight:500}
+    #top .diagram-group{background:var(--surface);border-radius:4px;border:0;padding:15px 12px}
+    #top .diagram-group strong{font-size:16px;font-weight:500}
+    #top .diagram-task{padding-top:18px}
+    #top .diagram-end{margin-top:12px;padding-top:12px}
+    #top .study-strip{margin-top:36px;padding-top:20px}
+    @media(max-width:1100px){#top .hero-grid{gap:36px}#top .hero-copy h1{font-size:35px}}
+    @media(max-width:800px){#top.hero{padding-top:36px;padding-bottom:32px}#top .hero-grid{grid-template-columns:1fr;gap:28px}#top .hero-copy h1{font-size:34px}#top .diagram{max-width:550px;width:100%;padding:18px 0}#top .study-strip{margin-top:28px}}
+    @media(max-width:420px){#top .hero-copy h1{font-size:29px}#top .eyebrow{font-size:12px}#top .hero-copy>p{font-size:14px}#top .hero-actions{gap:20px}#top .diagram-group{padding:14px 8px}}
+    @media print{#top.hero{padding:20px 0}#top .hero-copy h1{font-size:25pt}#top .hero-grid{gap:25px}#top .study-strip{margin-top:20px}}
+    /* Align the two research columns; other sections retain their layout. */
+    #research .research-grid{align-items:start}
+    @media(min-width:801px){#research .audience{border-top:0;padding-top:0}}
   </style>
 </head>
 <body>
@@ -32,18 +59,18 @@
     <div class="nav-tools"><button class="quiet-button menu-toggle" id="menu" type="button" aria-expanded="false" aria-controls="navigation">目录</button></div>
   </div>
 </header>
-<noscript><p class="noscript">JavaScript 已关闭。研究内容与材料仍可阅读；筛选、主题切换和文件下载需要启用 JavaScript。</p></noscript>
+<noscript><p class="noscript">JavaScript 已关闭。研究内容与材料仍可阅读；筛选与文件下载需要启用 JavaScript。</p></noscript>
 <main id="main">
   <div class="wrap hero" id="top">
     <div class="hero-grid">
       <div class="hero-copy">
         <div class="eyebrow">XJTLU CMO AI Agent <span>学生小组评价研究</span></div>
-        <h1>CMO AI 校务服务助手评价研究</h1>
+        <h1><span>CMO AI 校务服务助手</span><span>评价研究</span></h1>
         <p>比较传统信息查询与 CMO AI 辅助查询，了解新生完成校园服务任务时的效率、准确性与使用体验。</p>
         <div class="hero-actions"><a class="button" href="#research">研究问题与目标用户 <span aria-hidden="true">↗</span></a><a class="text-link" href="#materials">查看研究材料</a></div>
       </div>
       <figure class="diagram" aria-label="实验设计示意：计划招募约60名新生，随机分为两组，每组计划30人；所有参与者完成3个简单和3个复杂任务。">
-        <figcaption>实验设计示意 · 计划方案</figcaption>
+        <figcaption>实验设计概览（计划方案）</figcaption>
         <div class="diagram-start">XJTLU 新生</div><div class="diagram-route">便利抽样招募 → 随机分组</div>
         <div class="diagram-groups"><div class="diagram-group"><strong>Baseline</strong><small>传统官方渠道<br>计划 30 人</small></div><div class="diagram-group ai"><strong>CMO AI</strong><small>传统渠道 + AI 辅助<br>计划 30 人</small></div></div>
         <div class="diagram-task"><strong>每位参与者</strong><span>3 个简单任务 + 3 个复杂任务</span></div>
@@ -54,8 +81,8 @@
   </div>
 
   <section class="section" id="research" aria-labelledby="research-title"><div class="wrap">
-    <div class="section-intro"><h2 id="research-title">研究背景与研究问题</h2><p>校园信息分布于官网、App 与公众号等平台。本研究评价自然语言交互对新生信息检索与校务流程理解的辅助效果。</p></div>
     <div class="research-grid"><div>
+    <div class="section-intro"><h2 id="research-title">研究背景与研究问题</h2><p>校园信息分布于官网、App 与公众号等平台。本研究评价自然语言交互对新生信息检索与校务流程理解的辅助效果。</p></div>
       <article class="question"><div class="question-label">RQ1 · 效率与准确性</div><h3>CMO AI 对校务任务完成效率与准确性的影响</h3><p>比较两组参与者的任务完成时间、完成率及答案准确性。</p></article>
       <article class="question"><div class="question-label">RQ2 · 任务复杂度</div><h3>任务复杂度对 CMO AI 辅助效果的影响</h3><p>比较简单信息查询与多服务整合任务，关注复杂流程中的信息遗漏及流程理解问题。</p></article>
     </div><aside class="audience"><h3>目标用户群体</h3><p>目标用户为 XJTLU 新入学学生，包括：</p><ul><li>本科一年级学生</li><li>研究生一年级学生</li></ul><p>新生校园经验较少，对服务入口、申请步骤和责任部门可能不够熟悉。</p><div class="inline-note" style="margin-top:22px">研究目标：评价 CMO AI 的帮助效果，同时识别需要进一步核实的信息与流程。</div></aside></div>
