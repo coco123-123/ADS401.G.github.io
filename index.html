@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="XJTLU CMO AI 校务信息查询与开放式校务规划用户研究：研究问题、2×2 混合实验设计、任务材料、数据记录与实施反思。">
-  <title>CMO AI 校务信息查询与开放式校务规划用户研究 | ADS401</title>
+  <meta name="description" content="A user study of XJTLU CMO AI for campus information retrieval and open-ended campus service planning: research questions, a 2 × 2 mixed design, study materials, data records and implementation reflection.">
+  <title>CMO AI: Campus Information Retrieval and Open-ended Planning | ADS401</title>
   <style>
     :root{--bg:oklch(1 0 0);--surface:oklch(.975 0 0);--panel:oklch(1 0 0);--ink:oklch(0 0 0);--muted:oklch(.34 0 0);--line:oklch(.88 0 0);--accent:oklch(0 0 0);--tint:oklch(.95 0 0);--on-accent:oklch(0 0 0);--radius:12px;--nav-layer:10;--menu-layer:20;color-scheme:light}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:104px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 "Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}button,a,input{ -webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}button:focus-visible,a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:5px}button{color:inherit}h1,h2,h3,h4,p{margin:0}h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}h2{font-size:clamp(28px,3.2vw,39px);font-weight:600;line-height:1.35;letter-spacing:-.025em}h3{font-size:21px;line-height:1.5;font-weight:600}h4{font-size:16px;font-weight:600}ul,ol{padding-left:1.3em;margin:12px 0}li+li{margin-top:6px}.wrap{width:min(1120px,calc(100% - 80px));margin-inline:auto}.muted{color:var(--muted)}.small{font-size:14px}.skip{position:fixed;left:16px;top:-90px;padding:12px 20px;background:var(--ink);color:var(--bg);z-index:30}.skip:focus{top:12px}.header{position:sticky;top:0;z-index:var(--nav-layer);background:var(--bg);border-bottom:1px solid var(--line)}.nav-shell{height:76px;display:flex;align-items:center;gap:36px}.brand{display:flex;align-items:center;gap:11px;white-space:nowrap}.brand-mark{background:var(--accent);color:var(--on-accent);display:grid;place-items:center;width:36px;height:36px;border-radius:8px;font-size:15px;letter-spacing:-.04em;font-weight:700}.brand strong{font-size:17px;font-weight:600}.brand small{font-size:12px;color:var(--muted);margin-left:8px}.nav{margin-left:auto;display:flex;align-items:center;gap:27px}.nav a{font-size:14px;position:relative;white-space:nowrap;padding:25px 0}.nav a[aria-current="location"]{color:var(--accent)}.nav a[aria-current="location"]:after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent)}.nav-tools{display:flex;gap:8px}.quiet-button{padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:transparent;font-size:13px;white-space:nowrap}.quiet-button:hover{background:var(--surface)}.menu-toggle{display:none}.hero{padding:78px 0 64px}.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}.eyebrow{font-size:14px;color:var(--accent);margin-bottom:21px;display:flex;align-items:center;gap:14px}.eyebrow span{color:var(--muted);border-left:1px solid var(--line);padding-left:14px}.hero h1{font-size:clamp(35px,4.4vw,58px);font-weight:600;line-height:1.28;letter-spacing:-.035em;max-width:10em}.hero h1 em{font-style:normal;color:var(--accent)}.hero-copy>p{color:var(--muted);margin-top:25px;max-width:31em;line-height:1.9}.hero-actions{display:flex;align-items:center;gap:24px;margin-top:31px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:11px 20px;border:1px solid var(--accent);border-radius:8px;background:var(--accent);color:var(--on-accent);font-size:14px;font-weight:600;white-space:nowrap;transition:transform .18s ease,background .18s ease}.button:hover{transform:translateY(-2px);color:var(--on-accent)}.text-link{font-size:14px;color:var(--accent);border-bottom:1px solid var(--line);padding:6px 0}.diagram{background:var(--surface);border-radius:var(--radius);padding:30px}.diagram figcaption{font-size:14px;color:var(--muted);margin-bottom:24px}.diagram{margin:0}.diagram-start{text-align:center;font-size:17px;font-weight:600}.diagram-route{text-align:center;color:var(--muted);font-size:13px;margin:5px 0 17px}.diagram-groups{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative}.diagram-groups:before{content:"";position:absolute;top:-9px;left:25%;right:25%;height:1px;background:var(--line)}.diagram-group{background:var(--panel);padding:18px 15px;text-align:center;border:1px solid var(--line);border-radius:8px;position:relative}.diagram-group:before{content:"";position:absolute;top:-10px;left:50%;height:9px;width:1px;background:var(--line)}.diagram-group.ai{border-color:var(--accent)}.diagram-group strong{display:block;font-size:17px;color:var(--accent)}.diagram-group small{display:block;font-size:12px;color:var(--muted);line-height:1.7;margin-top:6px}.diagram-task{display:flex;align-items:center;justify-content:space-between;padding-top:23px;gap:10px;font-size:13px}.diagram-task strong{font-size:14px;font-weight:500}.diagram-end{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:17px;text-align:center}.study-strip{display:flex;gap:0;justify-content:space-between;margin-top:57px;padding-top:25px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.study-strip strong{font-weight:500;color:var(--ink);margin-left:9px}.section{padding:88px 0;border-top:1px solid var(--line);scroll-margin-top:100px}.section-intro{max-width:690px;margin-bottom:40px}.section-intro>p{margin-top:17px;color:var(--muted);max-width:65ch}.research-grid{display:grid;grid-template-columns:1.35fr .8fr;gap:80px}.question{padding:0 0 28px}.question+.question{border-top:1px solid var(--line);padding-top:28px}.question-label{color:var(--accent);font-size:13px;font-weight:600;margin-bottom:9px}.question h3{font-size:23px}.question p{color:var(--muted);margin-top:10px;font-size:15px}.audience{border-top:2px solid var(--accent);padding-top:20px}.audience h3{margin-bottom:15px}.audience p{font-size:15px;color:var(--muted)}.audience ul{font-size:15px;margin:17px 0 21px}.inline-note{background:var(--surface);padding:15px 18px;border-radius:8px;font-size:14px;color:var(--muted)}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:34px}.condition{padding:28px;background:var(--surface);border-radius:var(--radius)}.condition.ai{background:var(--tint)}.condition-type{font-size:13px;color:var(--accent);margin-bottom:7px}.condition h3{font-size:24px}.condition p{margin-top:12px;font-size:15px;color:var(--muted)}.condition .restrictions{font-size:13px;border-top:1px solid var(--line);padding-top:14px;margin-top:20px}.section-subheading{margin:47px 0 21px}.fact-row{display:flex;flex-wrap:wrap;gap:12px 30px;margin:23px 0 0;font-size:14px;color:var(--muted)}.fact-row b{font-weight:600;color:var(--ink)}.procedure{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin:0;counter-reset:flow}.procedure li{position:relative;padding-top:18px;border-top:1px solid var(--line);margin:0;counter-increment:flow}.procedure li:before{content:counter(flow,decimal-leading-zero);display:block;color:var(--accent);font-size:13px;margin-bottom:12px}.procedure p{font-size:14px;color:var(--muted);margin-top:9px}.task-top{display:flex;align-items:center;justify-content:space-between;margin:50px 0 18px;gap:18px}.filter{display:flex;gap:4px;background:var(--surface);padding:4px;border-radius:8px}.filter button{border:0;background:transparent;padding:7px 13px;font-size:13px;border-radius:5px;color:var(--muted)}.filter button[aria-pressed="true"]{background:var(--panel);color:var(--accent)}.tasks{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}.task{border-bottom:1px solid var(--line)}.task[hidden]{display:none}.task summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:13px;padding:18px 1px}.task summary::-webkit-details-marker{display:none}.task summary:after{content:"+";margin-left:auto;font-size:23px;color:var(--muted);font-weight:300}.task[open] summary:after{content:"−"}.task-code{font-size:12px;color:var(--accent);min-width:24px}.task summary strong{font-size:15px;font-weight:500}.task-body{padding:0 0 21px 38px;font-size:14px;color:var(--muted)}.task-body p+p{margin-top:10px}.task-en{font-size:13px;line-height:1.8}.measures{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;margin-top:49px}.measure-list{margin:19px 0 0}.measure-list div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:11px 0}.measure-list dt{font-size:14px;font-weight:600}.measure-list dd{margin:0;font-size:14px;color:var(--muted)}.scoring{padding:22px 25px;border:1px solid var(--line);border-radius:var(--radius)}.scoring p{font-size:14px;color:var(--muted);margin-top:12px}.scoring-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px;font-size:13px}.scoring-list span{display:flex;justify-content:space-between;gap:12px}.scoring-list b{font-weight:500;color:var(--accent)}.materials-layout{display:grid;grid-template-columns:240px 1fr;gap:46px;align-items:start}.material-tabs{display:flex;flex-direction:column;gap:5px}.material-tabs button{border:0;background:transparent;text-align:left;border-radius:8px;padding:13px 15px;color:var(--muted);font-size:15px}.material-tabs button[aria-selected="true"]{background:var(--tint);color:var(--accent);font-weight:600}.material-tabs button:hover{background:var(--surface)}.material-panel{min-height:420px;border:1px solid var(--line);border-radius:var(--radius);padding:29px 33px;background:var(--panel)}.material-panel[hidden]{display:none}.panel-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:16px}.badge{font-size:12px;background:var(--surface);color:var(--muted);border-radius:5px;padding:3px 8px;white-space:nowrap}.material-panel p,.material-panel li{font-size:14px;color:var(--muted)}.material-panel h4{margin-top:21px;margin-bottom:8px}.questionnaire{list-style:none;padding:0;margin:21px 0}.questionnaire li{padding-bottom:19px}.questionnaire strong{display:block;color:var(--ink);font-size:15px;font-weight:500;margin-bottom:7px}.option-line{font-size:13px;line-height:2;color:var(--muted)}.material-footer{display:flex;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:23px;margin-top:25px;flex-wrap:wrap}.material-footer p{font-size:13px;color:var(--muted)}.secondary{background:transparent;border-color:var(--line);color:var(--ink);font-weight:500}.secondary:hover{background:var(--surface);color:var(--ink)}.placeholder{color:var(--muted);background:var(--surface);border-radius:8px;padding:17px 19px;font-size:14px;margin-top:17px}.consent-lines{list-style:none;padding:0;margin:21px 0}.consent-lines li{display:flex;gap:12px;align-items:flex-start;margin-top:13px}.consent-lines li:before{content:"□";color:var(--accent);font-size:20px;line-height:1.5}.data-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:start}.data-status{padding:26px;background:var(--surface);border-radius:var(--radius)}.data-status h3{margin:12px 0}.data-status p{font-size:14px;color:var(--muted)}.status-label{font-size:12px;color:var(--accent)}.status-list{margin:25px 0 0;padding:0;list-style:none}.status-list li{display:flex;justify-content:space-between;gap:15px;padding:10px 0;font-size:14px;margin:0}.status-list span{color:var(--muted)}.data-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius)}table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th{background:var(--surface);font-weight:500;text-align:left;padding:12px 15px}td{padding:18px 15px}.empty-cell{height:145px;text-align:center;color:var(--muted);white-space:normal}.data-caption{margin-top:14px;font-size:13px;color:var(--muted)}
@@ -93,379 +93,414 @@
     /* Align the two research columns; other sections retain their layout. */
     #research .research-grid{align-items:start}
     @media(min-width:801px){#research .audience{border-top:0;padding-top:0}}
+
+    /* Scoped scoring-table layout correction. */
+    #design .score-section{margin-top:0}
+    #design #task-score-title{margin:48px 0 24px}
+    #design .score-tables{margin-top:0;align-items:start}
+    #design .score-tables>.table-figure{margin:0;padding:0;align-self:start;min-width:0}
+    #design .score-tables>.table-figure>figcaption{margin:0 0 21px;min-height:52px;line-height:1.6;display:flex;align-items:flex-end}
+    @media(max-width:800px){#design #task-score-title{margin:36px 0 20px}#design .score-tables{row-gap:30px}}
+    @media print{#design #task-score-title{margin:24px 0 16px}}
+
+    /* English content: retain the layout while allowing long labels to wrap. */
+    .academic-table th,.academic-table td{overflow-wrap:break-word}
+    #material-files[hidden]{display:none}
+    #choose-files{display:inline-block;margin-top:14px}
+    .materials-layout>*,.material-tabs,.material-panel{min-width:0}
+    .material-tabs button{max-width:100%;white-space:normal;overflow-wrap:break-word}
+    .panel-heading h3{min-width:0}
+    @media(max-width:420px){.panel-heading{flex-wrap:wrap}}
+    @media(min-width:801px){@supports(grid-template-rows:subgrid){
+      #design .score-tables{grid-template-rows:auto auto;row-gap:0}
+      #design .score-tables>.table-figure{display:grid;grid-template-rows:subgrid;grid-row:span 2;row-gap:0}
+    }}
   </style>
 </head>
 <body>
-<a class="skip" href="#main">跳至正文</a>
+<a class="skip" href="#main">Skip to main content</a>
 <header class="header">
   <div class="wrap nav-shell">
-    <a class="brand" href="#top" aria-label="CMO 研究首页"><span class="brand-mark" aria-hidden="true">CMO</span><strong>校务 AI 评价研究</strong><small>ADS401</small></a>
-    <nav class="nav" id="navigation" aria-label="页面导航">
-      <a href="#research" aria-current="location">研究问题</a><a href="#design">实验计划</a><a href="#materials">研究问卷</a><a href="#interview">访谈提纲</a><a href="#reflection">实施反思</a>
+    <a class="brand" href="#top" aria-label="CMO study home"><span class="brand-mark" aria-hidden="true">CMO</span><strong>Campus AI Evaluation</strong><small>ADS401</small></a>
+    <nav class="nav" id="navigation" aria-label="Page navigation">
+      <a href="#research" aria-current="location">Research Questions</a><a href="#design">Study Design</a><a href="#materials">Questionnaires</a><a href="#interview">Interviews</a><a href="#reflection">Reflection</a>
     </nav>
-    <div class="nav-tools"><button class="quiet-button menu-toggle" id="menu" type="button" aria-expanded="false" aria-controls="navigation">目录</button></div>
+    <div class="nav-tools"><button class="quiet-button menu-toggle" id="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button></div>
   </div>
 </header>
-<noscript><p class="noscript">JavaScript 已关闭。研究内容与材料仍可阅读；筛选与文件下载需要启用 JavaScript。</p></noscript>
+<noscript><p class="noscript">JavaScript is disabled. Study content remains readable; task filtering and material tabs require JavaScript.</p></noscript>
 <main id="main">
   <div class="wrap hero" id="top">
     <div class="hero-grid hero-only">
       <div class="hero-copy">
-        <div class="eyebrow">XJTLU CMO AI <span>校务信息查询与开放式校务规划研究</span></div>
-        <h1><span>CMO AI 校务信息查询</span><span>与开放式校务规划</span></h1>
-        <p>本研究比较 Baseline 与 CMO AI 两种信息获取方式，评估其对校园信息查询和开放式校务规划的影响，重点关注效率、准确性、服务发现、信息覆盖和行动可执行性。</p>
-        <div class="hero-actions"><a class="button" href="#research">研究问题与目标用户 <span aria-hidden="true">↗</span></a><a class="text-link" href="#materials">查看研究材料</a></div>
+        <div class="eyebrow">XJTLU CMO AI <span>Campus Information Retrieval and Open-ended Planning</span></div>
+        <h1><span>CMO AI: Campus Information Retrieval</span><span>and Open-ended Campus Planning</span></h1>
+        <p>This study compares Baseline and CMO AI information-seeking conditions in campus information retrieval and open-ended planning, focusing on efficiency, accuracy, service discovery, information coverage and actionability.</p>
+        <div class="hero-actions"><a class="button" href="#research">Research Questions and Target Users <span aria-hidden="true">↗</span></a><a class="text-link" href="#materials">View Study Materials</a></div>
       </div>
     </div>
-    <div class="study-strip"><span>当前内容<strong>研究设计提案</strong></span><span>目标人群<strong>本科 / 研究生新生</strong></span><span>计划样本<strong>约 60 人</strong></span><span>实际结果<strong>待小组补充</strong></span></div>
+    <div class="study-strip"><span>Document status<strong>Research design proposal</strong></span><span>Target users<strong>New undergraduate and postgraduate students</strong></span><span>Planned sample<strong>Approximately 60 participants</strong></span><span>Study results<strong>To be added by the group</strong></span></div>
   </div>
 
   <section class="section" id="research" aria-labelledby="research-title"><div class="wrap">
     <div class="research-grid"><div>
-    <div class="section-intro"><h2 id="research-title">研究背景与研究问题</h2><p>校园服务信息分布于官网、App、公众号和不同部门页面。本研究考察 CMO AI 是否不仅能够回答学生已经明确的问题，还能够帮助学生发现未预先考虑到的校园服务与规划要求。</p></div>
-      <article class="question"><div class="question-label">RQ1 · 简单信息查询</div><h3>CMO AI 是否提高校园信息查询的效率与准确性？</h3><p>比较 Baseline 与 CMO AI 条件下的任务完成时间、完成状态和答案准确性。</p></article>
-      <article class="question"><div class="question-label">RQ2 · 开放式校务规划</div><h3>CMO AI 是否能够帮助学生发现并整合开放式规划所需的校园服务？</h3><p>重点考察 Service Discovery、Information Coverage、Completeness、Accuracy 与 Actionability。</p></article>
-     </div><aside class="audience"><h3>目标用户群体</h3><p>目标用户为 XJTLU 新入学学生，包括：</p><ul><li>本科一年级学生</li><li>研究生一年级学生</li></ul><p>新生校园经验较少，对服务入口、申请步骤和责任部门可能不够熟悉。</p><div class="inline-note" style="margin-top:22px">研究目标：评价 CMO AI 的帮助效果，同时识别需要进一步核实的信息与流程。</div></aside></div>
-     <div class="section-intro" style="margin-top:60px;margin-bottom:0"><h2>Research Rationale</h2><p>本研究将已有提案中的研究动机、目标用户、对照设计和任务分类整合为以下四点。</p></div>
+    <div class="section-intro"><h2 id="research-title">Background and Research Questions</h2><p>Campus service information is distributed across official websites, apps, WeChat accounts and departmental pages. This study examines whether CMO AI can answer explicit questions and help students discover campus services and planning requirements they have not yet considered.</p></div>
+      <article class="question"><div class="question-label">RQ1 · Simple Information Retrieval</div><h3>Does CMO AI improve the efficiency and accuracy of campus information retrieval?</h3><p>Compare task completion time, completion status and answer accuracy between the Baseline and CMO AI conditions.</p></article>
+      <article class="question"><div class="question-label">RQ2 · Open-ended Campus Planning</div><h3>Can CMO AI help students discover and integrate the campus services required for open-ended planning?</h3><p>The evaluation focuses on service discovery, information coverage, completeness, accuracy and actionability.</p></article>
+     </div><aside class="audience"><h3>Target Users</h3><p>The target population is newly enrolled XJTLU students, including:</p><ul><li>First-year undergraduate students</li><li>First-year postgraduate students</li></ul><p>New students have limited campus experience and may be unfamiliar with service entry points, application procedures and responsible departments.</p><div class="inline-note" style="margin-top:22px">Study objective: evaluate the assistance provided by CMO AI and identify information and procedures that require further verification.</div></aside></div>
+     <div class="section-intro" style="margin-top:60px;margin-bottom:0"><h2>Research Rationale</h2><p>The following four points bring together the motivation, target users, comparison conditions and task categories in the existing proposal.</p></div>
      <div class="rationale-grid">
-       <article class="rationale-item"><h3>为什么研究 CMO AI？</h3><p>新生可能不知道校务信息在哪里、由哪个部门负责，以及办理某项事务需要哪些步骤。CMO AI 可能通过自然语言对话帮助学生检索并整合校园服务信息。</p><small>Why this matters: campus information is distributed across multiple sources.</small></article>
-       <article class="rationale-item"><h3>为什么选择新生？</h3><p>新生对校园服务体系的熟悉程度有限，更可能遇到信息入口不清楚、流程不确定和服务发现不足的问题。</p><small>Target group: first-year undergraduate and postgraduate students.</small></article>
-       <article class="rationale-item"><h3>为什么比较 Baseline 与 CMO AI？</h3><p>Baseline 组使用现有校园信息渠道；CMO AI 组在相同渠道基础上增加 CMO AI。这样的对照可以估计加入 CMO AI 后产生的额外价值。</p><small>Rationale for the between-subjects factor.</small></article>
-       <article class="rationale-item"><h3>为什么设置两类任务？</h3><p>Simple 任务考察用户已经知道要查什么时的检索表现；Complex 任务考察用户能否发现尚未想到的服务，并将信息整合成可执行计划。</p><small>Rationale for the within-subjects task-type factor.</small></article>
+       <article class="rationale-item"><h3>Why Study CMO AI?</h3><p>New students may not know where to find campus information, which department is responsible or which steps a service requires. Through natural-language interaction, CMO AI may help them retrieve and integrate campus service information.</p><small>Why this matters: campus information is distributed across multiple sources.</small></article>
+       <article class="rationale-item"><h3>Why Focus on New Students?</h3><p>New students have limited familiarity with campus services and may face unclear entry points, uncertain procedures and difficulty discovering relevant services.</p><small>Target group: first-year undergraduate and postgraduate students.</small></article>
+       <article class="rationale-item"><h3>Why Compare Baseline and CMO AI?</h3><p>The Baseline group uses existing campus information channels. The CMO AI group can also use CMO AI. This comparison is intended to estimate the additional value of access to CMO AI.</p><small>Rationale for the between-subjects factor.</small></article>
+       <article class="rationale-item"><h3>Why Include Two Task Types?</h3><p>Simple tasks assess retrieval when users already know what they need. Complex tasks assess whether users discover services they have not considered and integrate information into an actionable plan.</p><small>Rationale for the within-subjects task-type factor.</small></article>
      </div>
   </div></section>
 
   <section class="section" id="design" aria-labelledby="design-title"><div class="wrap">
-    <div class="section-intro"><h2 id="design-title">实验设计与实施计划</h2><p>本研究采用 2×2 混合实验设计。信息获取方式是组间变量，包括 Baseline 与 CMO AI；任务类型是组内变量，包括 Simple 信息查询与 Complex 开放式校务规划。每位参与者只接受一种信息获取方式，但完成两种任务类型。</p></div>
-    <figure class="diagram design-overview" aria-label="2×2 混合实验设计：信息获取方式为组间变量，任务类型为组内变量。参与者随机进入 Baseline 或 CMO AI 组，并完成六个简单信息查询任务与两个复杂开放式校务规划任务。">
-      <figcaption>实验设计概览</figcaption>
-      <div class="diagram-start">XJTLU 新生</div><div class="diagram-route">便利抽样招募 → 随机分组</div>
-      <div class="diagram-groups"><div class="diagram-group"><strong>Baseline</strong><small>浏览器 + 官方信息源<br>计划 30 人</small></div><div class="diagram-group ai"><strong>CMO AI</strong><small>传统渠道 + CMO AI<br>计划 30 人</small></div></div>
-      <div class="diagram-task"><strong>每位参与者</strong><span>6 个简单任务 + 2 个复杂任务</span></div>
-      <div class="diagram-end">记录完成时间、完成状态、准确性、服务发现、信息覆盖、完整性与行动可执行性</div>
+    <div class="section-intro"><h2 id="design-title">Experimental Design and Implementation Plan</h2><p>The study uses a 2 × 2 mixed design. Information-seeking condition is the between-subjects factor, with Baseline and CMO AI levels. Task type is the within-subjects factor, with Simple retrieval and Complex open-ended planning levels. Each participant uses one information-seeking condition and completes both task types.</p></div>
+    <figure class="diagram design-overview" aria-label="A 2 × 2 mixed design: information-seeking condition is between subjects and task type is within subjects. Participants are randomly assigned to Baseline or CMO AI and complete six simple retrieval tasks and two complex open-ended planning tasks.">
+      <figcaption>Study Design Overview</figcaption>
+      <div class="diagram-start">New XJTLU Students</div><div class="diagram-route">Convenience recruitment → Random assignment</div>
+      <div class="diagram-groups"><div class="diagram-group"><strong>Baseline</strong><small>Browser + official information sources<br>Planned: 30 participants</small></div><div class="diagram-group ai"><strong>CMO AI</strong><small>Traditional channels + CMO AI<br>Planned: 30 participants</small></div></div>
+      <div class="diagram-task"><strong>Each participant</strong><span>6 simple tasks + 2 complex tasks</span></div>
+      <div class="diagram-end">Record completion time, completion status, accuracy, service discovery, information coverage, completeness and actionability.</div>
     </figure>
     <div class="table-section">
-      <h3 class="table-section-title">变量定义与研究假设</h3>
+      <h3 class="table-section-title">Variable Definitions and Research Hypotheses</h3>
       <figure class="table-figure">
-        <figcaption id="variable-caption">表 1　自变量、因变量与控制变量</figcaption>
+        <figcaption id="variable-caption">Table 1. Independent, Dependent and Control Variables</figcaption>
         <div class="table-scroll" role="region" aria-labelledby="variable-caption" tabindex="0">
           <table class="academic-table metric-table" aria-labelledby="variable-caption">
             <colgroup><col><col><col><col></colgroup>
-            <thead><tr><th scope="col">变量角色</th><th scope="col">变量</th><th scope="col">水平 / 指标</th><th scope="col">说明</th></tr></thead>
+            <thead><tr><th scope="col">Variable role</th><th scope="col">Variable</th><th scope="col">Levels / measures</th><th scope="col">Description</th></tr></thead>
             <tbody>
-              <tr><th scope="row">组间自变量</th><td>信息获取方式</td><td>Baseline / CMO AI</td><td>Baseline 使用浏览器和官方信息源；CMO AI 组在相同基础上增加 CMO AI。</td></tr>
-              <tr><th scope="row">组内自变量</th><td>任务类型</td><td>Simple / Complex</td><td>Simple 为 S1–S6 单一服务信息查询；Complex 为 C1–C2 开放式校务规划。</td></tr>
-              <tr><th scope="row">因变量</th><td>任务表现</td><td>时间、完成状态、准确性</td><td>记录每项任务的完成时间、是否完成以及答案与标准答案的一致程度。</td></tr>
-              <tr><th scope="row">因变量</th><td>开放式规划质量</td><td>服务发现、信息覆盖、完整性、行动可执行性</td><td>依据独立核对的官方标准答案和预先制定的评分标准评价规划输出。</td></tr>
-              <tr><th scope="row">背景变量</th><td>既有经验</td><td>校园熟悉度、信息查询经验、AI 使用习惯</td><td>通过前置问卷记录，用于解释个体差异和研究限制。</td></tr>
+              <tr><th scope="row">Between-subjects independent variable</th><td>Information-seeking condition</td><td>Baseline / CMO AI</td><td>Baseline uses browsers and official information sources; the CMO AI group also has access to CMO AI.</td></tr>
+              <tr><th scope="row">Within-subjects independent variable</th><td>Task type</td><td>Simple / Complex</td><td>Simple: single-service retrieval tasks S1–S6. Complex: open-ended campus planning tasks C1–C2.</td></tr>
+              <tr><th scope="row">Dependent variable</th><td>Task performance</td><td>Time, completion status and accuracy</td><td>Record completion time, whether the task was completed and agreement between the submitted answer and the reference answer.</td></tr>
+              <tr><th scope="row">Dependent variable</th><td>Open-ended planning quality</td><td>Service discovery, information coverage, completeness and actionability</td><td>Evaluate planning outputs against independently verified official reference answers and predefined scoring criteria.</td></tr>
+              <tr><th scope="row">Background variable</th><td>Prior experience</td><td>Campus familiarity, information-seeking experience and AI usage habits</td><td>Record through the pre-study questionnaire to help interpret individual differences and study limitations.</td></tr>
             </tbody>
           </table>
         </div>
       </figure>
       <figure class="table-figure design-matrix-figure" style="margin-top:42px">
-        <figcaption id="factor-caption">表 2　2×2 混合实验设计矩阵</figcaption>
+        <figcaption id="factor-caption">Table 2. 2 × 2 Mixed Experimental Design Matrix</figcaption>
         <div class="table-scroll" role="region" aria-labelledby="factor-caption" tabindex="0">
           <table class="academic-table design-matrix" aria-labelledby="factor-caption">
             <colgroup><col><col><col></colgroup>
-            <thead><tr><th scope="col">信息获取方式 / 组间变量</th><th scope="col">Simple 任务类型 / 组内变量</th><th scope="col">Complex 任务类型 / 组内变量</th></tr></thead>
+            <thead><tr><th scope="col">Information-seeking condition / between subjects</th><th scope="col">Simple tasks / within subjects</th><th scope="col">Complex tasks / within subjects</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Group 1<br><small>Baseline：不使用 CMO AI</small></th><td><strong>Group 1 + Simple</strong><br>S1–S6 单一校园服务信息查询</td><td><strong>Group 1 + Complex</strong><br>C1–C2 开放式校务规划</td></tr>
-              <tr><th scope="row">Group 2<br><small>CMO AI：使用 CMO AI</small></th><td><strong>Group 2 + Simple</strong><br>S1–S6 单一校园服务信息查询</td><td><strong>Group 2 + Complex</strong><br>C1–C2 开放式校务规划</td></tr>
+              <tr><th scope="row">Group 1<br><small>Baseline: without CMO AI</small></th><td><strong>Group 1 + Simple</strong><br>S1–S6: single-service campus information retrieval</td><td><strong>Group 1 + Complex</strong><br>C1–C2: open-ended campus planning</td></tr>
+              <tr><th scope="row">Group 2<br><small>CMO AI: with CMO AI</small></th><td><strong>Group 2 + Simple</strong><br>S1–S6: single-service campus information retrieval</td><td><strong>Group 2 + Complex</strong><br>C1–C2: open-ended campus planning</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="table-note">行变量表示参与者被分配的信息获取方式；列变量表示每位参与者都要完成的两种任务类型。四个交叉单元构成 2×2 mixed factorial design。</p>
+        <p class="table-note">Rows represent the assigned information-seeking condition; columns represent the two task types completed by every participant. The four cells form a 2 × 2 mixed factorial design.</p>
       </figure>
       <div class="comparison" style="margin-top:33px">
-        <article class="condition"><div class="condition-type">H1 · 信息获取方式主效应</div><h3>CMO AI 组表现更好</h3><p>与 Baseline 组相比，CMO AI 组预计具有更短的任务完成时间、更高的完成率和准确性。</p></article>
-        <article class="condition ai"><div class="condition-type">H2 · 交互效应</div><h3>复杂任务中的帮助效果更明显</h3><p>CMO AI 对 Complex 开放式规划任务的服务发现、信息覆盖、完整性和行动可执行性的提升预计大于对 Simple 任务的提升。</p></article>
+        <article class="condition"><div class="condition-type">H1 · Main Effect of Information-seeking Condition</div><h3>Better Performance with CMO AI</h3><p>Compared with Baseline, the CMO AI group is expected to have shorter completion times, higher completion rates and greater accuracy.</p></article>
+        <article class="condition ai"><div class="condition-type">H2 · Interaction Effect</div><h3>Greater Assistance for Complex Tasks</h3><p>CMO AI is expected to provide greater benefits for service discovery, information coverage, completeness and actionability in Complex open-ended planning than in Simple tasks.</p></article>
       </div>
-      <p class="table-note">研究假设将在 Pilot Study 后进一步检查任务难度、时间限制和评分标准是否可执行；正式结果需以实际收集的数据为准。</p>
+      <p class="table-note">A pilot study will check the feasibility of task difficulty, time limits and scoring criteria. Findings must be based on the data actually collected.</p>
     </div>
     <figure class="table-figure">
-      <figcaption id="condition-caption">表 3　实验条件与资源使用范围</figcaption>
+      <figcaption id="condition-caption">Table 3. Experimental Conditions and Permitted Resources</figcaption>
       <div class="table-scroll" role="region" aria-labelledby="condition-caption" tabindex="0">
-        <table class="academic-table condition-table" aria-labelledby="condition-caption" aria-describedby="condition-note">
+        <table class="academic-table condition-table" aria-labelledby="condition-caption">
           <colgroup><col><col><col></colgroup>
-          <thead><tr><th scope="col">比较项目</th><th scope="col">传统查询组<small lang="en">Traditional / Baseline</small></th><th scope="col">CMO AI 辅助组<small lang="en">CMO AI Assisted</small></th></tr></thead>
+          <thead><tr><th scope="col">Comparison item</th><th scope="col">Traditional Search Group<small lang="en">Traditional / Baseline</small></th><th scope="col">CMO AI-assisted Group<small lang="en">CMO AI Assisted</small></th></tr></thead>
           <tbody>
-            <tr><th scope="row">条件定义</th><td>通过现有校园信息渠道完成任务</td><td>在相同传统渠道基础上，额外使用 CMO AI Agent</td></tr>
-            <tr><th scope="row">官方信息渠道</th><td>XJTLU 官网、官方微信公众号、XJTLU App</td><td>XJTLU 官网、官方微信公众号、XJTLU App</td></tr>
-            <tr><th scope="row">普通浏览器搜索</th><td>允许使用普通搜索结果</td><td>允许使用普通搜索结果</td></tr>
-            <tr><th scope="row">CMO AI Agent</th><td>不允许使用</td><td>允许使用</td></tr>
-            <tr><th scope="row">其他 AI 工具</th><td>不允许使用，包括浏览器 AI 摘要</td><td>不允许使用；浏览器查询采用普通搜索结果</td></tr>
-            <tr><th scope="row">计划样本量</th><td>约 30 人</td><td>约 30 人</td></tr>
-            <tr><th scope="row">任务配置</th><td>每人完成 S1–S6 六个简单任务，以及 C1–C2 两个复杂任务</td><td>每人完成 S1–S6 六个简单任务，以及 C1–C2 两个复杂任务</td></tr>
+            <tr><th scope="row">Condition definition</th><td>Complete tasks using existing campus information channels.</td><td>Use CMO AI Agent in addition to the same traditional channels.</td></tr>
+            <tr><th scope="row">Official information channels</th><td>XJTLU website, official WeChat accounts and XJTLU App</td><td>XJTLU website, official WeChat accounts and XJTLU App</td></tr>
+            <tr><th scope="row">Standard browser search</th><td>Standard search results are permitted.</td><td>Standard search results are permitted.</td></tr>
+            <tr><th scope="row">CMO AI Agent</th><td>Not permitted</td><td>Permitted</td></tr>
+            <tr><th scope="row">Other AI tools</th><td>Not permitted, including browser AI summaries.</td><td>Not permitted; browser searches must use standard search results.</td></tr>
+            <tr><th scope="row">Planned sample size</th><td>Approximately 30 participants</td><td>Approximately 30 participants</td></tr>
+            <tr><th scope="row">Task allocation</th><td>Each participant completes six simple tasks (S1–S6) and two complex tasks (C1–C2).</td><td>Each participant completes six simple tasks (S1–S6) and two complex tasks (C1–C2).</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="table-note" id="condition-note">注：Baseline 与 CMO AI 为组间信息获取条件。每位参与者均完成 S1–S6 六个简单信息查询任务和 C1–C2 两个复杂开放式规划任务。两组通过随机分配形成；实际招募和研究结果不属于本次设计提案的展示范围。</p>
+      
     </figure>
-    <div class="fact-row"><span><b>抽样方式</b> 便利抽样</span><span><b>招募渠道</b> 新生群、学生社区、校园社交平台</span><span><b>分组计划</b> 随机分配，约 30 人 / 组</span></div>
-    <h3 class="section-subheading">拟定实验流程</h3>
-    <ol class="procedure"><li><h4>研究说明与知情同意</h4><p>说明研究目的、实验流程、数据收集方式、退出权利及匿名化处理方式。</p></li><li><h4>填写前置问卷并随机分组</h4><p>记录年级、校园熟悉度、既有信息查询经验和 AI 使用习惯。</p></li><li><h4>完成八项任务与任务后问卷</h4><p>完成 S1–S6 六个简单任务和 C1–C2 两个复杂任务，记录任务用时、完成情况与提交内容。</p></li><li><h4>整理答案与记录问题</h4><p>依据官方信息、标准答案和评分表整理结果，记录遗漏、流程错误及信息来源问题。</p></li></ol>
-    <div class="task-top"><h3>实验任务设计</h3><div class="filter" role="group" aria-label="筛选实验任务"><button type="button" data-filter="all" aria-pressed="true">全部</button><button type="button" data-filter="simple" aria-pressed="false">简单任务</button><button type="button" data-filter="complex" aria-pressed="false">复杂任务</button></div></div>
+    <div class="fact-row"><span><b>Sampling method</b> Convenience sampling</span><span><b>Recruitment channels</b> New-student groups, student communities and campus social platforms</span><span><b>Assignment plan</b> Random assignment; approximately 30 participants per group</span></div>
+    <h3 class="section-subheading">Proposed Experimental Procedure</h3>
+    <ol class="procedure"><li><h4>Study Information and Informed Consent</h4><p>Explain the purpose, procedure, data collection, withdrawal rights and anonymisation arrangements.</p></li><li><h4>Pre-study Questionnaire and Random Assignment</h4><p>Record year of study, campus familiarity, prior information-seeking experience and AI usage habits.</p></li><li><h4>Eight Tasks and Post-task Questionnaires</h4><p>Complete six simple tasks (S1–S6) and two complex tasks (C1–C2), recording time, completion status and submitted outputs.</p></li><li><h4>Answer Scoring and Issue Recording</h4><p>Evaluate outputs using official information, reference answers and scoring sheets. Record omissions, procedural errors and source issues.</p></li></ol>
+    <div class="task-top"><h3>Experimental Tasks</h3><div class="filter" role="group" aria-label="Filter experimental tasks"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="simple" aria-pressed="false">Simple Tasks</button><button type="button" data-filter="complex" aria-pressed="false">Complex Tasks</button></div></div>
     <div class="tasks">
-      <details class="task" data-kind="simple"><summary><span class="task-code">S1</span><strong>学生一站式联系方式查询</strong></summary><div class="task-body"><p>你想咨询一项校园事务，但不确定应该联系哪个部门。请查询学生一站式的联系方式和办公信息。（填写：联系电话、办公地点、公开服务时间）</p><p class="task-en" lang="en">You need to contact the Campus Management Office about a campus service issue. Find the CMO telephone number, office location and publicly available service hours, if available.</p></div></details>
-      <details class="task" data-kind="simple"><summary><span class="task-code">S2</span><strong>通宵自习室信息查询</strong></summary><div class="task-body"><p>你计划在考试周晚上留在校园学习。请查询学校提供的通宵自习室相关信息，包括使用条件、开放安排和预约入口。（填写：使用条件、开放时间或开放安排、预约入口）</p><p class="task-en" lang="en">You plan to stay on campus to study during an exam week evening. Find information about overnight study rooms, including usage requirements, opening arrangements and the booking channel.</p></div></details>
-      <details class="task" data-kind="simple"><summary><span class="task-code">S3</span><strong>Taicang 与 SIP 校区校车查询</strong></summary><div class="task-body"><p>你需要在 Taicang 和 SIP 两个校区之间出行。请查询官方校车时刻表，填写两个校区之间的班次和预约规则。（填写：发车时间、预约规则）</p><p class="task-en" lang="en">You plan to travel between the Taicang and SIP campuses. Find the campus shuttle routes and timetable, and explain what should be confirmed before travelling.</p></div></details>
-      <details class="task" data-kind="simple"><summary><span class="task-code">S4</span><strong>电瓶车充电服务查询</strong></summary><div class="task-body"><p>你在校园内使用电瓶车，需要寻找合适的充电地点。请查询学校提供的电瓶车充电服务及充电桩使用说明。（填写：充电地点、充电桩使用步骤、使用限制或注意事项）</p><p class="task-en" lang="en">Find information about electric vehicles and vehicle registration or licence-plate information changes, including eligibility, application channels and required information.</p></div></details>
-      <details class="task" data-kind="simple"><summary><span class="task-code">S5</span><strong>校园设施维修服务查询</strong></summary><div class="task-body"><p>你发现校园内一项设施或设备需要维修。请查询学校提供的相关服务、申请方式以及提交服务请求时需要提供的信息。（填写：报修提交入口、提交请求时必须提供的信息）</p><p class="task-en" lang="en">A campus facility or piece of equipment needs repair. Find the relevant service, application method and information required to submit a service request.</p></div></details>
-      <details class="task" data-kind="simple"><summary><span class="task-code">S6</span><strong>小组讨论室预约查询</strong></summary><div class="task-body"><p>查询小组讨论室的预约条件、预约步骤及取消规则。（填写：预约条件、预约步骤、取消规则）</p><p class="task-en" lang="en">Find the booking requirements, booking steps and cancellation rules for a group discussion room.</p></div></details>
-      <details class="task" data-kind="complex"><summary><span class="task-code">C1</span><strong>一天校园活动开放式规划</strong></summary><div class="task-body"><p>你是一名刚入学的 XJTLU 新生，计划在周六安排一天的校园活动。你希望上午找一个合适的地方学习，下午和朋友打羽毛球，晚上与另外三位同学进行小组讨论。由于你还不熟悉学校的各项服务，希望提前做好安排，确保当天的计划能够顺利完成。</p><p>请制定一份可执行的日程安排，并查询完成计划所需的校园服务信息、相关条件和办理流程。请说明你的安排依据，以及还需要提前确认的事项。</p><p class="task-en" lang="en">You are a new XJTLU student planning a full day of campus activities on Saturday. Plan a study location in the morning, badminton with friends in the afternoon and a group discussion with three classmates in the evening. Prepare an actionable schedule, identify the required campus services, conditions and procedures, and state what still needs to be confirmed.</p></div></details>
-      <details class="task" data-kind="complex"><summary><span class="task-code">C2</span><strong>校外讲者跨服务活动规划</strong></summary><div class="task-body"><p>你所在的学生小组计划在下个月邀请一位校外讲者到 XJTLU，为约 30 名学生开展一场下午的主题分享会。活动包括讲者现场演讲和学生提问环节，预计持续约两小时。你是活动的主要组织者，目前还不熟悉学校相关事务的办理方式，希望提前做好准备，确保活动能够顺利进行。</p><p>请制定一份可执行的活动准备计划，并查询完成计划所需的校园服务信息、相关条件和办理流程。请说明你的安排依据，以及还需要提前确认的事项。</p><p class="task-en" lang="en">Your student group plans to invite an external speaker to XJTLU next month for a two-hour afternoon talk for approximately 30 students. Prepare an actionable event plan, identify the required campus services, conditions and procedures, and state what still needs to be confirmed.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S1</span><strong>Student One-stop Contact Information</strong></summary><div class="task-body"><p>You need advice on a campus matter but are unsure which department to contact. Find the contact and office information for the Student One-stop service. Provide the telephone number, office location and publicly available service hours.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S2</span><strong>Overnight Study Room Information</strong></summary><div class="task-body"><p>You plan to study on campus during an exam-week evening. Find the usage requirements, opening arrangements and booking channel for overnight study rooms. Provide the requirements, opening hours or arrangements, and booking entry point.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S3</span><strong>Shuttle Services between Taicang and SIP</strong></summary><div class="task-body"><p>You need to travel between the Taicang and SIP campuses. Consult the official shuttle timetable and provide departure times and booking rules.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S4</span><strong>E-bike Charging Services</strong></summary><div class="task-body"><p>You use an e-bike on campus and need a suitable charging location. Find information about campus e-bike charging services and instructions for using charging stations. Provide locations, operating steps, restrictions and precautions.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S5</span><strong>Campus Facility Maintenance Services</strong></summary><div class="task-body"><p>You notice a campus facility or piece of equipment that needs repair. Find the relevant service, request channel and information required to submit a maintenance request. Provide the submission entry point and required details.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S6</span><strong>Group Discussion Room Booking</strong></summary><div class="task-body"><p>Find the eligibility requirements, booking steps and cancellation rules for a group discussion room. Provide all three items.</p></div></details>
+      <details class="task" data-kind="complex"><summary><span class="task-code">C1</span><strong>Open-ended Planning for a Day on Campus</strong></summary><div class="task-body"><p>You are a newly enrolled XJTLU student planning a Saturday on campus: study in a suitable place in the morning, play badminton with friends in the afternoon and hold a group discussion with three classmates in the evening. You are unfamiliar with campus services and want to prepare in advance so that the day runs smoothly.</p><p>Prepare an actionable schedule and find the campus services, requirements and procedures needed to carry it out. Explain the basis for your arrangements and identify matters that need advance confirmation.</p></div></details>
+      <details class="task" data-kind="complex"><summary><span class="task-code">C2</span><strong>Cross-service Planning for an External Speaker Event</strong></summary><div class="task-body"><p>Your student group plans to invite an external speaker to XJTLU next month for an afternoon talk attended by approximately 30 students. The event includes a presentation and student questions and will last about two hours. As the main organiser, you are unfamiliar with the relevant campus procedures and want to prepare in advance.</p><p>Prepare an actionable event preparation plan and find the campus services, requirements and procedures needed to implement it. Explain the basis for your arrangements and identify matters that need advance confirmation.</p></div></details>
     </div>
     <div class="table-section">
-      <h3 class="table-section-title">评价方式与数据类型</h3>
+      <h3 class="table-section-title">Evaluation Methods and Data Types</h3>
       <p class="section-intro" style="margin-bottom:22px">
-        本研究采用四种互补的评估方式：任务表现用于比较效率、完成状态和答案质量；
-        复杂任务质量用于评价服务发现、信息覆盖、完整性和行动可执行性；
-        任务后问卷用于测量有用性、易用性、信心、工作负荷和满意度；
-        访谈与过程记录用于解释参与者的查询策略、信息核验和错误来源。
+        The study combines four evaluation approaches: task performance compares efficiency, completion status and answer quality; complex-task quality assesses service discovery, information coverage, completeness and actionability; post-task questionnaires measure usefulness, ease of use, confidence, workload and satisfaction; interviews and process records explain search strategies, verification and sources of error.
       </p>
       <div class="evaluation-grid">
-        <article class="evaluation-item"><h3>1. Objective task performance</h3><p>记录完成时间、完成状态和答案准确性。用于比较 Baseline 与 CMO AI 在 S1–S6 简单查询任务中的表现，并记录 C1–C2 的完成时间。</p><small>主要数据：秒数、Completed / Partial / Failed、准确性评分。</small></article>
-        <article class="evaluation-item"><h3>2. Complex-task quality</h3><p>依据独立核对的官方标准答案，比较 C1–C2 最终方案中的 Service Discovery、Information Coverage、Completeness、Accuracy 与 Actionability。</p><small>主要数据：服务发现数量、必要信息覆盖率、完整性和行动可执行性。</small></article>
-        <article class="evaluation-item"><h3>3. Subjective and qualitative evaluation</h3><p>使用任务后问卷、开放式回答、半结构式访谈和参与者评论，解释参与者为什么补充、修改或放弃某些信息。</p><small>主要数据：有用性、易用性、信心、工作负荷、满意度和访谈主题。</small></article>
-        <article class="evaluation-item"><h3>4. Query process and reasons</h3><p>通过半结构式访谈、参与者评论和可取得的 AI 交互记录，了解参与者为什么选择、修改、核验或放弃某些信息。</p><small>主要数据：查询策略、官方来源核验、AI interaction patterns 和错误类型。</small></article>
+        <article class="evaluation-item"><h3>1. Objective task performance</h3><p>Record completion time, completion status and answer accuracy. Compare Baseline and CMO AI on simple retrieval tasks S1–S6, and record completion times for C1–C2.</p><small>Key data: seconds, Completed / Partial / Failed, and accuracy scores.</small></article>
+        <article class="evaluation-item"><h3>2. Complex-task quality</h3><p>Compare service discovery, information coverage, completeness, accuracy and actionability in the final C1–C2 plans against independently verified official reference answers.</p><small>Key data: number of services discovered, required-information coverage, completeness and actionability.</small></article>
+        <article class="evaluation-item"><h3>3. Subjective and qualitative evaluation</h3><p>Use post-task questionnaires, open-ended responses, semi-structured interviews and participant comments to explain why participants add, revise or discard information.</p><small>Key data: usefulness, ease of use, confidence, workload, satisfaction and interview themes.</small></article>
+        <article class="evaluation-item"><h3>4. Query process and reasons</h3><p>Use semi-structured interviews, participant comments and available AI interaction records to understand why participants select, revise, verify or discard information.</p><small>Key data: search strategies, official-source verification, AI interaction patterns and error types.</small></article>
       </div>
       <figure class="table-figure">
-        <figcaption id="metric-caption">表 4　评价维度、记录内容与评估方式</figcaption>
+        <figcaption id="metric-caption">Table 4. Evaluation Dimensions, Recorded Data and Assessment Methods</figcaption>
         <div class="table-scroll" role="region" aria-labelledby="metric-caption" tabindex="0">
-          <table class="academic-table metric-table" aria-labelledby="metric-caption" aria-describedby="metric-note">
+          <table class="academic-table metric-table" aria-labelledby="metric-caption">
             <colgroup><col><col><col><col></colgroup>
-            <thead><tr><th scope="col">评价维度</th><th scope="col">记录内容</th><th scope="col">数据来源</th><th scope="col">评估方式</th></tr></thead>
+            <thead><tr><th scope="col">Evaluation dimension</th><th scope="col">Recorded data</th><th scope="col">Data sources</th><th scope="col">Assessment method</th></tr></thead>
             <tbody>
-              <tr><th scope="row">任务表现</th><td>完成时间、完成状态、答案准确性与任务得分</td><td>任务提交记录、独立核对的官方标准答案</td><td>比较 Baseline 与 CMO AI 在 S1–S6、C1–C2 中的表现</td></tr>
-              <tr><th scope="row">复杂任务质量</th><td>Service Discovery、Information Coverage、Completeness、Accuracy、Actionability</td><td>C1–C2 最终方案、官方标准答案</td><td>依据评分标准评价方案是否发现相关服务、覆盖必要信息并支持实际执行</td></tr>
-              <tr><th scope="row">主观体验</th><td>有用性、易用性、信心、工作负荷、满意度</td><td>任务后问卷</td><td>使用 5-point Likert scale 记录参与者评价</td></tr>
-              <tr><th scope="row">查询过程与原因</th><td>查询策略、信息核验、错误来源和对 AI 的质疑</td><td>半结构式访谈、参与者评论、AI 交互记录</td><td>主题归纳，解释参与者为什么选择、修改或放弃某些信息</td></tr>
+              <tr><th scope="row">Task performance</th><td>Completion time, completion status, answer accuracy and task scores</td><td>Task submissions and independently verified official reference answers</td><td>Compare Baseline and CMO AI performance on S1–S6 and C1–C2.</td></tr>
+              <tr><th scope="row">Complex-task quality</th><td>Service Discovery、Information Coverage、Completeness、Accuracy、Actionability</td><td>Final C1–C2 plans and official reference answers</td><td>Assess whether plans identify relevant services, cover required information and support implementation.</td></tr>
+              <tr><th scope="row">Subjective experience</th><td>Usefulness, ease of use, confidence, workload and satisfaction</td><td>Post-task questionnaire</td><td>Record participant ratings using a 5-point Likert scale.</td></tr>
+              <tr><th scope="row">Search process and reasoning</th><td>Search strategies, information verification, sources of error and concerns about AI</td><td>Semi-structured interviews, participant comments and AI interaction records</td><td>Identify themes explaining why participants select, revise or discard information.</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="table-note" id="metric-note">注：独立核对的官方标准答案由校园官方资料和预先制定的参考清单组成，用于判断参与者答案和规划方案的准确性、完整性与可执行性。</p>
+        
       </figure>
       <div id="interview-module">
-      <h3 class="table-section-title">半结构式访谈问题</h3>
-      <p class="table-note">访谈预计持续 5–10 分钟。所有参与者回答共同问题，再根据实验条件选择对应的专属问题；访谈者可根据实际经历进行追问。</p>
+      <h3 class="table-section-title">Semi-structured Interview Guide</h3>
+      <p class="table-note">Interviews are expected to last 5–10 minutes. All participants answer the common questions, followed by questions for their assigned condition. Interviewers may ask follow-up questions about actual experiences.</p>
       <div class="materials-layout interview-layout">
-        <div class="material-tabs interview-tabs" role="group" aria-label="访谈问题分类">
-          <button type="button" class="interview-tab is-active" data-interview-tab="common" aria-pressed="true">共同问题</button>
-          <button type="button" class="interview-tab" data-interview-tab="ai" aria-pressed="false">CMO AI 组专属</button>
-          <button type="button" class="interview-tab" data-interview-tab="baseline" aria-pressed="false">Baseline 组专属</button>
+        <div class="material-tabs interview-tabs" role="group" aria-label="Interview question categories">
+          <button type="button" class="interview-tab is-active" data-interview-tab="common" aria-pressed="true">Common Questions</button>
+          <button type="button" class="interview-tab" data-interview-tab="ai" aria-pressed="false">CMO AI Group</button>
+          <button type="button" class="interview-tab" data-interview-tab="baseline" aria-pressed="false">Baseline Group</button>
         </div>
         <div class="interview-panels">
           <section class="material-panel interview-panel" data-interview-panel="common">
-            <div class="panel-heading"><h4>A. 共同问题</h4><span class="badge">两组均回答</span></div>
+            <div class="panel-heading"><h4>A. Common Questions</h4><span class="badge">Both groups</span></div>
       <ol class="questionnaire interview-list">
-        <li><strong>Q1 · 信息渠道选择</strong><span>在完成任务的过程中，你主要使用了哪些信息查询方式？为什么选择这些方式？<br>追问：你会根据任务的难度或类型改变查询方式吗？</span></li>
-        <li><strong>Q2 · 信息质疑与核验</strong><span>完成任务时，有没有哪些信息让你感到不确定，或者觉得需要进一步核实？请举例说明。<br>追问：具体是哪条信息或哪个办理步骤？后来如何处理？是否通过官方渠道核实？</span></li>
-        <li><strong>Q3 · 时间压力与任务困难</strong><span>完成任务时，你有没有感到时间紧张？主要卡在哪个环节？<br>追问：寻找信息、理解流程、核实信息还是整理最终方案最耗时？</span></li>
-        <li><strong>Q4 · 问题解决与策略调整</strong><span>当你遇到查询困难，或者无法确定下一步该怎么做时，你是如何解决的？<br>追问：你有没有更换关键词、调整查询方式或寻找其他来源？最后解决了吗？</span></li>
+        <li><strong>Q1 · Choice of Information Channels</strong><span>Which information-seeking methods did you mainly use during the tasks, and why did you choose them?<br>Follow-up: Did you change your approach according to task difficulty or type?</span></li>
+        <li><strong>Q2 · Uncertainty and Verification</strong><span>Was any information uncertain or in need of further verification? Please give an example.<br>Follow-up: Which information or procedural step was involved? How did you handle it? Did you check an official source?</span></li>
+        <li><strong>Q3 · Time Pressure and Task Difficulty</strong><span>Did you feel short of time during the tasks? At which stage did you get stuck?<br>Follow-up: Which took the most time: finding information, understanding procedures, verifying information or organising the final plan?</span></li>
+        <li><strong>Q4 · Problem-solving and Strategy Changes</strong><span>How did you deal with difficulty finding information or uncertainty about what to do next?<br>Follow-up: Did you change keywords, switch methods or consult other sources? Was the problem resolved?</span></li>
             </ol>
           </section>
           <section class="material-panel interview-panel" data-interview-panel="ai" hidden>
-            <div class="panel-heading"><h4>B. 仅向 CMO AI 组提问</h4><span class="badge">AI 组专属</span></div>
+            <div class="panel-heading"><h4>B. Questions for the CMO AI Group Only</h4><span class="badge">AI group only</span></div>
       <ol class="questionnaire interview-list">
-        <li><strong>AI-Q1 · AI 与直接搜索的选择</strong><span>在完成任务时，你通常在什么情况下倾向于向 CMO AI 提问，什么情况下会直接搜索官网、公众号或使用 App？为什么？<br>追问：你会先问 AI 再核实，还是先搜索再问 AI？</span></li>
-        <li><strong>AI-Q2 · 对 AI 回答的质疑</strong><span>你有没有质疑过 CMO AI 提供的回答？如果有，具体质疑哪些内容，为什么？<br>追问：是因为信息不完整、流程不清楚、缺少来源，还是与官方资料不一致？</span></li>
+        <li><strong>AI-Q1 · Choosing AI or Direct Search</strong><span>When did you prefer asking CMO AI, and when did you search the website, official WeChat accounts or app directly? Why?<br>Follow-up: Did you ask AI first and then verify, or search first and then ask AI?</span></li>
+        <li><strong>AI-Q2 · Questioning AI Answers</strong><span>Did you question any answers from CMO AI? If so, which information did you question, and why?<br>Follow-up: Was the information incomplete, the procedure unclear, the source missing or the answer inconsistent with official information?</span></li>
             </ol>
           </section>
           <section class="material-panel interview-panel" data-interview-panel="baseline" hidden>
-            <div class="panel-heading"><h4>C. 仅向 Baseline 组提问</h4><span class="badge">Baseline 组专属</span></div>
+            <div class="panel-heading"><h4>C. Questions for the Baseline Group Only</h4><span class="badge">Baseline Group</span></div>
       <ol class="questionnaire interview-list">
-        <li><strong>B-Q1 · 官方渠道与搜索引擎的选择</strong><span>在完成任务时，你通常在什么情况下选择官网、公众号、XJTLU App 或搜索引擎？为什么？<br>追问：你会先用搜索引擎定位信息，再进入官网核实吗？</span></li>
-        <li><strong>B-Q2 · 搜索困难与信息冲突</strong><span>你有没有遇到找不到信息、多个来源说法不一致，或者无法确定办理流程的情况？<br>追问：你如何判断哪个来源更可靠？如果没有找到官方依据，最后怎么处理？</span></li>
+        <li><strong>B-Q1 · Official Channels and Search Engines</strong><span>When did you choose the website, official WeChat accounts, XJTLU App or a search engine? Why?<br>Follow-up: Did you use a search engine to locate information before verifying it on the official website?</span></li>
+        <li><strong>B-Q2 · Search Difficulties and Conflicting Information</strong><span>Did you encounter missing information, conflicting sources or uncertainty about a procedure?<br>Follow-up: How did you judge which source was more reliable? What did you do if you could not find official evidence?</span></li>
             </ol>
           </section>
         </div>
       </div>
       </div>
     
+    <div class="table-section score-section">
+      <h3 class="table-section-title" id="task-score-title">Task Scoring Criteria (Draft)</h3>
+      <div class="score-tables">
+        <figure class="table-figure">
+          <figcaption id="simple-score-caption">Table 5. Simple-task Scoring Criteria</figcaption>
+          <div class="table-scroll" role="region" aria-labelledby="simple-score-caption" tabindex="0">
+            <table class="academic-table" aria-labelledby="simple-score-caption"><colgroup><col><col></colgroup><thead><tr><th scope="col">Score</th><th scope="col">Criterion</th></tr></thead><tbody><tr><th scope="row">0 points</th><td>Incorrect</td></tr><tr><th scope="row">1 point</th><td>Partially correct</td></tr><tr><th scope="row">2 points</th><td>Fully correct</td></tr></tbody></table>
+          </div>
+        </figure>
+        <figure class="table-figure">
+          <figcaption id="complex-score-caption">Table 6. Complex-task Scoring Dimensions and Points</figcaption>
+          <div class="table-scroll" role="region" aria-labelledby="complex-score-caption" tabindex="0">
+            <table class="academic-table complex-score" aria-labelledby="complex-score-caption"><colgroup><col><col></colgroup><thead><tr><th scope="col">Scoring dimension</th><th scope="col">Maximum points</th></tr></thead><tbody><tr><th scope="row">Correct identification of relevant services</th><td>5 points</td></tr><tr><th scope="row">Procedural completeness</th><td>5 points</td></tr><tr><th scope="row">Information accuracy</th><td>5 points</td></tr><tr><th scope="row">Information omissions</th><td>5 points</td></tr></tbody><tfoot><tr><th scope="row">Total</th><td>20 points</td></tr></tfoot></table>
+          </div>
+        </figure>
+      </div>
+    </div>
   </div></section>
 
   <section class="section" id="materials" aria-labelledby="materials-title"><div class="wrap">
-    <div class="section-intro"><h2 id="materials-title">研究问卷与补充材料</h2><p>本节展示前置问卷和任务后问卷。其他参与者文件与批准材料不在页面中展开，可通过补充材料入口上传。</p></div>
+    <div class="section-intro"><h2 id="materials-title">Questionnaires and Supplementary Materials</h2><p>This section presents the pre-study and post-task questionnaires. Other participant documents and approval materials are not displayed in full; they can be selected through the supplementary-materials panel.</p></div>
     <div class="materials-layout">
-      <div class="material-tabs" role="tablist" aria-label="研究问卷与补充材料" aria-orientation="vertical"><button id="tab-pre" role="tab" aria-selected="true" aria-controls="panel-pre" tabindex="0">前置问卷</button><button id="tab-post" role="tab" aria-selected="false" aria-controls="panel-post" tabindex="-1">任务中与任务后问卷</button><button id="tab-upload" role="tab" aria-selected="false" aria-controls="panel-upload" tabindex="-1">补充材料</button></div>
+      <div class="material-tabs" role="tablist" aria-label="Questionnaires and Supplementary Materials" aria-orientation="vertical"><button id="tab-pre" role="tab" aria-selected="true" aria-controls="panel-pre" tabindex="0">Pre-study Questionnaire</button><button id="tab-post" role="tab" aria-selected="false" aria-controls="panel-post" tabindex="-1">During-task and Post-task Questionnaires</button><button id="tab-upload" role="tab" aria-selected="false" aria-controls="panel-upload" tabindex="-1">Supplementary Materials</button></div>
       <div>
-        <article class="material-panel" id="panel-pre" role="tabpanel" aria-labelledby="tab-pre" tabindex="0"><div class="panel-heading"><h3>前置问卷：校园信息查询经验与 AI 校务助手先验</h3><span class="badge">问卷全文</span></div><p>本问卷用于了解你入学初期的校园校务信息查询经验，约 5 分钟。没有对错之分，请按过去 30 天或题目注明的真实情况独立填写。您提供的数据将完全保密，仅用于本研究。</p><p class="inline-note">注：CMO 是西浦校务服务 AI 助手，您可以通过 <a href="https://aiagent.xjtlu.edu.cn" target="_blank" rel="noopener">aiagent.xjtlu.edu.cn</a> 找到它。本问卷匿名，仅用于研究分析，不参与也不影响任何课程或服务评价。联系方式：Jiaming.Hao26@student.xjtlu.edu.cn</p><ol class="questionnaire"><li><strong>Q1. 您是否愿意在完成本问卷后，被邀请参加后续约 20 分钟的校务任务实验？</strong><div class="option-line">○ 愿意　○ 不愿意　○ 暂不确定</div></li><li><strong>Q2. 如需联系后续实验，请自愿留下邮箱或微信号（选填，将与问卷数据分开保存）：</strong><div class="option-line">__________</div></li><li><strong>Q3. 您的学院 / 专业大类：</strong><div class="option-line">__________（可简写）</div></li></ol><h4>1. 校园信息查询行为与 Baseline 验证</h4><ol class="questionnaire"><li><strong>Q4. 您通常通过哪些方式查询校园信息？（可多选）</strong><div class="option-line">□ XJTLU 官网　□ XJTLU 官方微信公众号　□ XJTLU App　□ 普通浏览器搜索　□ 同学 / 朋友询问　□ 辅导员 / 老师 / 邮件　□ AI 工具（如 ChatGPT、豆包等）　□ 西浦君谋 AI 及其智能体（如 CMO AI 等）　□ 其他：__________</div></li><li><strong>Q5. 您查询校园信息时通常遇到哪些困难？（可多选）</strong><div class="option-line">□ 不知道去哪个平台找　□ 信息分散在不同平台　□ 不确定完整流程　□ 不知道下一步该做什么　□ 不清楚需要哪些材料　□ 不清楚责任部门　□ 英文 / 术语理解困难　□ 信息太多难以筛选　□ 其他：__________</div></li></ol><h4>2. 教室 / 场地预定（Room Booking）专项先验经验</h4><ol class="questionnaire"><li><strong>Q6. 您是否听说过 CMO AI Agent（校务服务助手）？</strong><div class="option-line">○ 是　○ 否　○ 不确定</div></li><li><strong>Q7. 如果您使用过 CMO AI Agent，主要用于哪些方面？（可多选；未使用过可跳过）</strong><div class="option-line">□ 教室 / 场地预定　□ 班车　□ 访客 EID　□ 自习室　□ 设施维修　□ 餐饮 / 医疗　□ CMO 联系方式　□ Service Ticket　□ 其他：__________</div></li><li><strong>Q8. 请根据您以往使用 AI 的经验，评价以下说法（1 = 非常不同意 / 完全不知道，7 = 非常同意 / 非常清楚）。</strong><div class="data-table-wrap" tabindex="0" role="region" aria-label="AI 校务助手评价量表，1 至 7 分，可横向滚动"><table class="likert-table"><caption style="text-align:left;padding:14px 15px;font-weight:600">AI 校务助手评价题项</caption><thead><tr><th scope="col">题项</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr></thead><tbody><tr><th scope="row">a. AI 校务助手能帮助我更快找到校务信息</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">b. AI 校务助手容易使用</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">c. 我相信 AI 校务助手提供的信息</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">d. 我担心 AI 提供的信息不准确</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">e. 我担心 AI 没有标明官方信息来源</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">f. 我愿意在查询教室 / 场地预定时使用 AI 校务助手</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">g. 我期望 AI 校务助手能帮助我理解多步骤校务流程</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr></tbody></table></div></li><li><strong>Q9. 您对使用 AI 校务助手的主要顾虑是：（可多选）</strong><div class="option-line">□ 信息不准确　□ 信息来源不清楚　□ 隐私 / 数据安全　□ 不会使用　□ 更偏好人工或官网　□ 复杂流程 AI 可能遗漏步骤　□ 没有顾虑　□ 其他：__________</div></li></ol><h4>3. 后续实验安排</h4><ol class="questionnaire"><li><strong>Q10. 您通常可参加后续实验的时间段（可多选）：</strong><div class="option-line">□ 工作日上午　□ 工作日下午　□ 工作日晚间　□ 周末上午　□ 周末下午　□ 周末晚间</div></li></ol></article>
+        <article class="material-panel" id="panel-pre" role="tabpanel" aria-labelledby="tab-pre" tabindex="0"><div class="panel-heading"><h3>Pre-study Questionnaire: Campus Information-seeking Experience and Prior Views of AI Campus Assistants</h3><span class="badge">Full questionnaire</span></div><p>This questionnaire asks about your experience finding campus service information since enrolment and takes approximately five minutes. There are no right or wrong answers. Please answer independently based on the past 30 days or the period specified. Your responses will be kept confidential and used only for this study.</p><ol class="questionnaire"><li><strong>Q1. Would you be willing to take part in a follow-up campus service task experiment lasting approximately 20 minutes?</strong><div class="option-line">○ Willing  ○ Not willing  ○ Not sure yet</div></li><li><strong>Q2. If you would like to be contacted about the follow-up experiment, please optionally provide your email address or WeChat ID. Contact details will be stored separately from questionnaire responses:</strong><div class="option-line">__________</div></li><li><strong>Q3. Your school / broad subject area:</strong><div class="option-line">__________ (abbreviations accepted)</div></li></ol><h4>1. Campus Information-seeking Behaviour and Baseline Validation</h4><ol class="questionnaire"><li><strong>Q4. Which channels do you usually use to find campus information? Select all that apply.</strong><div class="option-line">□ XJTLU website  □ XJTLU official WeChat accounts  □ XJTLU App  □ Standard browser search  □ Classmates / friends  □ Advisers / teachers / email  □ AI tools, such as ChatGPT or Doubao  □ XJTLU Junmou AI and its agents, such as CMO AI  □ Other: __________</div></li><li><strong>Q5. What difficulties do you usually encounter when finding campus information? Select all that apply.</strong><div class="option-line">□ Unsure which platform to use  □ Information scattered across platforms  □ Unsure of the full procedure  □ Unsure what to do next  □ Unclear required documents  □ Unclear responsible department  □ Difficulty with English / terminology  □ Too much information to filter  □ Other: __________</div></li></ol><h4>2. Prior Experience with Classroom / Room Booking</h4><ol class="questionnaire"><li><strong>Q6. Have you heard of CMO AI Agent, the campus service assistant?</strong><div class="option-line">○ Yes  ○ No  ○ Not sure</div></li><li><strong>Q7. If you have used CMO AI Agent, what did you use it for? Select all that apply; skip if you have not used it.</strong><div class="option-line">□ Classroom / room booking  □ Shuttle services  □ Visitor EID  □ Study rooms  □ Facility maintenance  □ Catering / medical services  □ CMO contact information  □ Service tickets  □ Other: __________</div></li><li><strong>Q8. Based on your previous experience with AI, rate the following statements (1 = strongly disagree / not at all familiar; 7 = strongly agree / very familiar).</strong><div class="data-table-wrap" tabindex="0" role="region" aria-label="AI campus assistant ratings, from 1 to 7; scroll horizontally"><table class="likert-table"><caption style="text-align:left;padding:14px 15px;font-weight:600">AI Campus Assistant Rating Items</caption><thead><tr><th scope="col">Item</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr></thead><tbody><tr><th scope="row">a. An AI campus assistant can help me find campus information faster.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">b. An AI campus assistant is easy to use.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">c. I trust the information provided by an AI campus assistant.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">d. I am concerned that AI information may be inaccurate.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">e. I am concerned when AI does not identify official information sources.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">f. I am willing to use an AI campus assistant for classroom / room booking queries.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">g. I expect an AI campus assistant to help me understand multi-step campus procedures.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr></tbody></table></div></li><li><strong>Q9. What are your main concerns about using an AI campus assistant? Select all that apply.</strong><div class="option-line">□ Inaccurate information  □ Unclear sources  □ Privacy / data security  □ Unsure how to use it  □ Prefer staff assistance or official websites  □ AI may omit steps in complex procedures  □ No concerns  □ Other: __________</div></li></ol><h4>3. Follow-up Experiment Arrangements</h4><ol class="questionnaire"><li><strong>Q10. When would you usually be available for the follow-up experiment? Select all that apply.</strong><div class="option-line">□ Weekday mornings  □ Weekday afternoons  □ Weekday evenings  □ Weekend mornings  □ Weekend afternoons  □ Weekend evenings</div></li></ol></article>
        <article class="material-panel" id="panel-post" role="tabpanel" aria-labelledby="tab-post" tabindex="0" hidden>
-          <div class="panel-heading"><h3>任务中与任务后问卷：分块问卷与总体问卷</h3><span class="badge">7 点 / 5 点量表</span></div>
-          <p>本部分包含实验说明与知情同意、简单任务块后问卷（C-1）、复杂任务块后问卷（C-2）、实验员核实记录表（B-2）、实验后总体问卷（总体评价 / SUS / NASA-TLX）以及针对问题访谈。除 SUS 题项采用 1–5 分外，其余量表均采用 1–7 分。</p>
+          <div class="panel-heading"><h3>During-task and Post-task Questionnaires: Task-block and Overall Measures</h3><span class="badge">7-point / 5-point scales</span></div>
+          <p>This section includes study information and consent, the simple-task-block questionnaire (C-1), the complex-task-block questionnaire (C-2), the researcher verification sheet (B-2), the overall post-study questionnaire (overall evaluation / SUS / NASA-TLX) and targeted interviews. SUS items use a 1–5 scale; other rating scales use 1–7.</p>
 
-          <h4>实验说明</h4>
+          <h4>Study Instructions</h4>
           <ol class="questionnaire">
-            <li>1. 阅读本说明并决定是否同意。</li>
-            <li>2. 实验中你将完成 6 个校务信息查询任务（3 个简单、3 个复杂），每个任务有统一时间限制。实验总时长约 20–25 分钟。</li>
-            <li>3. 每块任务后填写对应的题目；全部任务后填写总体问卷。</li>
-            <li>4. 工具使用边界：传统查询组可使用 XJTLU 官网、官方微信公众号、XJTLU App、普通浏览器搜索；CMO AI 组可在上述渠道外使用 CMO AI。</li>
-            <li>5. 研究可能收集以下数据：测前问卷与测后问卷回答；任务完成时间、完成状态、提交答案及质量评分；资源使用记录；CMO AI 组会保存你与 CMO 的交互记录（提问与回答），用于分析 AI 使用方式；实验员观察记录（如是否再次核实信息）。</li>
-            <li>6. 参与完全自愿。若你在实验中途退出，请告知实验员；你可以要求删除尚未匿名汇总的问卷与任务记录。</li>
-            <li>7. 任务可能带来轻微疲劳或时间压力。如感到不适，可随时暂停或退出。本研究不涉及身体风险、欺骗或敏感个人数据。</li>
+            <li>1. Read this information and decide whether to consent.</li>
+            <li>2. You will complete six campus information tasks: three simple and three complex. Each task has a standard time limit. The experiment is expected to last approximately 20–25 minutes.</li>
+            <li>3. Complete the relevant questionnaire after each task block, then the overall questionnaire after all tasks.</li>
+            <li>4. Permitted tools: the traditional-search group may use the XJTLU website, official WeChat accounts, XJTLU App and standard browser search. The CMO AI group may also use CMO AI.</li>
+            <li>5. Data may include pre-study and post-study questionnaire responses; task completion times, completion status, submitted answers and quality scores; resource-use records; CMO AI prompts and responses for analysing AI use; and researcher observations, such as whether information was verified again.</li>
+            <li>6. Participation is voluntary. Tell the researcher if you wish to withdraw during the experiment. You may request deletion of questionnaire and task records that have not yet been anonymised and aggregated.</li>
+            <li>7. Tasks may cause mild fatigue or time pressure. You may pause or withdraw if you feel uncomfortable. This study does not involve physical risks, deception or sensitive personal data.</li>
           </ol>
-          <p class="inline-note">我已阅读并理解本页信息，同意参加本研究　□</p>
+          <p class="inline-note">I have read and understood this information and agree to participate. □</p>
 
-          <h4>C-1 简单任务块后问卷（完成 S1–S3 后填写）</h4>
-          <p>请根据刚刚完成的 S1–S3 三个简单任务的整体体验回答。</p>
+          <h4>C-1 Simple-task-block Questionnaire (after S1–S3)</h4>
+          <p>Answer based on your overall experience of the three simple tasks, S1–S3, that you have just completed.</p>
           <ol class="questionnaire">
-            <li><strong>1. 有用性</strong><span>本块任务中，你获准使用的查询方式在多大程度上帮助你完成了任务？</span><div class="option-line">□ 1 完全没有帮助　□ 2 帮助很小　□ 3 有一些帮助　□ 4 中等帮助　□ 5 较大帮助　□ 6 很大帮助　□ 7 极大帮助</div></li>
-            <li><strong>2. 易用性</strong><span>使用的查询方式在任务中使用起来容易吗？</span><div class="option-line">□ 1 非常困难　□ 2 困难　□ 3 有些困难　□ 4 一般　□ 5 有些容易　□ 6 容易　□ 7 非常容易</div></li>
-            <li><strong>3. 信任</strong><span>我相信任务结束时我获得的信息是准确的。</span><div class="option-line">□ 1 非常不同意　□ 2 不同意　□ 3 有些不同意　□ 4 既不同意也不反对　□ 5 有些同意　□ 6 同意　□ 7 非常同意</div></li>
-            <li><strong>4. 整体工作负荷</strong><span>完成本块任务时，你感受到的整体工作负荷是？</span><div class="option-line">□ 1 非常低　□ 2 低　□ 3 有些低　□ 4 中等　□ 5 有些高　□ 6 高　□ 7 非常高</div></li>
-          </ol>
-
-          <h4>C-2 复杂任务块后问卷（完成 C1–C3 后填写）</h4>
-          <p>请根据刚刚完成的 C1–C3 三个复杂任务的整体体验回答。</p>
-          <ol class="questionnaire">
-            <li><strong>1. 感知有用性</strong><span>本块任务中，你获准使用的查询方式在多大程度上帮助你完成了任务？</span><div class="option-line">□ 1 完全没有帮助　□ 2 帮助很小　□ 3 有一些帮助　□ 4 中等帮助　□ 5 较大帮助　□ 6 很大帮助　□ 7 极大帮助</div></li>
-            <li><strong>2. 感知易用性</strong><span>该查询方式在本块任务中使用起来容易吗？</span><div class="option-line">□ 1 非常困难　□ 2 困难　□ 3 有些困难　□ 4 一般　□ 5 有些容易　□ 6 容易　□ 7 非常容易</div></li>
-            <li><strong>3. 信任</strong><span>我相信本块任务中获得的信息是准确的。</span><div class="option-line">□ 1 非常不同意　□ 2 不同意　□ 3 有些不同意　□ 4 既不同意也不反对　□ 5 有些同意　□ 6 同意　□ 7 非常同意</div></li>
-            <li><strong>4. 整体工作负荷</strong><span>完成本块任务时，你感受到的整体工作负荷是？</span><div class="option-line">□ 1 非常低　□ 2 低　□ 3 有些低　□ 4 中等　□ 5 有些高　□ 6 高　□ 7 非常高</div></li>
+            <li><strong>1. Usefulness</strong><span>To what extent did the information-seeking method you were allowed to use help you complete this task block?</span><div class="option-line">□ 1 Not at all helpful  □ 2 Slightly helpful  □ 3 Somewhat helpful  □ 4 Moderately helpful  □ 5 Quite helpful  □ 6 Very helpful  □ 7 Extremely helpful</div></li>
+            <li><strong>2. Ease of Use</strong><span>How easy was it to use the information-seeking method during the tasks?</span><div class="option-line">□ 1 Very difficult  □ 2 Difficult  □ 3 Somewhat difficult  □ 4 Neither difficult nor easy  □ 5 Somewhat easy  □ 6 Easy  □ 7 Very easy</div></li>
+            <li><strong>3. Trust</strong><span>I believe that the information I obtained by the end of the tasks was accurate.</span><div class="option-line">□ 1 Strongly disagree  □ 2 Disagree  □ 3 Somewhat disagree  □ 4 Neither agree nor disagree  □ 5 Somewhat agree  □ 6 Agree  □ 7 Strongly agree</div></li>
+            <li><strong>4. Overall Workload</strong><span>How much overall workload did you experience while completing this task block?</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
           </ol>
 
-          <h4>B-2 实验员核实记录表</h4>
-          <p>每个任务结束后由实验员填写；与参与者任务后问卷分开保存。参与者ID：__________</p>
-          <div class="data-table-wrap" tabindex="0" role="region" aria-label="实验员核实记录表，可横向滚动">
+          <h4>C-2 Complex-task-block Questionnaire (after C1–C3)</h4>
+          <p>Answer based on your overall experience of the three complex tasks, C1–C3, that you have just completed.</p>
+          <ol class="questionnaire">
+            <li><strong>1. Perceived Usefulness</strong><span>To what extent did the information-seeking method you were allowed to use help you complete this task block?</span><div class="option-line">□ 1 Not at all helpful  □ 2 Slightly helpful  □ 3 Somewhat helpful  □ 4 Moderately helpful  □ 5 Quite helpful  □ 6 Very helpful  □ 7 Extremely helpful</div></li>
+            <li><strong>2. Perceived Ease of Use</strong><span>How easy was the information-seeking method to use during this task block?</span><div class="option-line">□ 1 Very difficult  □ 2 Difficult  □ 3 Somewhat difficult  □ 4 Neither difficult nor easy  □ 5 Somewhat easy  □ 6 Easy  □ 7 Very easy</div></li>
+            <li><strong>3. Trust</strong><span>I believe that the information obtained during this task block was accurate.</span><div class="option-line">□ 1 Strongly disagree  □ 2 Disagree  □ 3 Somewhat disagree  □ 4 Neither agree nor disagree  □ 5 Somewhat agree  □ 6 Agree  □ 7 Strongly agree</div></li>
+            <li><strong>4. Overall Workload</strong><span>How much overall workload did you experience while completing this task block?</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+          </ol>
+
+          <h4>B-2 Researcher Verification Record</h4>
+          <p>The researcher completes this after each task. Store it separately from participant post-task questionnaires. Participant ID: __________</p>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="Researcher verification record; scroll horizontally">
             <table>
-              <thead><tr><th scope="col">任务编号</th><th scope="col">参与者是否主动通过另一官方渠道再次核实信息？</th><th scope="col">备注</th></tr></thead>
+              <thead><tr><th scope="col">Task ID</th><th scope="col">Did the participant independently verify information through another official channel?</th><th scope="col">Comments</th></tr></thead>
               <tbody>
-                <tr><th scope="row">S1</th><td>□ 不需要　□ 核实1项　□ 核实2项及以上　□ 无法判断</td><td></td></tr>
-                <tr><th scope="row">S2</th><td>□ 不需要　□ 核实1项　□ 核实2项及以上　□ 无法判断</td><td></td></tr>
-                <tr><th scope="row">S3</th><td>□ 不需要　□ 核实1项　□ 核实2项及以上　□ 无法判断</td><td></td></tr>
-                <tr><th scope="row">C1</th><td>□ 不需要　□ 核实1项　□ 核实2项及以上　□ 无法判断</td><td></td></tr>
-                <tr><th scope="row">C2</th><td>□ 不需要　□ 核实1项　□ 核实2项及以上　□ 无法判断</td><td></td></tr>
-                <tr><th scope="row">C3</th><td>□ 不需要　□ 核实1项　□ 核实2项及以上　□ 无法判断</td><td></td></tr>
+                <tr><th scope="row">S1</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">S2</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">S3</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">C1</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">C2</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">C3</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
               </tbody>
             </table>
           </div>
 
-          <h4>实验后总体问卷 · 第一部分：总体评价</h4>
+          <h4>Overall Post-study Questionnaire · Part 1: Overall Evaluation</h4>
           <ol class="questionnaire">
-            <li><strong>1. 继续使用意愿</strong><span>如果下次查询校务信息，你愿意继续使用本次获准的查询方式吗？</span><div class="option-line">□ 1 非常不愿意　□ 2 不愿意　□ 3 有些不愿意　□ 4 一般　□ 5 有些愿意　□ 6 愿意　□ 7 非常愿意</div></li>
-            <li><strong>2. 推荐意愿</strong><span>你愿意向同年级新生推荐该查询方式吗？</span><div class="option-line">□ 1 非常不推荐　□ 2 不推荐　□ 3 有些不推荐　□ 4 一般　□ 5 有些推荐　□ 6 推荐　□ 7 非常推荐</div></li>
-            <li><strong>3. 整体核实次数</strong><span>6 个任务中，你大约有多少次需要通过另一个官方渠道再次核实信息？</span><div class="option-line">□ 0 次　□ 1 次　□ 2 次　□ 3 次　□ 4 次　□ 5 次　□ 6 次</div></li>
+            <li><strong>1. Intention to Use Again</strong><span>Would you use the information-seeking method you were allowed to use again for a future campus query?</span><div class="option-line">□ 1 Very unwilling  □ 2 Unwilling  □ 3 Somewhat unwilling  □ 4 Neutral  □ 5 Somewhat willing  □ 6 Willing  □ 7 Very willing</div></li>
+            <li><strong>2. Willingness to Recommend</strong><span>Would you recommend this information-seeking method to other new students in your year?</span><div class="option-line">□ 1 Very unlikely to recommend  □ 2 Unlikely  □ 3 Somewhat unlikely  □ 4 Neutral  □ 5 Somewhat likely  □ 6 Likely  □ 7 Very likely to recommend</div></li>
+            <li><strong>3. Overall Verification Count</strong><span>Across the six tasks, approximately how many times did you need to verify information through another official channel?</span><div class="option-line">□ 0 times  □ 1 time  □ 2 times  □ 3 times  □ 4 times  □ 5 times  □ 6 times</div></li>
           </ol>
 
-          <h4>第二部分：系统可用性量表 SUS</h4>
-          <p>本部分中的“该方式”指你本次任务中获准使用的查询方式。请按你使用后的真实感受，对以下题项分别选择 1–5。</p>
-          <p class="small">选项：1 非常不同意　2 不同意　3 一般　4 同意　5 非常同意</p>
-          <div class="data-table-wrap" tabindex="0" role="region" aria-label="系统可用性量表 SUS，1 至 5 分，可横向滚动">
+          <h4>Part 2: System Usability Scale (SUS)</h4>
+          <p>In this section, “the method” means the information-seeking method you were allowed to use. Rate each statement from 1 to 5 based on your experience.</p>
+          <p class="small">Options: 1 Strongly disagree; 2 Disagree; 3 Neutral; 4 Agree; 5 Strongly agree.</p>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="System Usability Scale ratings, from 1 to 5; scroll horizontally">
             <table class="likert-table">
-              <thead><tr><th scope="col">题号</th><th scope="col">题目</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th></tr></thead>
+              <thead><tr><th scope="col">Item No.</th><th scope="col">Statement</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th></tr></thead>
               <tbody>
-                <tr><th scope="row">1</th><td>我认为我愿意经常使用该方式。</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
-                <tr><th scope="row">2</th><td>我认为该方式容易使用。</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
-                <tr><th scope="row">3</th><td>我觉得该方式中的各项功能整合得很好。</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
-                <tr><th scope="row">4</th><td>我觉得该方式中存在太多不一致。</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
-                <tr><th scope="row">5</th><td>我需要更多时间学习使用该方式。</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
-                <tr><th scope="row">6</th><td>我觉得该方式使用起来非常笨拙。</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
-                <tr><th scope="row">7</th><td>我对使用该方式很有信心。</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
-                <tr><th scope="row">8</th><td>我认为大多数人会很快学会使用该方式。</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">1</th><td>I think I would like to use this method frequently.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">2</th><td>I think this method is easy to use.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">3</th><td>I find that the functions of this method are well integrated.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">4</th><td>I think there is too much inconsistency in this method.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">5</th><td>I need more time to learn how to use this method.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">6</th><td>I find this method very cumbersome to use.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">7</th><td>I feel confident using this method.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">8</th><td>I think most people would learn to use this method very quickly.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
               </tbody>
             </table>
           </div>
 
-          <h4>第三部分：NASA-TLX 工作负荷（简化 1–7 版）</h4>
-          <p>请根据完成全部 6 个任务时的整体感受，对以下 6 个方面分别选择 1–7。</p>
+          <h4>Part 3: NASA-TLX Workload (Simplified 1–7 Version)</h4>
+          <p>Based on your overall experience of all six tasks, rate the following six dimensions from 1 to 7.</p>
           <ol class="questionnaire">
-            <li><strong>1. 心理需求</strong><span>需要思考、记忆、判断的程度</span><div class="option-line">□ 1 非常低　□ 2 低　□ 3 有些低　□ 4 中等　□ 5 有些高　□ 6 高　□ 7 非常高</div></li>
-            <li><strong>2. 身体需求</strong><span>需要身体操作或动作的程度</span><div class="option-line">□ 1 非常低　□ 2 低　□ 3 有些低　□ 4 中等　□ 5 有些高　□ 6 高　□ 7 非常高</div></li>
-            <li><strong>3. 时间压力</strong><span>感到时间紧张的程度</span><div class="option-line">□ 1 非常低　□ 2 低　□ 3 有些低　□ 4 中等　□ 5 有些高　□ 6 高　□ 7 非常高</div></li>
-            <li><strong>4. 努力程度</strong><span>需要付出努力的程度</span><div class="option-line">□ 1 非常低　□ 2 低　□ 3 有些低　□ 4 中等　□ 5 有些高　□ 6 高　□ 7 非常高</div></li>
-            <li><strong>5. 绩效</strong><span>你觉得自己在完成目标方面有多成功？</span><div class="option-line">□ 1 非常不成功　□ 2 不成功　□ 3 有些不成功　□ 4 一般　□ 5 有些成功　□ 6 成功　□ 7 非常成功</div></li>
-            <li><strong>6. 挫败感</strong><span>感到挫败或烦躁的程度</span><div class="option-line">□ 1 非常低　□ 2 低　□ 3 有些低　□ 4 中等　□ 5 有些高　□ 6 高　□ 7 非常高</div></li>
+            <li><strong>1. Mental Demand</strong><span>The amount of thinking, remembering and judgement required</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+            <li><strong>2. Physical Demand</strong><span>The amount of physical activity or action required</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+            <li><strong>3. Time Pressure</strong><span>The extent to which you felt rushed</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+            <li><strong>4. Effort</strong><span>The amount of effort required</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+            <li><strong>5. Performance</strong><span>How successful do you think you were in achieving the task goals?</span><div class="option-line">□ 1 Very unsuccessful  □ 2 Unsuccessful  □ 3 Somewhat unsuccessful  □ 4 Neither unsuccessful nor successful  □ 5 Somewhat successful  □ 6 Successful  □ 7 Very successful</div></li>
+            <li><strong>6. Frustration</strong><span>The extent to which you felt frustrated or annoyed</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
           </ol>
 
-          <p class="inline-note">感谢你的参与。</p>
+          <p class="inline-note">Thank you for participating.</p>
         </article>
         <article class="material-panel" id="panel-upload" role="tabpanel" aria-labelledby="tab-upload" tabindex="0" hidden>
-          <div class="panel-heading"><h3>补充材料：可行的评估工具</h3><span class="badge">评估指标与统计口径</span></div>
-          <p>本部分汇总研究的评估方式：有用性评分均值、完成时间几何均值、SUS 与 NASA-TLX 总体量表得分、访谈高频词与核实次数。结果数据将在实际收集、整理后补充，当前展示统计口径与记录结构。</p>
+          <div class="panel-heading"><h3>Supplementary Materials: Evaluation Tools</h3><span class="badge">Measures and Summary Definitions</span></div>
+          <p>This section summarises the evaluation measures: mean usefulness ratings, geometric mean completion time, overall SUS and NASA-TLX scores, frequent interview terms and verification counts. Results will be added after data collection and processing; the definitions and record structures are shown here.</p>
 
-          <h4>1. 有用性评分均值（1–7，越高越好）×3</h4>
-          <div class="data-table-wrap" tabindex="0" role="region" aria-label="有用性评分均值记录表，可横向滚动">
+          <h4>1. Mean Usefulness Rating (1–7; Higher Is Better) × 3</h4>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="Mean usefulness rating records; scroll horizontally">
             <table>
-              <thead><tr><th scope="col">组别</th><th scope="col">简单任务 S1–S3</th><th scope="col">复杂任务 C1–C3</th></tr></thead>
+              <thead><tr><th scope="col">Group</th><th scope="col">Simple tasks S1–S3</th><th scope="col">Complex tasks C1–C3</th></tr></thead>
               <tbody>
-                <tr><th scope="row">传统组（n=30）</th><td class="muted">待填写</td><td class="muted">待填写</td></tr>
-                <tr><th scope="row">CMO 组（n=30）</th><td class="muted">待填写</td><td class="muted">待填写</td></tr>
+                <tr><th scope="row">Baseline group (n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">CMO group (n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
               </tbody>
             </table>
           </div>
 
-          <h4>2. 完成时间几何均值（秒）</h4>
-          <div class="data-table-wrap" tabindex="0" role="region" aria-label="完成时间几何均值记录表，可横向滚动">
+          <h4>2. Geometric Mean Completion Time (Seconds)</h4>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="Geometric mean completion time records; scroll horizontally">
             <table>
-              <thead><tr><th scope="col">组别</th><th scope="col">简单任务</th><th scope="col">复杂任务</th></tr></thead>
+              <thead><tr><th scope="col">Group</th><th scope="col">Simple Tasks</th><th scope="col">Complex Tasks</th></tr></thead>
               <tbody>
-                <tr><th scope="row">传统组</th><td class="muted">待填写</td><td class="muted">待填写</td></tr>
-                <tr><th scope="row">CMO 组</th><td class="muted">待填写</td><td class="muted">待填写</td></tr>
+                <tr><th scope="row">Baseline group</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">CMO group</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
               </tbody>
             </table>
           </div>
 
-          <h4>3. SUS 与 NASA-TLX 总体量表得分</h4>
-          <div class="data-table-wrap" tabindex="0" role="region" aria-label="SUS 与 NASA-TLX 总体量表得分记录表，可横向滚动">
+          <h4>3. Overall SUS and NASA-TLX Scores</h4>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="Overall SUS and NASA-TLX score records; scroll horizontally">
             <table>
-              <thead><tr><th scope="col">指标</th><th scope="col">传统组均值（SD）</th><th scope="col">CMO 组均值（SD）</th></tr></thead>
+              <thead><tr><th scope="col">Measure</th><th scope="col">Baseline mean (SD)</th><th scope="col">CMO mean (SD)</th></tr></thead>
               <tbody>
-                <tr><th scope="row">SUS（0–100）</th><td class="muted">待填写</td><td class="muted">待填写</td></tr>
-                <tr><th scope="row">Raw TLX（1–7）</th><td class="muted">待填写</td><td class="muted">待填写</td></tr>
-                <tr><th scope="row">继续使用意愿（1–7）</th><td class="muted">待填写</td><td class="muted">待填写</td></tr>
+                <tr><th scope="row">SUS（0–100）</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">Raw TLX（1–7）</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">Intention to use again (1–7)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
               </tbody>
             </table>
           </div>
 
-          <h4>4. 访谈高频词</h4>
-          <p class="placeholder">待访谈转录与编码完成后，替换为高频主题词。</p>
+          <h4>4. Frequent Interview Terms</h4>
+          <p class="placeholder">Replace with frequent themes after interview transcription and coding.</p>
 
-          <h4>5. 核实次数</h4>
-          <p class="placeholder">待汇总各任务中参与者主动核实信息的次数后填写。</p>
+          <h4>5. Verification Counts</h4>
+          <p class="placeholder">Complete after summarising participants’ independent information-verification actions in each task.</p>
 
-          <h4>引用</h4>
+          <h4>References</h4>
           <p class="small muted">Brooke, J. (1996). SUS: A “quick and dirty” usability scale. In P. W. Jordan, B. Thomas, B. A. Weerdmeester, &amp; I. L. McClelland (Eds.), Usability evaluation in industry (pp. 189–194). Taylor &amp; Francis.</p>
           <p class="small muted">Hart, S. G., &amp; Staveland, L. E. (1988). Development of NASA-TLX (Task Load Index): Results of empirical and theoretical research. In P. A. Hancock &amp; N. Meshkati (Eds.), Human mental workload (pp. 139–183). North-Holland.</p>
 
           <div class="upload-panel">
-            <label for="material-files"><strong>上传其他补充材料</strong></label>
-            <p class="small">可选择需要补充到展示页面的研究文件（如问卷原件、评估表）。文件仅保留在当前浏览器页面中，不会自动上传到服务器。</p>
-            <input id="material-files" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg">
-            <ul class="upload-list" id="upload-list"><li>尚未选择文件</li></ul>
+            <label for="material-files"><strong>Select Additional Supplementary Materials</strong></label>
+            <p class="small">Select study files to supplement this page, such as original questionnaires or evaluation sheets. Files remain in the current browser page and are not automatically uploaded to a server.</p>
+            <button class="quiet-button" id="choose-files" type="button">Choose files</button><input id="material-files" hidden type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg">
+            <ul class="upload-list" id="upload-list"><li>No files selected</li></ul>
           </div>
         </article>
-        <div class="material-footer"><button class="button secondary" id="download-materials" type="button">下载材料草稿 <span aria-hidden="true">↓</span></button><p>TXT 格式，包含所有材料与待补充项</p></div>
+        
       </div>
     </div>
   </div></section>
 
   <section class="section" id="interview" aria-labelledby="interview-title"><div class="wrap">
-    <div class="section-intro"><h2 id="interview-title">半结构式访谈问题</h2><p>访谈预计持续 5–10 分钟。所有参与者回答共同问题，再根据实验条件选择对应的专属问题；访谈者可根据实际经历进行追问。</p></div>
+    <div class="section-intro"><h2 id="interview-title">Semi-structured Interview Guide</h2><p>Interviews are expected to last 5–10 minutes. All participants answer the common questions, followed by questions for their assigned condition. Interviewers may ask follow-up questions about actual experiences.</p></div>
     <div id="interview-destination"></div>
   </div></section>
 
   <section class="section" id="data" aria-labelledby="data-title"><div class="wrap">
-    <div class="section-intro"><h2 id="data-title">数据收集与统计分析</h2><p>样本数据与统计结果将在实际收集、整理后补充。当前页面展示记录结构，不包含模拟参与者或虚构研究结果。</p></div>
-    <div class="data-layout"><aside class="data-status"><span class="status-label">数据状态 · 尚未提供</span><h3>研究实施与样本收集状态</h3><p>计划招募约 60 人。实际招募人数、完成情况及执行日期，均需以小组记录为准。</p><ul class="status-list"><li>实际参与人数 <span>待填写</span></li><li>有效记录数量 <span>待填写</span></li><li>实际执行日期 <span>待填写</span></li><li>排除 / 缺失情况 <span>待说明</span></li></ul></aside><div><div class="data-table-wrap" tabindex="0" role="region" aria-label="样本数据记录模板，可横向滚动"><table><caption style="text-align:left;padding:14px 15px;font-weight:600">任务级记录结构</caption><thead><tr><th scope="col">参与者编号</th><th scope="col">组别</th><th scope="col">任务</th><th scope="col">用时 / 秒</th><th scope="col">完成情况</th><th scope="col">评分</th></tr></thead><tbody><tr><td class="empty-cell" colspan="6">尚无实际记录<br><span class="small">完成数据收集后，替换为匿名化样本。</span></td></tr></tbody></table></div><p class="data-caption">CSV 模板包含 S1–S6 与 C1–C2 的任务编号、任务类型、完成时间、完成状态、准确性、服务发现、信息覆盖、完整性、行动可执行性、任务后问卷和错误备注字段；当前文件仅含表头。</p><div class="data-action"><button class="button secondary" id="download-csv" type="button">下载空白数据模板 <span aria-hidden="true">↓</span></button></div><div class="analysis-note"><h3>统计分析 · 待小组确定</h3><p>预留描述性统计、Baseline 与 CMO AI 组间差异、Simple 与 Complex 任务类型差异、交互效应与错误类型汇总的位置。待小组确定具体方法并完成分析后，补充统计量、差异估计及结果解释。</p><p>同一参与者完成多个任务；分析时需考虑重复记录之间的关联。</p></div></div></div>
+    <div class="section-intro"><h2 id="data-title">Data Collection and Statistical Analysis</h2><p>Sample data and statistical results will be added after collection and processing. This page shows the record structure and contains no simulated participants or fabricated findings.</p></div>
+    <div class="data-layout"><aside class="data-status"><span class="status-label">Data status · Not yet provided</span><h3>Study Implementation and Sample Collection Status</h3><p>The planned sample is approximately 60 participants. Actual recruitment, completion and study dates must follow the group’s records.</p><ul class="status-list"><li>Actual participant count <span>To be completed</span></li><li>Valid record count <span>To be completed</span></li><li>Actual study dates <span>To be completed</span></li><li>Exclusions / missing data <span>To be explained</span></li></ul></aside><div><div class="data-table-wrap" tabindex="0" role="region" aria-label="Sample data record template; scroll horizontally"><table><caption style="text-align:left;padding:14px 15px;font-weight:600">Task-level Record Structure</caption><thead><tr><th scope="col">Participant ID</th><th scope="col">Group</th><th scope="col">Task</th><th scope="col">Time / seconds</th><th scope="col">Completion status</th><th scope="col">Score</th></tr></thead><tbody><tr><td class="empty-cell" colspan="6">No actual records yet<br><span class="small">Replace with anonymised participant records after data collection.</span></td></tr></tbody></table></div><div class="analysis-note"><h3>Statistical Analysis · To Be Confirmed by the Group</h3><p>Space is reserved for descriptive statistics, Baseline versus CMO AI comparisons, Simple versus Complex task comparisons, interaction effects and error-type summaries. Add statistics, effect estimates and interpretations after the group has selected the methods and completed the analysis.</p><p>Each participant completes multiple tasks; analysis must account for the relationship between repeated observations.</p></div></div></div>
   </div></section>
 
   <section class="section" id="reflection" aria-labelledby="reflection-title"><div class="wrap">
-    <div class="section-intro"><h2 id="reflection-title">研究实施反思与局限性</h2><p>本节用于报告实验执行情况、实施偏差、参与者反馈与研究局限。以下为待填写的反思内容，尚未形成实证结论。</p></div>
-    <div class="reflection-grid"><ul class="reflection-prompts"><li><strong>实验计划的执行情况</strong><p>补充实际流程与原计划的差异，以及调整原因。</p></li><li><strong>参与者操作困难与使用反馈</strong><p>补充现场观察和真实反馈，区分工具问题与任务理解问题。</p></li><li><strong>AI 信息准确性与流程完整性</strong><p>根据真实错误记录，说明遗漏、流程或信息来源问题。</p></li><li><strong>研究结论的适用范围</strong><p>结合便利抽样、新生群体和任务范围，说明研究边界。</p></li></ul><aside class="reflection-sheet"><h3>小组实施记录</h3><p>研究完成后，用可核查的事实替换以下占位内容。</p><dl><dt>实际观察</dt><dd>待填写实际观察到的现象。</dd><dt>证据与影响</dt><dd>待填写相关证据及其对研究结果的影响。</dd><dt>下一次调整</dt><dd>待填写后续改进措施。</dd></dl></aside></div>
-    <div class="closing"><div><h3>研究总结与后续改进</h3><p>汇报内容应明确区分研究设计、实际结果、研究局限与后续改进。</p></div><button type="button" class="button secondary" id="print">打印 / 保存 PDF <span aria-hidden="true">↗</span></button></div>
+    <div class="section-intro"><h2 id="reflection-title">Study Implementation: Reflection and Limitations</h2><p>This section covers implementation, departures from the plan, participant feedback and study limitations. The content below remains to be completed and does not report empirical findings.</p></div>
+    <div class="reflection-grid"><ul class="reflection-prompts"><li><strong>Implementation of the Study Plan</strong><p>Describe differences between the actual procedure and the plan, and explain any adjustments.</p></li><li><strong>Participant Difficulties and Feedback</strong><p>Add observations and actual feedback, distinguishing tool-use difficulties from task-understanding difficulties.</p></li><li><strong>AI Information Accuracy and Procedural Completeness</strong><p>Use actual error records to describe omissions, procedural errors and source issues.</p></li><li><strong>Scope of the Findings</strong><p>Explain the limits of the findings in relation to convenience sampling, the new-student population and the selected tasks.</p></li></ul><aside class="reflection-sheet"><h3>Group Implementation Record</h3><p>Replace the placeholders below with verifiable facts after the study.</p><dl><dt>Observed Events</dt><dd>Add actual observed events.</dd><dt>Evidence and Implications</dt><dd>Add supporting evidence and explain its implications for interpreting the results.</dd><dt>Next Adjustments</dt><dd>Add the planned improvements.</dd></dl></aside></div>
+    
   </div></section>
 </main>
-<footer class="footer"><div class="wrap"><div class="footer-top"><span>CMO AI 校务服务助手评价研究</span><a href="#top">返回顶部 ↑</a></div><p>ADS401 小组展示页面。内容依据小组提供的研究设计提案整理；Group ID、成员信息与实际结果待补充。本页面不代表 XJTLU 官方服务说明。</p><p>AI 使用记录待小组核实补齐：工具名称与版本、页面格式整理及前端实现的具体用途。请按模块要求确认并保留实际使用记录。</p></div></footer>
-<div class="toast" role="status" aria-live="polite" id="toast"></div>
+
 <script>
   (() => {
     'use strict';
     const menu = document.getElementById('menu');
     const navigation = document.getElementById('navigation');
-    const closeMenu = () => {navigation.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='目录';};
+    const closeMenu = () => {navigation.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu';};
     menu.addEventListener('click', () => {
       const open = menu.getAttribute('aria-expanded') !== 'true';
-      navigation.classList.toggle('open', open);menu.setAttribute('aria-expanded', String(open));menu.textContent=open?'收起':'目录';
+      navigation.classList.toggle('open', open);menu.setAttribute('aria-expanded', String(open));menu.textContent=open?'Close':'Menu';
     });
     navigation.querySelectorAll('a').forEach(a => a.addEventListener('click',closeMenu));
     document.addEventListener('keydown', e => {if(e.key==='Escape' && navigation.classList.contains('open')){closeMenu();menu.focus();}});
@@ -506,10 +541,11 @@
     setTabOrientation();window.matchMedia('(max-width: 800px)').addEventListener('change',setTabOrientation);
     const materialFiles=document.getElementById('material-files');
     const uploadList=document.getElementById('upload-list');
+    document.getElementById('choose-files').addEventListener('click',()=>materialFiles.click());
     materialFiles.addEventListener('change',()=>{
       uploadList.replaceChildren();
       const files=[...materialFiles.files];
-      if(!files.length){const empty=document.createElement('li');empty.textContent='尚未选择文件';uploadList.append(empty);return;}
+      if(!files.length){const empty=document.createElement('li');empty.textContent='No files selected';uploadList.append(empty);return;}
       files.forEach(file=>{
         const item=document.createElement('li');
         const name=document.createElement('span');
@@ -530,22 +566,6 @@
       interviewTabs.forEach(item=>item.setAttribute('aria-pressed',String(item===tab)));
       interviewPanels.forEach(panel=>{panel.hidden=panel.dataset.interviewPanel!==key;});
     }));
-    let toastTimer;
-    function notify(message){const toast=document.getElementById('toast');toast.textContent=message;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.textContent='';},4200);}
-    function download(name,content,type){
-      let url;
-      try{const blob=new Blob(['\uFEFF',content],{type});url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);notify('已发起下载：'+name);}
-      catch(_){if(url)URL.revokeObjectURL(url);notify('下载未成功，请使用打印功能保存页面。');}
-    }
-    document.getElementById('download-materials').addEventListener('click',()=>{
-      const materialText=panels.map(panel=>panel.textContent.replace(/\s+/g,' ').trim()).join('\n\n');
-      download('CMO_Research_Materials_Draft.txt','CMO AI 评价研究材料草稿\n内容来自小组提案，正式使用前须补齐与核对。\n\n'+materialText,'text/plain;charset=utf-8');
-    });
-    document.getElementById('download-csv').addEventListener('click',()=>{
-      const headers=['participant_id','prior_experience','condition','task_id','task_type','completion_time_seconds','completion_status','accuracy_score','service_discovery_score','information_coverage_score','completeness_score','actionability_score','usefulness_1_5','ease_of_use_1_5','confidence_1_5','workload_1_5','satisfaction_1_5','error_type','source_verification','notes'];
-      download('CMO_Task_Data_Blank_Template.csv',headers.join(',')+'\r\n','text/csv;charset=utf-8');
-    });
-    document.getElementById('print').addEventListener('click',()=>window.print());
     const openBeforePrint = new Map();
     window.addEventListener('beforeprint',()=>document.querySelectorAll('.task').forEach(task=>{openBeforePrint.set(task,task.open);task.open=true;}));
     window.addEventListener('afterprint',()=>{openBeforePrint.forEach((open,task)=>{task.open=open;});openBeforePrint.clear();});
