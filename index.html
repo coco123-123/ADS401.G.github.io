@@ -115,6 +115,10 @@
       #design .score-tables{grid-template-rows:auto auto;row-gap:0}
       #design .score-tables>.table-figure{display:grid;grid-template-rows:subgrid;grid-row:span 2;row-gap:0}
     }}
+
+    /* One header offset for native anchors; scripted navigation aligns the heading. */
+    html{scroll-padding-top:var(--anchor-offset,100px)}
+    main>.section,#top{scroll-margin-top:0}
   </style>
 </head>
 <body>
@@ -123,7 +127,7 @@
   <div class="wrap nav-shell">
     <a class="brand" href="#top" aria-label="CMO study home"><span class="brand-mark" aria-hidden="true">CMO</span><strong>Campus AI Evaluation</strong><small>ADS401</small></a>
     <nav class="nav" id="navigation" aria-label="Page navigation">
-      <a href="#research" aria-current="location">Research Questions</a><a href="#design">Study Design</a><a href="#materials">Questionnaires</a><a href="#interview">Interviews</a><a href="#reflection">Reflection</a>
+      <a href="#research" title="Background and Research Questions">Research Questions</a><a href="#design" title="Experimental Design and Implementation Plan">Study Design</a><a href="#materials" title="Questionnaires and Supplementary Materials">Study Materials</a><a href="#interview" title="Semi-structured Interview Guide">Interviews</a><a href="#reflection" title="Study Implementation: Reflection and Limitations">Reflection</a>
     </nav>
     <div class="nav-tools"><button class="quiet-button menu-toggle" id="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button></div>
   </div>
@@ -159,11 +163,11 @@
 
   <section class="section" id="design" aria-labelledby="design-title"><div class="wrap">
     <div class="section-intro"><h2 id="design-title">Experimental Design and Implementation Plan</h2><p>The study uses a 2 × 2 mixed design. Information-seeking condition is the between-subjects factor, with Baseline and CMO AI levels. Task type is the within-subjects factor, with Simple retrieval and Complex open-ended planning levels. Each participant uses one information-seeking condition and completes both task types.</p></div>
-    <figure class="diagram design-overview" aria-label="A 2 × 2 mixed design: information-seeking condition is between subjects and task type is within subjects. Participants are randomly assigned to Baseline or CMO AI and complete six simple retrieval tasks and two complex open-ended planning tasks.">
+    <figure class="diagram design-overview" aria-label="A 2 × 2 mixed design: information-seeking condition is between subjects and task type is within subjects. Participants are randomly assigned to Baseline or CMO AI and complete three simple retrieval tasks and three complex open-ended planning tasks.">
       <figcaption>Study Design Overview</figcaption>
       <div class="diagram-start">New XJTLU Students</div><div class="diagram-route">Convenience recruitment → Random assignment</div>
       <div class="diagram-groups"><div class="diagram-group"><strong>Baseline</strong><small>Browser + official information sources<br>Planned: 30 participants</small></div><div class="diagram-group ai"><strong>CMO AI</strong><small>Traditional channels + CMO AI<br>Planned: 30 participants</small></div></div>
-      <div class="diagram-task"><strong>Each participant</strong><span>6 simple tasks + 2 complex tasks</span></div>
+      <div class="diagram-task"><strong>Each participant</strong><span>3 simple tasks + 3 complex tasks</span></div>
       <div class="diagram-end">Record completion time, completion status, accuracy, service discovery, information coverage, completeness and actionability.</div>
     </figure>
     <div class="table-section">
@@ -176,10 +180,10 @@
             <thead><tr><th scope="col">Variable role</th><th scope="col">Variable</th><th scope="col">Levels / measures</th><th scope="col">Description</th></tr></thead>
             <tbody>
               <tr><th scope="row">Between-subjects independent variable</th><td>Information-seeking condition</td><td>Baseline / CMO AI</td><td>Baseline uses browsers and official information sources; the CMO AI group also has access to CMO AI.</td></tr>
-              <tr><th scope="row">Within-subjects independent variable</th><td>Task type</td><td>Simple / Complex</td><td>Simple: single-service retrieval tasks S1–S6. Complex: open-ended campus planning tasks C1–C2.</td></tr>
+              <tr><th scope="row">Within-subjects independent variable</th><td>Task type</td><td>Simple / Complex</td><td>Simple: single-service retrieval tasks S1–S3. Complex: open-ended campus planning tasks C1–C3.</td></tr>
               <tr><th scope="row">Dependent variable</th><td>Task performance</td><td>Time, completion status and accuracy</td><td>Record completion time, whether the task was completed and agreement between the submitted answer and the reference answer.</td></tr>
               <tr><th scope="row">Dependent variable</th><td>Open-ended planning quality</td><td>Service discovery, information coverage, completeness and actionability</td><td>Evaluate planning outputs against independently verified official reference answers and predefined scoring criteria.</td></tr>
-              <tr><th scope="row">Background variable</th><td>Prior experience</td><td>Campus familiarity, information-seeking experience and AI usage habits</td><td>Record through the pre-study questionnaire to help interpret individual differences and study limitations.</td></tr>
+              <tr><th scope="row">Background variable</th><td>Prior experience</td><td>Subject area, information-seeking channels and difficulties, and prior AI experience</td><td>Record through the pre-study questionnaire to help interpret individual differences and study limitations.</td></tr>
             </tbody>
           </table>
         </div>
@@ -191,8 +195,8 @@
             <colgroup><col><col><col></colgroup>
             <thead><tr><th scope="col">Information-seeking condition / between subjects</th><th scope="col">Simple tasks / within subjects</th><th scope="col">Complex tasks / within subjects</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Group 1<br><small>Baseline: without CMO AI</small></th><td><strong>Group 1 + Simple</strong><br>S1–S6: single-service campus information retrieval</td><td><strong>Group 1 + Complex</strong><br>C1–C2: open-ended campus planning</td></tr>
-              <tr><th scope="row">Group 2<br><small>CMO AI: with CMO AI</small></th><td><strong>Group 2 + Simple</strong><br>S1–S6: single-service campus information retrieval</td><td><strong>Group 2 + Complex</strong><br>C1–C2: open-ended campus planning</td></tr>
+              <tr><th scope="row">Group 1<br><small>Baseline: without CMO AI</small></th><td><strong>Group 1 + Simple</strong><br>S1–S3: single-service campus information retrieval</td><td><strong>Group 1 + Complex</strong><br>C1–C3: open-ended campus planning</td></tr>
+              <tr><th scope="row">Group 2<br><small>CMO AI: with CMO AI</small></th><td><strong>Group 2 + Simple</strong><br>S1–S3: single-service campus information retrieval</td><td><strong>Group 2 + Complex</strong><br>C1–C3: open-ended campus planning</td></tr>
             </tbody>
           </table>
         </div>
@@ -217,7 +221,7 @@
             <tr><th scope="row">CMO AI Agent</th><td>Not permitted</td><td>Permitted</td></tr>
             <tr><th scope="row">Other AI tools</th><td>Not permitted, including browser AI summaries.</td><td>Not permitted; browser searches must use standard search results.</td></tr>
             <tr><th scope="row">Planned sample size</th><td>Approximately 30 participants</td><td>Approximately 30 participants</td></tr>
-            <tr><th scope="row">Task allocation</th><td>Each participant completes six simple tasks (S1–S6) and two complex tasks (C1–C2).</td><td>Each participant completes six simple tasks (S1–S6) and two complex tasks (C1–C2).</td></tr>
+            <tr><th scope="row">Task allocation</th><td>Each participant completes three simple tasks (S1–S3) and three complex tasks (C1–C3).</td><td>Each participant completes three simple tasks (S1–S3) and three complex tasks (C1–C3).</td></tr>
           </tbody>
         </table>
       </div>
@@ -225,27 +229,25 @@
     </figure>
     <div class="fact-row"><span><b>Sampling method</b> Convenience sampling</span><span><b>Recruitment channels</b> New-student groups, student communities and campus social platforms</span><span><b>Assignment plan</b> Random assignment; approximately 30 participants per group</span></div>
     <h3 class="section-subheading">Proposed Experimental Procedure</h3>
-    <ol class="procedure"><li><h4>Study Information and Informed Consent</h4><p>Explain the purpose, procedure, data collection, withdrawal rights and anonymisation arrangements.</p></li><li><h4>Pre-study Questionnaire and Random Assignment</h4><p>Record year of study, campus familiarity, prior information-seeking experience and AI usage habits.</p></li><li><h4>Eight Tasks and Post-task Questionnaires</h4><p>Complete six simple tasks (S1–S6) and two complex tasks (C1–C2), recording time, completion status and submitted outputs.</p></li><li><h4>Answer Scoring and Issue Recording</h4><p>Evaluate outputs using official information, reference answers and scoring sheets. Record omissions, procedural errors and source issues.</p></li></ol>
-    <div class="task-top"><h3>Experimental Tasks</h3><div class="filter" role="group" aria-label="Filter experimental tasks"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="simple" aria-pressed="false">Simple Tasks</button><button type="button" data-filter="complex" aria-pressed="false">Complex Tasks</button></div></div>
+    <ol class="procedure"><li><h4>Study Information and Informed Consent</h4><p>Explain the purpose, procedure, data collection, withdrawal rights and anonymisation arrangements.</p></li><li><h4>Pre-study Questionnaire and Random Assignment</h4><p>Record subject area, campus information-seeking channels and difficulties, prior AI experience and availability. Randomly assign participants to a condition.</p></li><li><h4>Six Tasks and Task-block Questionnaires</h4><p>Complete three simple tasks (S1–S3) and three complex tasks (C1–C3). Record time, completion status and submitted outputs for each task. Collect block questionnaires after S1–S3 and C1–C3, followed by the overall questionnaire.</p></li><li><h4>Answer Scoring and Issue Recording</h4><p>Evaluate outputs using official information, reference answers and scoring sheets. Record omissions, procedural errors and source issues.</p></li></ol>
+    <div class="task-top"><h3>Six Experimental Tasks: S1–S3 and C1–C3</h3><div class="filter" role="group" aria-label="Filter experimental tasks"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="simple" aria-pressed="false">Simple Tasks</button><button type="button" data-filter="complex" aria-pressed="false">Complex Tasks</button></div></div>
     <div class="tasks">
       <details class="task" data-kind="simple"><summary><span class="task-code">S1</span><strong>Student One-stop Contact Information</strong></summary><div class="task-body"><p>You need advice on a campus matter but are unsure which department to contact. Find the contact and office information for the Student One-stop service. Provide the telephone number, office location and publicly available service hours.</p></div></details>
       <details class="task" data-kind="simple"><summary><span class="task-code">S2</span><strong>Overnight Study Room Information</strong></summary><div class="task-body"><p>You plan to study on campus during an exam-week evening. Find the usage requirements, opening arrangements and booking channel for overnight study rooms. Provide the requirements, opening hours or arrangements, and booking entry point.</p></div></details>
       <details class="task" data-kind="simple"><summary><span class="task-code">S3</span><strong>Shuttle Services between Taicang and SIP</strong></summary><div class="task-body"><p>You need to travel between the Taicang and SIP campuses. Consult the official shuttle timetable and provide departure times and booking rules.</p></div></details>
-      <details class="task" data-kind="simple"><summary><span class="task-code">S4</span><strong>E-bike Charging Services</strong></summary><div class="task-body"><p>You use an e-bike on campus and need a suitable charging location. Find information about campus e-bike charging services and instructions for using charging stations. Provide locations, operating steps, restrictions and precautions.</p></div></details>
-      <details class="task" data-kind="simple"><summary><span class="task-code">S5</span><strong>Campus Facility Maintenance Services</strong></summary><div class="task-body"><p>You notice a campus facility or piece of equipment that needs repair. Find the relevant service, request channel and information required to submit a maintenance request. Provide the submission entry point and required details.</p></div></details>
-      <details class="task" data-kind="simple"><summary><span class="task-code">S6</span><strong>Group Discussion Room Booking</strong></summary><div class="task-body"><p>Find the eligibility requirements, booking steps and cancellation rules for a group discussion room. Provide all three items.</p></div></details>
       <details class="task" data-kind="complex"><summary><span class="task-code">C1</span><strong>Open-ended Planning for a Day on Campus</strong></summary><div class="task-body"><p>You are a newly enrolled XJTLU student planning a Saturday on campus: study in a suitable place in the morning, play badminton with friends in the afternoon and hold a group discussion with three classmates in the evening. You are unfamiliar with campus services and want to prepare in advance so that the day runs smoothly.</p><p>Prepare an actionable schedule and find the campus services, requirements and procedures needed to carry it out. Explain the basis for your arrangements and identify matters that need advance confirmation.</p></div></details>
       <details class="task" data-kind="complex"><summary><span class="task-code">C2</span><strong>Cross-service Planning for an External Speaker Event</strong></summary><div class="task-body"><p>Your student group plans to invite an external speaker to XJTLU next month for an afternoon talk attended by approximately 30 students. The event includes a presentation and student questions and will last about two hours. As the main organiser, you are unfamiliar with the relevant campus procedures and want to prepare in advance.</p><p>Prepare an actionable event preparation plan and find the campus services, requirements and procedures needed to implement it. Explain the basis for your arrangements and identify matters that need advance confirmation.</p></div></details>
+      <details class="task" data-kind="complex"><summary><span class="task-code">C3</span><strong>Welcome Activity Planning for New Students</strong></summary><div class="task-body"><p>You are organising a welcome activity for new students. Prepare the required campus arrangements, covering the venue, transport, catering and service support.</p></div></details>
     </div>
     <div class="table-section">
       <h3 class="table-section-title">Evaluation Methods and Data Types</h3>
       <p class="section-intro" style="margin-bottom:22px">
-        The study combines four evaluation approaches: task performance compares efficiency, completion status and answer quality; complex-task quality assesses service discovery, information coverage, completeness and actionability; post-task questionnaires measure usefulness, ease of use, confidence, workload and satisfaction; interviews and process records explain search strategies, verification and sources of error.
+        The evaluation follows the questionnaire: completion time, completion status and answer quality are recorded for S1–S3 and C1–C3. After each block, participants rate usefulness, ease of use, trust and workload from 1 to 7. The overall questionnaire covers continued use, recommendation, verification, usability and workload. Summaries include mean usefulness ratings, geometric mean completion times and the supplied overall measures. The five interview questions address participants’ experiences and improvement priorities.
       </p>
       <div class="evaluation-grid">
-        <article class="evaluation-item"><h3>1. Objective task performance</h3><p>Record completion time, completion status and answer accuracy. Compare Baseline and CMO AI on simple retrieval tasks S1–S6, and record completion times for C1–C2.</p><small>Key data: seconds, Completed / Partial / Failed, and accuracy scores.</small></article>
-        <article class="evaluation-item"><h3>2. Complex-task quality</h3><p>Compare service discovery, information coverage, completeness, accuracy and actionability in the final C1–C2 plans against independently verified official reference answers.</p><small>Key data: number of services discovered, required-information coverage, completeness and actionability.</small></article>
-        <article class="evaluation-item"><h3>3. Subjective and qualitative evaluation</h3><p>Use post-task questionnaires, open-ended responses, semi-structured interviews and participant comments to explain why participants add, revise or discard information.</p><small>Key data: usefulness, ease of use, confidence, workload, satisfaction and interview themes.</small></article>
+        <article class="evaluation-item"><h3>1. Objective task performance</h3><p>Record completion time, completion status and answer accuracy. Compare Baseline and CMO AI on simple retrieval tasks S1–S3, and record completion times for C1–C3.</p><small>Key data: seconds, Completed / Partial / Failed, and accuracy scores.</small></article>
+        <article class="evaluation-item"><h3>2. Complex-task quality</h3><p>Compare service discovery, information coverage, completeness, accuracy and actionability in the final C1–C3 plans against independently verified official reference answers.</p><small>Key data: number of services discovered, required-information coverage, completeness and actionability.</small></article>
+        <article class="evaluation-item"><h3>3. Subjective and qualitative evaluation</h3><p>Use post-task questionnaires, open-ended responses, semi-structured interviews and participant comments to explain why participants add, revise or discard information.</p><small>Key data: block ratings, overall questionnaire responses and interview themes.</small></article>
         <article class="evaluation-item"><h3>4. Query process and reasons</h3><p>Use semi-structured interviews, participant comments and available AI interaction records to understand why participants select, revise, verify or discard information.</p><small>Key data: search strategies, official-source verification, AI interaction patterns and error types.</small></article>
       </div>
       <figure class="table-figure">
@@ -255,52 +257,15 @@
             <colgroup><col><col><col><col></colgroup>
             <thead><tr><th scope="col">Evaluation dimension</th><th scope="col">Recorded data</th><th scope="col">Data sources</th><th scope="col">Assessment method</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Task performance</th><td>Completion time, completion status, answer accuracy and task scores</td><td>Task submissions and independently verified official reference answers</td><td>Compare Baseline and CMO AI performance on S1–S6 and C1–C2.</td></tr>
-              <tr><th scope="row">Complex-task quality</th><td>Service Discovery、Information Coverage、Completeness、Accuracy、Actionability</td><td>Final C1–C2 plans and official reference answers</td><td>Assess whether plans identify relevant services, cover required information and support implementation.</td></tr>
-              <tr><th scope="row">Subjective experience</th><td>Usefulness, ease of use, confidence, workload and satisfaction</td><td>Post-task questionnaire</td><td>Record participant ratings using a 5-point Likert scale.</td></tr>
+              <tr><th scope="row">Task performance</th><td>Completion time, completion status, answer accuracy and task scores</td><td>Task submissions and independently verified official reference answers</td><td>Compare Baseline and CMO AI performance on S1–S3 and C1–C3.</td></tr>
+              <tr><th scope="row">Complex-task quality</th><td>Service discovery, information coverage, completeness, accuracy and actionability</td><td>Final C1–C3 plans and official reference answers</td><td>Assess whether plans identify relevant services, cover required information and support implementation.</td></tr>
+              <tr><th scope="row">Subjective experience</th><td>Task-block usefulness, ease of use, trust and overall workload; overall intention to use again, willingness to recommend, verification counts, usability and workload</td><td>Task-block and overall questionnaires</td><td>Use 1–7 ratings for task-block and overall experience items, 1–5 ratings for the supplied usability items, and separate verification-count responses.</td></tr>
               <tr><th scope="row">Search process and reasoning</th><td>Search strategies, information verification, sources of error and concerns about AI</td><td>Semi-structured interviews, participant comments and AI interaction records</td><td>Identify themes explaining why participants select, revise or discard information.</td></tr>
             </tbody>
           </table>
         </div>
         
       </figure>
-      <div id="interview-module">
-      <h3 class="table-section-title">Semi-structured Interview Guide</h3>
-      <p class="table-note">Interviews are expected to last 5–10 minutes. All participants answer the common questions, followed by questions for their assigned condition. Interviewers may ask follow-up questions about actual experiences.</p>
-      <div class="materials-layout interview-layout">
-        <div class="material-tabs interview-tabs" role="group" aria-label="Interview question categories">
-          <button type="button" class="interview-tab is-active" data-interview-tab="common" aria-pressed="true">Common Questions</button>
-          <button type="button" class="interview-tab" data-interview-tab="ai" aria-pressed="false">CMO AI Group</button>
-          <button type="button" class="interview-tab" data-interview-tab="baseline" aria-pressed="false">Baseline Group</button>
-        </div>
-        <div class="interview-panels">
-          <section class="material-panel interview-panel" data-interview-panel="common">
-            <div class="panel-heading"><h4>A. Common Questions</h4><span class="badge">Both groups</span></div>
-      <ol class="questionnaire interview-list">
-        <li><strong>Q1 · Choice of Information Channels</strong><span>Which information-seeking methods did you mainly use during the tasks, and why did you choose them?<br>Follow-up: Did you change your approach according to task difficulty or type?</span></li>
-        <li><strong>Q2 · Uncertainty and Verification</strong><span>Was any information uncertain or in need of further verification? Please give an example.<br>Follow-up: Which information or procedural step was involved? How did you handle it? Did you check an official source?</span></li>
-        <li><strong>Q3 · Time Pressure and Task Difficulty</strong><span>Did you feel short of time during the tasks? At which stage did you get stuck?<br>Follow-up: Which took the most time: finding information, understanding procedures, verifying information or organising the final plan?</span></li>
-        <li><strong>Q4 · Problem-solving and Strategy Changes</strong><span>How did you deal with difficulty finding information or uncertainty about what to do next?<br>Follow-up: Did you change keywords, switch methods or consult other sources? Was the problem resolved?</span></li>
-            </ol>
-          </section>
-          <section class="material-panel interview-panel" data-interview-panel="ai" hidden>
-            <div class="panel-heading"><h4>B. Questions for the CMO AI Group Only</h4><span class="badge">AI group only</span></div>
-      <ol class="questionnaire interview-list">
-        <li><strong>AI-Q1 · Choosing AI or Direct Search</strong><span>When did you prefer asking CMO AI, and when did you search the website, official WeChat accounts or app directly? Why?<br>Follow-up: Did you ask AI first and then verify, or search first and then ask AI?</span></li>
-        <li><strong>AI-Q2 · Questioning AI Answers</strong><span>Did you question any answers from CMO AI? If so, which information did you question, and why?<br>Follow-up: Was the information incomplete, the procedure unclear, the source missing or the answer inconsistent with official information?</span></li>
-            </ol>
-          </section>
-          <section class="material-panel interview-panel" data-interview-panel="baseline" hidden>
-            <div class="panel-heading"><h4>C. Questions for the Baseline Group Only</h4><span class="badge">Baseline Group</span></div>
-      <ol class="questionnaire interview-list">
-        <li><strong>B-Q1 · Official Channels and Search Engines</strong><span>When did you choose the website, official WeChat accounts, XJTLU App or a search engine? Why?<br>Follow-up: Did you use a search engine to locate information before verifying it on the official website?</span></li>
-        <li><strong>B-Q2 · Search Difficulties and Conflicting Information</strong><span>Did you encounter missing information, conflicting sources or uncertainty about a procedure?<br>Follow-up: How did you judge which source was more reliable? What did you do if you could not find official evidence?</span></li>
-            </ol>
-          </section>
-        </div>
-      </div>
-      </div>
-    
     <div class="table-section score-section">
       <h3 class="table-section-title" id="task-score-title">Task Scoring Criteria (Draft)</h3>
       <div class="score-tables">
@@ -325,12 +290,12 @@
     <div class="materials-layout">
       <div class="material-tabs" role="tablist" aria-label="Questionnaires and Supplementary Materials" aria-orientation="vertical"><button id="tab-pre" role="tab" aria-selected="true" aria-controls="panel-pre" tabindex="0">Pre-study Questionnaire</button><button id="tab-post" role="tab" aria-selected="false" aria-controls="panel-post" tabindex="-1">During-task and Post-task Questionnaires</button><button id="tab-upload" role="tab" aria-selected="false" aria-controls="panel-upload" tabindex="-1">Supplementary Materials</button></div>
       <div>
-        <article class="material-panel" id="panel-pre" role="tabpanel" aria-labelledby="tab-pre" tabindex="0"><div class="panel-heading"><h3>Pre-study Questionnaire: Campus Information-seeking Experience and Prior Views of AI Campus Assistants</h3><span class="badge">Full questionnaire</span></div><p>This questionnaire asks about your experience finding campus service information since enrolment and takes approximately five minutes. There are no right or wrong answers. Please answer independently based on the past 30 days or the period specified. Your responses will be kept confidential and used only for this study.</p><ol class="questionnaire"><li><strong>Q1. Would you be willing to take part in a follow-up campus service task experiment lasting approximately 20 minutes?</strong><div class="option-line">○ Willing  ○ Not willing  ○ Not sure yet</div></li><li><strong>Q2. If you would like to be contacted about the follow-up experiment, please optionally provide your email address or WeChat ID. Contact details will be stored separately from questionnaire responses:</strong><div class="option-line">__________</div></li><li><strong>Q3. Your school / broad subject area:</strong><div class="option-line">__________ (abbreviations accepted)</div></li></ol><h4>1. Campus Information-seeking Behaviour and Baseline Validation</h4><ol class="questionnaire"><li><strong>Q4. Which channels do you usually use to find campus information? Select all that apply.</strong><div class="option-line">□ XJTLU website  □ XJTLU official WeChat accounts  □ XJTLU App  □ Standard browser search  □ Classmates / friends  □ Advisers / teachers / email  □ AI tools, such as ChatGPT or Doubao  □ XJTLU Junmou AI and its agents, such as CMO AI  □ Other: __________</div></li><li><strong>Q5. What difficulties do you usually encounter when finding campus information? Select all that apply.</strong><div class="option-line">□ Unsure which platform to use  □ Information scattered across platforms  □ Unsure of the full procedure  □ Unsure what to do next  □ Unclear required documents  □ Unclear responsible department  □ Difficulty with English / terminology  □ Too much information to filter  □ Other: __________</div></li></ol><h4>2. Prior Experience with Classroom / Room Booking</h4><ol class="questionnaire"><li><strong>Q6. Have you heard of CMO AI Agent, the campus service assistant?</strong><div class="option-line">○ Yes  ○ No  ○ Not sure</div></li><li><strong>Q7. If you have used CMO AI Agent, what did you use it for? Select all that apply; skip if you have not used it.</strong><div class="option-line">□ Classroom / room booking  □ Shuttle services  □ Visitor EID  □ Study rooms  □ Facility maintenance  □ Catering / medical services  □ CMO contact information  □ Service tickets  □ Other: __________</div></li><li><strong>Q8. Based on your previous experience with AI, rate the following statements (1 = strongly disagree / not at all familiar; 7 = strongly agree / very familiar).</strong><div class="data-table-wrap" tabindex="0" role="region" aria-label="AI campus assistant ratings, from 1 to 7; scroll horizontally"><table class="likert-table"><caption style="text-align:left;padding:14px 15px;font-weight:600">AI Campus Assistant Rating Items</caption><thead><tr><th scope="col">Item</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr></thead><tbody><tr><th scope="row">a. An AI campus assistant can help me find campus information faster.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">b. An AI campus assistant is easy to use.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">c. I trust the information provided by an AI campus assistant.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">d. I am concerned that AI information may be inaccurate.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">e. I am concerned when AI does not identify official information sources.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">f. I am willing to use an AI campus assistant for classroom / room booking queries.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">g. I expect an AI campus assistant to help me understand multi-step campus procedures.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr></tbody></table></div></li><li><strong>Q9. What are your main concerns about using an AI campus assistant? Select all that apply.</strong><div class="option-line">□ Inaccurate information  □ Unclear sources  □ Privacy / data security  □ Unsure how to use it  □ Prefer staff assistance or official websites  □ AI may omit steps in complex procedures  □ No concerns  □ Other: __________</div></li></ol><h4>3. Follow-up Experiment Arrangements</h4><ol class="questionnaire"><li><strong>Q10. When would you usually be available for the follow-up experiment? Select all that apply.</strong><div class="option-line">□ Weekday mornings  □ Weekday afternoons  □ Weekday evenings  □ Weekend mornings  □ Weekend afternoons  □ Weekend evenings</div></li></ol></article>
+        <article class="material-panel" id="panel-pre" role="tabpanel" aria-labelledby="tab-pre" tabindex="0"><div class="panel-heading"><h3>Pre-study Questionnaire: Campus Information-seeking Experience and Prior Views of AI Campus Assistants</h3><span class="badge">Full questionnaire</span></div><p>This questionnaire asks about your experience finding campus service information since enrolment and takes approximately five minutes. There are no right or wrong answers. Please answer independently based on the past 30 days or the period specified. Your responses will be kept confidential and used only for this study. CMO is XJTLU’s campus service AI assistant and can be accessed through <a class="text-link" href="https://aiagent.xjtlu.edu.cn/" target="_blank" rel="noopener noreferrer">aiagent.xjtlu.edu.cn</a>. Questionnaire responses are anonymous and used only for research analysis; participation does not affect course or service evaluations. Optional contact details are stored separately.</p><p class="small">Contact: <a class="text-link" href="mailto:Jiaming.Hao26@student.xjtlu.edu.cn">Jiaming.Hao26@student.xjtlu.edu.cn</a></p><ol class="questionnaire"><li><strong>Q1. Would you be willing to take part in a follow-up campus service task experiment lasting approximately 20 minutes?</strong><div class="option-line">○ Willing  ○ Not willing  ○ Not sure yet</div></li><li><strong>Q2. If you would like to be contacted about the follow-up experiment, please optionally provide your email address or WeChat ID. Contact details will be stored separately from questionnaire responses:</strong><div class="option-line">__________</div></li><li><strong>Q3. Your school / broad subject area:</strong><div class="option-line">__________ (abbreviations accepted)</div></li></ol><h4>1. Campus Information-seeking Behaviour and Baseline Validation</h4><ol class="questionnaire"><li><strong>Q4. Which channels do you usually use to find campus information? Select all that apply.</strong><div class="option-line">□ XJTLU website  □ XJTLU official WeChat accounts  □ XJTLU App  □ Standard browser search  □ Classmates / friends  □ Advisers / teachers / email  □ AI tools, such as ChatGPT or Doubao  □ XJTLU Junmou AI and its agents, such as CMO AI  □ Other: __________</div></li><li><strong>Q5. What difficulties do you usually encounter when finding campus information? Select all that apply.</strong><div class="option-line">□ Unsure which platform to use  □ Information scattered across platforms  □ Unsure of the full procedure  □ Unsure what to do next  □ Unclear required documents  □ Unclear responsible department  □ Difficulty with English / terminology  □ Too much information to filter  □ Other: __________</div></li></ol><h4>2. Prior Experience with Classroom / Room Booking</h4><ol class="questionnaire"><li><strong>Q6. Have you heard of CMO AI Agent, the campus service assistant?</strong><div class="option-line">○ Yes  ○ No  ○ Not sure</div></li><li><strong>Q7. If you have used CMO AI Agent, what did you use it for? Select all that apply; skip if you have not used it.</strong><div class="option-line">□ Classroom / room booking  □ Shuttle services  □ Visitor EID  □ Study rooms  □ Facility maintenance  □ Catering / medical services  □ CMO contact information  □ Service tickets  □ Other: __________</div></li><li><strong>Q8. Based on your previous experience with AI, rate the following statements (1 = strongly disagree / not at all familiar; 7 = strongly agree / very familiar).</strong><div class="data-table-wrap" tabindex="0" role="region" aria-label="AI campus assistant ratings, from 1 to 7; scroll horizontally"><table class="likert-table"><caption style="text-align:left;padding:14px 15px;font-weight:600">AI Campus Assistant Rating Items</caption><thead><tr><th scope="col">Item</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr></thead><tbody><tr><th scope="row">a. An AI campus assistant can help me find campus information faster.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">b. An AI campus assistant is easy to use.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">c. I trust the information provided by an AI campus assistant.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">d. I am concerned that AI information may be inaccurate.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">e. I am concerned when AI does not identify official information sources.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">f. I am willing to use an AI campus assistant for classroom / room booking queries.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">g. I expect an AI campus assistant to help me understand multi-step campus procedures.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr></tbody></table></div></li><li><strong>Q9. What are your main concerns about using an AI campus assistant? Select all that apply.</strong><div class="option-line">□ Inaccurate information  □ Unclear sources  □ Privacy / data security  □ Unsure how to use it  □ Prefer staff assistance or official websites  □ AI may omit steps in complex procedures  □ No concerns  □ Other: __________</div></li></ol><h4>3. Follow-up Experiment Arrangements</h4><ol class="questionnaire"><li><strong>Q10. When would you usually be available for the follow-up experiment? Select all that apply.</strong><div class="option-line">□ Weekday mornings  □ Weekday afternoons  □ Weekday evenings  □ Weekend mornings  □ Weekend afternoons  □ Weekend evenings</div></li></ol></article>
        <article class="material-panel" id="panel-post" role="tabpanel" aria-labelledby="tab-post" tabindex="0" hidden>
           <div class="panel-heading"><h3>During-task and Post-task Questionnaires: Task-block and Overall Measures</h3><span class="badge">7-point / 5-point scales</span></div>
           <p>This section includes study information and consent, the simple-task-block questionnaire (C-1), the complex-task-block questionnaire (C-2), the researcher verification sheet (B-2), the overall post-study questionnaire (overall evaluation / SUS / NASA-TLX) and targeted interviews. SUS items use a 1–5 scale; other rating scales use 1–7.</p>
 
-          <h4>Study Instructions</h4>
+          <h4>Study Instructions</h4><p class="small">Research team: ADS-401 Group G<br>Participant ID (researcher): __________<br>Condition (researcher): □ Traditional search group　□ CMO AI-assisted group<br>Date: __________</p>
           <ol class="questionnaire">
             <li>1. Read this information and decide whether to consent.</li>
             <li>2. You will complete six campus information tasks: three simple and three complex. Each task has a standard time limit. The experiment is expected to last approximately 20–25 minutes.</li>
@@ -424,8 +389,8 @@
             <table>
               <thead><tr><th scope="col">Group</th><th scope="col">Simple tasks S1–S3</th><th scope="col">Complex tasks C1–C3</th></tr></thead>
               <tbody>
-                <tr><th scope="row">Baseline group (n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
-                <tr><th scope="row">CMO group (n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">Baseline group (planned n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">CMO group (planned n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
               </tbody>
             </table>
           </div>
@@ -476,8 +441,19 @@
   </div></section>
 
   <section class="section" id="interview" aria-labelledby="interview-title"><div class="wrap">
-    <div class="section-intro"><h2 id="interview-title">Semi-structured Interview Guide</h2><p>Interviews are expected to last 5–10 minutes. All participants answer the common questions, followed by questions for their assigned condition. Interviewers may ask follow-up questions about actual experiences.</p></div>
-    <div id="interview-destination"></div>
+    <div class="section-intro"><h2 id="interview-title">Semi-structured Interview Guide</h2><p>The five draft interview questions cover time spent on tasks, information verification, conflicting sources, complex-task information integration and priorities for improving campus AI.</p></div>
+    <div id="interview-destination">
+      <div id="interview-module" class="material-panel">
+        <div class="panel-heading"><h3>Targeted Interview Questions</h3><span class="badge">Draft prompts</span></div>
+        <ol class="questionnaire">
+          <li><strong>1. Time Spent on Tasks</strong><p>Which tasks took you the most time? Was most of that time spent finding information, judging whether it was trustworthy, or organising your answer?</p></li>
+          <li><strong>2. Currency and Applicability of Information</strong><p>How did you judge whether the information was up to date and applicable to XJTLU? Did you check the source, date or page hierarchy, or rely on prior experience?</p></li>
+          <li><strong>3. Conflicting Information</strong><p>If CMO and the official website provided conflicting information, which would you trust? How would you like CMO to display information sources or update dates?</p></li>
+          <li><strong>4. Integrating Complex-task Information</strong><p>In complex tasks, which information was hardest to integrate: venues, procedures, responsible departments, required documents, contact details or scheduling?</p></li>
+          <li><strong>5. Priorities for Improvement</strong><p>What do you think is the most important improvement needed for a campus service AI assistant?</p></li>
+        </ol>
+      </div>
+    </div>
   </div></section>
 
   <section class="section" id="data" aria-labelledby="data-title"><div class="wrap">
@@ -487,7 +463,7 @@
 
   <section class="section" id="reflection" aria-labelledby="reflection-title"><div class="wrap">
     <div class="section-intro"><h2 id="reflection-title">Study Implementation: Reflection and Limitations</h2><p>This section covers implementation, departures from the plan, participant feedback and study limitations. The content below remains to be completed and does not report empirical findings.</p></div>
-    <div class="reflection-grid"><ul class="reflection-prompts"><li><strong>Implementation of the Study Plan</strong><p>Describe differences between the actual procedure and the plan, and explain any adjustments.</p></li><li><strong>Participant Difficulties and Feedback</strong><p>Add observations and actual feedback, distinguishing tool-use difficulties from task-understanding difficulties.</p></li><li><strong>AI Information Accuracy and Procedural Completeness</strong><p>Use actual error records to describe omissions, procedural errors and source issues.</p></li><li><strong>Scope of the Findings</strong><p>Explain the limits of the findings in relation to convenience sampling, the new-student population and the selected tasks.</p></li></ul><aside class="reflection-sheet"><h3>Group Implementation Record</h3><p>Replace the placeholders below with verifiable facts after the study.</p><dl><dt>Observed Events</dt><dd>Add actual observed events.</dd><dt>Evidence and Implications</dt><dd>Add supporting evidence and explain its implications for interpreting the results.</dd><dt>Next Adjustments</dt><dd>Add the planned improvements.</dd></dl></aside></div>
+    <div class="reflection-grid"><ul class="reflection-prompts"><li><strong>Implementation of the Study Plan</strong><p>Describe differences between the actual procedure and the plan, and explain any adjustments.</p></li><li><strong>Participant Difficulties and Feedback</strong><p>Add observations and actual feedback, distinguishing tool-use difficulties from task-understanding difficulties.</p></li><li><strong>AI Information Accuracy and Procedural Completeness</strong><p>Use actual error records to describe omissions, procedural errors and source issues.</p></li><li><strong>Scope of the Findings</strong><p>Explain the limits of the findings in relation to convenience sampling, the new-student population and the selected tasks.</p></li></ul><aside class="reflection-sheet"><h3>Group Implementation Record</h3><p>Limitations of the current records and planned improvements.</p><dl><dt>Difficulty Locating Time Savings</dt><dd>The task-block questionnaires capture overall experience. They cannot identify which step of discussion room booking, if any, was faster with CMO AI.</dd><dt>Individual Task Records</dt><dd>Use consistent participant and task IDs to link each participant’s completion time, submitted answer and sources used to verify information.</dd><dt>Interview Follow-up</dt><dd>Reconstruct one actual discussion room query. Ask which step took the most time, how the booking entry point was found and which information was verified again. Preserve participants’ exact words.</dd></dl></aside></div>
     
   </div></section>
 </main>
@@ -506,16 +482,91 @@
     document.addEventListener('keydown', e => {if(e.key==='Escape' && navigation.classList.contains('open')){closeMenu();menu.focus();}});
     window.matchMedia('(min-width: 801px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
     const navLinks = [...navigation.querySelectorAll('a')];
-    const sections = [...document.querySelectorAll('main section[id]')];
-    if ('IntersectionObserver' in window) {
-      const visible = new Set();
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => entry.isIntersecting ? visible.add(entry.target.id) : visible.delete(entry.target.id));
-        const active = sections.find(section => visible.has(section.id));
-        if(active) navLinks.forEach(a => {if(a.hash==='#'+active.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
-      },{rootMargin:'-90px 0px -45% 0px',threshold:0});
-      sections.forEach(section => observer.observe(section));
+    const header = document.querySelector('.header');
+    const navItems = navLinks.map(link => ({link, section:document.getElementById(link.hash.slice(1))}));
+    const headingFor = section => section.querySelector('h1,h2,h3') || section;
+    const isVisible = element => element && element.getClientRects().length > 0;
+    let anchorOffset = 100;
+    let scrollFrame = 0;
+    let pendingNavigation = null;
+    const setCurrent = item => navItems.forEach(entry => {
+      if(entry === item) entry.link.setAttribute('aria-current','location');
+      else entry.link.removeAttribute('aria-current');
+    });
+    const updateCurrent = () => {
+      scrollFrame = 0;
+      const items = navItems.filter(item => isVisible(item.section));
+      if(pendingNavigation && Math.abs(window.scrollY-pendingNavigation.top)>2){
+        setCurrent(pendingNavigation.item);
+        return;
+      }
+      pendingNavigation = null;
+      let current = null;
+      for(const item of items){
+        if(headingFor(item.section).getBoundingClientRect().top<=anchorOffset+2) current=item;
+      }
+      if(window.scrollY>0 && window.scrollY+window.innerHeight>=document.documentElement.scrollHeight-2){
+        current=items[items.length-1] || current;
+      }
+      setCurrent(current);
+    };
+    const queueCurrent = () => {if(!scrollFrame) scrollFrame=requestAnimationFrame(updateCurrent);};
+    const measureHeader = () => {
+      anchorOffset=Math.ceil(header.getBoundingClientRect().height)+24;
+      document.documentElement.style.setProperty('--anchor-offset',anchorOffset+'px');
+      queueCurrent();
+    };
+    const navigateTo = (hash, {push=false, focus=false, smooth=false}={}) => {
+      const target=document.getElementById(hash.slice(1));
+      if(!isVisible(target) || !document.querySelector('main').contains(target)) return false;
+      closeMenu();
+      measureHeader();
+      const heading=headingFor(target);
+      const top=Math.min(Math.max(0,window.scrollY+heading.getBoundingClientRect().top-anchorOffset),
+        Math.max(0,document.documentElement.scrollHeight-window.innerHeight));
+      const item=navItems.find(entry=>entry.section===target) || null;
+      if(push && location.hash!==hash) history.pushState(null,'',hash);
+      pendingNavigation={item,top};
+      setCurrent(item);
+      if(focus){
+        if(!heading.hasAttribute('tabindex')) heading.setAttribute('tabindex','-1');
+        heading.focus({preventScroll:true});
+      }
+      const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top,behavior:smooth&&!reducedMotion?'smooth':'instant'});
+      queueCurrent();
+      return true;
+    };
+    document.querySelectorAll('#navigation a,.brand,.hero-actions a').forEach(link=>{
+      link.addEventListener('click',event=>{
+        if(event.defaultPrevented || event.button!==0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        if(navigateTo(link.hash,{push:true,focus:true,smooth:true})) event.preventDefault();
+      });
+    });
+    window.addEventListener('scroll',queueCurrent,{passive:true});
+    const cancelNavigation = () => {pendingNavigation=null;queueCurrent();};
+    window.addEventListener('wheel',cancelNavigation,{passive:true});
+    window.addEventListener('touchstart',cancelNavigation,{passive:true});
+    document.addEventListener('keydown',event=>{
+      if(['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].includes(event.key)) cancelNavigation();
+    });
+    window.addEventListener('scrollend',cancelNavigation);
+    window.addEventListener('resize',measureHeader);
+    if('ResizeObserver' in window){
+      new ResizeObserver(measureHeader).observe(header);
+      new ResizeObserver(queueCurrent).observe(document.querySelector('main'));
     }
+    let historyFrame=0;
+    const followLocation = () => {
+      cancelAnimationFrame(historyFrame);
+      historyFrame=requestAnimationFrame(()=>{
+        if(!location.hash || !navigateTo(location.hash)) queueCurrent();
+      });
+    };
+    window.addEventListener('popstate',followLocation);
+    window.addEventListener('hashchange',followLocation);
+    measureHeader();
+    followLocation();
     document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
       const kind = button.dataset.filter;
       document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed',String(b===button)));
@@ -556,16 +607,6 @@
         uploadList.append(item);
       });
     });
-    const interviewTabs=[...document.querySelectorAll('[data-interview-tab]')];
-    const interviewPanels=[...document.querySelectorAll('[data-interview-panel]')];
-    const interviewModule=document.getElementById('interview-module');
-    const interviewSlot=document.getElementById('interview-destination');
-    if(interviewModule&&interviewSlot)interviewSlot.append(interviewModule);
-    interviewTabs.forEach(tab=>tab.addEventListener('click',()=>{
-      const key=tab.dataset.interviewTab;
-      interviewTabs.forEach(item=>item.setAttribute('aria-pressed',String(item===tab)));
-      interviewPanels.forEach(panel=>{panel.hidden=panel.dataset.interviewPanel!==key;});
-    }));
     const openBeforePrint = new Map();
     window.addEventListener('beforeprint',()=>document.querySelectorAll('.task').forEach(task=>{openBeforePrint.set(task,task.open);task.open=true;}));
     window.addEventListener('afterprint',()=>{openBeforePrint.forEach((open,task)=>{task.open=open;});openBeforePrint.clear();});
