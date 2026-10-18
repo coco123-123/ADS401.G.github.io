@@ -461,11 +461,622 @@
     <div class="data-layout"><aside class="data-status"><span class="status-label">Data status · Not yet provided</span><h3>Study Implementation and Sample Collection Status</h3><p>The planned sample is approximately 60 participants. Actual recruitment, completion and study dates must follow the group’s records.</p><ul class="status-list"><li>Actual participant count <span>To be completed</span></li><li>Valid record count <span>To be completed</span></li><li>Actual study dates <span>To be completed</span></li><li>Exclusions / missing data <span>To be explained</span></li></ul></aside><div><div class="data-table-wrap" tabindex="0" role="region" aria-label="Sample data record template; scroll horizontally"><table><caption style="text-align:left;padding:14px 15px;font-weight:600">Task-level Record Structure</caption><thead><tr><th scope="col">Participant ID</th><th scope="col">Group</th><th scope="col">Task</th><th scope="col">Time / seconds</th><th scope="col">Completion status</th><th scope="col">Score</th></tr></thead><tbody><tr><td class="empty-cell" colspan="6">No actual records yet<br><span class="small">Replace with anonymised participant records after data collection.</span></td></tr></tbody></table></div><div class="analysis-note"><h3>Statistical Analysis · To Be Confirmed by the Group</h3><p>Space is reserved for descriptive statistics, Baseline versus CMO AI comparisons, Simple versus Complex task comparisons, interaction effects and error-type summaries. Add statistics, effect estimates and interpretations after the group has selected the methods and completed the analysis.</p><p>Each participant completes multiple tasks; analysis must account for the relationship between repeated observations.</p></div></div></div>
   </div></section>
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="A user study of XJTLU CMO AI for campus information retrieval and open-ended campus service planning: research questions, a 2 × 2 mixed design, study materials, data records and implementation reflection.">
+  <title>CMO AI: Campus Information Retrieval and Open-ended Planning | ADS401</title>
+  <style>
+    :root{--bg:oklch(1 0 0);--surface:oklch(.975 0 0);--panel:oklch(1 0 0);--ink:oklch(0 0 0);--muted:oklch(.34 0 0);--line:oklch(.88 0 0);--accent:oklch(0 0 0);--tint:oklch(.95 0 0);--on-accent:oklch(0 0 0);--radius:12px;--nav-layer:10;--menu-layer:20;color-scheme:light}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:104px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 "Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}button,a,input{ -webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}button:focus-visible,a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:5px}button{color:inherit}h1,h2,h3,h4,p{margin:0}h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}h2{font-size:clamp(28px,3.2vw,39px);font-weight:600;line-height:1.35;letter-spacing:-.025em}h3{font-size:21px;line-height:1.5;font-weight:600}h4{font-size:16px;font-weight:600}ul,ol{padding-left:1.3em;margin:12px 0}li+li{margin-top:6px}.wrap{width:min(1120px,calc(100% - 80px));margin-inline:auto}.muted{color:var(--muted)}.small{font-size:14px}.skip{position:fixed;left:16px;top:-90px;padding:12px 20px;background:var(--ink);color:var(--bg);z-index:30}.skip:focus{top:12px}.header{position:sticky;top:0;z-index:var(--nav-layer);background:var(--bg);border-bottom:1px solid var(--line)}.nav-shell{height:76px;display:flex;align-items:center;gap:36px}.brand{display:flex;align-items:center;gap:11px;white-space:nowrap}.brand-mark{background:var(--accent);color:var(--on-accent);display:grid;place-items:center;width:36px;height:36px;border-radius:8px;font-size:15px;letter-spacing:-.04em;font-weight:700}.brand strong{font-size:17px;font-weight:600}.brand small{font-size:12px;color:var(--muted);margin-left:8px}.nav{margin-left:auto;display:flex;align-items:center;gap:27px}.nav a{font-size:14px;position:relative;white-space:nowrap;padding:25px 0}.nav a[aria-current="location"]{color:var(--accent)}.nav a[aria-current="location"]:after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--accent)}.nav-tools{display:flex;gap:8px}.quiet-button{padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:transparent;font-size:13px;white-space:nowrap}.quiet-button:hover{background:var(--surface)}.menu-toggle{display:none}.hero{padding:78px 0 64px}.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}.eyebrow{font-size:14px;color:var(--accent);margin-bottom:21px;display:flex;align-items:center;gap:14px}.eyebrow span{color:var(--muted);border-left:1px solid var(--line);padding-left:14px}.hero h1{font-size:clamp(35px,4.4vw,58px);font-weight:600;line-height:1.28;letter-spacing:-.035em;max-width:10em}.hero h1 em{font-style:normal;color:var(--accent)}.hero-copy>p{color:var(--muted);margin-top:25px;max-width:31em;line-height:1.9}.hero-actions{display:flex;align-items:center;gap:24px;margin-top:31px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:11px 20px;border:1px solid var(--accent);border-radius:8px;background:var(--accent);color:var(--on-accent);font-size:14px;font-weight:600;white-space:nowrap;transition:transform .18s ease,background .18s ease}.button:hover{transform:translateY(-2px);color:var(--on-accent)}.text-link{font-size:14px;color:var(--accent);border-bottom:1px solid var(--line);padding:6px 0}.diagram{background:var(--surface);border-radius:var(--radius);padding:30px}.diagram figcaption{font-size:14px;color:var(--muted);margin-bottom:24px}.diagram{margin:0}.diagram-start{text-align:center;font-size:17px;font-weight:600}.diagram-route{text-align:center;color:var(--muted);font-size:13px;margin:5px 0 17px}.diagram-groups{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative}.diagram-groups:before{content:"";position:absolute;top:-9px;left:25%;right:25%;height:1px;background:var(--line)}.diagram-group{background:var(--panel);padding:18px 15px;text-align:center;border:1px solid var(--line);border-radius:8px;position:relative}.diagram-group:before{content:"";position:absolute;top:-10px;left:50%;height:9px;width:1px;background:var(--line)}.diagram-group.ai{border-color:var(--accent)}.diagram-group strong{display:block;font-size:17px;color:var(--accent)}.diagram-group small{display:block;font-size:12px;color:var(--muted);line-height:1.7;margin-top:6px}.diagram-task{display:flex;align-items:center;justify-content:space-between;padding-top:23px;gap:10px;font-size:13px}.diagram-task strong{font-size:14px;font-weight:500}.diagram-end{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:17px;text-align:center}.study-strip{display:flex;gap:0;justify-content:space-between;margin-top:57px;padding-top:25px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.study-strip strong{font-weight:500;color:var(--ink);margin-left:9px}.section{padding:88px 0;border-top:1px solid var(--line);scroll-margin-top:100px}.section-intro{max-width:690px;margin-bottom:40px}.section-intro>p{margin-top:17px;color:var(--muted);max-width:65ch}.research-grid{display:grid;grid-template-columns:1.35fr .8fr;gap:80px}.question{padding:0 0 28px}.question+.question{border-top:1px solid var(--line);padding-top:28px}.question-label{color:var(--accent);font-size:13px;font-weight:600;margin-bottom:9px}.question h3{font-size:23px}.question p{color:var(--muted);margin-top:10px;font-size:15px}.audience{border-top:2px solid var(--accent);padding-top:20px}.audience h3{margin-bottom:15px}.audience p{font-size:15px;color:var(--muted)}.audience ul{font-size:15px;margin:17px 0 21px}.inline-note{background:var(--surface);padding:15px 18px;border-radius:8px;font-size:14px;color:var(--muted)}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:34px}.condition{padding:28px;background:var(--surface);border-radius:var(--radius)}.condition.ai{background:var(--tint)}.condition-type{font-size:13px;color:var(--accent);margin-bottom:7px}.condition h3{font-size:24px}.condition p{margin-top:12px;font-size:15px;color:var(--muted)}.condition .restrictions{font-size:13px;border-top:1px solid var(--line);padding-top:14px;margin-top:20px}.section-subheading{margin:47px 0 21px}.fact-row{display:flex;flex-wrap:wrap;gap:12px 30px;margin:23px 0 0;font-size:14px;color:var(--muted)}.fact-row b{font-weight:600;color:var(--ink)}.procedure{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin:0;counter-reset:flow}.procedure li{position:relative;padding-top:18px;border-top:1px solid var(--line);margin:0;counter-increment:flow}.procedure li:before{content:counter(flow,decimal-leading-zero);display:block;color:var(--accent);font-size:13px;margin-bottom:12px}.procedure p{font-size:14px;color:var(--muted);margin-top:9px}.task-top{display:flex;align-items:center;justify-content:space-between;margin:50px 0 18px;gap:18px}.filter{display:flex;gap:4px;background:var(--surface);padding:4px;border-radius:8px}.filter button{border:0;background:transparent;padding:7px 13px;font-size:13px;border-radius:5px;color:var(--muted)}.filter button[aria-pressed="true"]{background:var(--panel);color:var(--accent)}.tasks{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}.task{border-bottom:1px solid var(--line)}.task[hidden]{display:none}.task summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:13px;padding:18px 1px}.task summary::-webkit-details-marker{display:none}.task summary:after{content:"+";margin-left:auto;font-size:23px;color:var(--muted);font-weight:300}.task[open] summary:after{content:"−"}.task-code{font-size:12px;color:var(--accent);min-width:24px}.task summary strong{font-size:15px;font-weight:500}.task-body{padding:0 0 21px 38px;font-size:14px;color:var(--muted)}.task-body p+p{margin-top:10px}.task-en{font-size:13px;line-height:1.8}.measures{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;margin-top:49px}.measure-list{margin:19px 0 0}.measure-list div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:11px 0}.measure-list dt{font-size:14px;font-weight:600}.measure-list dd{margin:0;font-size:14px;color:var(--muted)}.scoring{padding:22px 25px;border:1px solid var(--line);border-radius:var(--radius)}.scoring p{font-size:14px;color:var(--muted);margin-top:12px}.scoring-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px;font-size:13px}.scoring-list span{display:flex;justify-content:space-between;gap:12px}.scoring-list b{font-weight:500;color:var(--accent)}.materials-layout{display:grid;grid-template-columns:240px 1fr;gap:46px;align-items:start}.material-tabs{display:flex;flex-direction:column;gap:5px}.material-tabs button{border:0;background:transparent;text-align:left;border-radius:8px;padding:13px 15px;color:var(--muted);font-size:15px}.material-tabs button[aria-selected="true"]{background:var(--tint);color:var(--accent);font-weight:600}.material-tabs button:hover{background:var(--surface)}.material-panel{min-height:420px;border:1px solid var(--line);border-radius:var(--radius);padding:29px 33px;background:var(--panel)}.material-panel[hidden]{display:none}.panel-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:16px}.badge{font-size:12px;background:var(--surface);color:var(--muted);border-radius:5px;padding:3px 8px;white-space:nowrap}.material-panel p,.material-panel li{font-size:14px;color:var(--muted)}.material-panel h4{margin-top:21px;margin-bottom:8px}.questionnaire{list-style:none;padding:0;margin:21px 0}.questionnaire li{padding-bottom:19px}.questionnaire strong{display:block;color:var(--ink);font-size:15px;font-weight:500;margin-bottom:7px}.option-line{font-size:13px;line-height:2;color:var(--muted)}.material-footer{display:flex;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:23px;margin-top:25px;flex-wrap:wrap}.material-footer p{font-size:13px;color:var(--muted)}.secondary{background:transparent;border-color:var(--line);color:var(--ink);font-weight:500}.secondary:hover{background:var(--surface);color:var(--ink)}.placeholder{color:var(--muted);background:var(--surface);border-radius:8px;padding:17px 19px;font-size:14px;margin-top:17px}.consent-lines{list-style:none;padding:0;margin:21px 0}.consent-lines li{display:flex;gap:12px;align-items:flex-start;margin-top:13px}.consent-lines li:before{content:"□";color:var(--accent);font-size:20px;line-height:1.5}.data-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:start}.data-status{padding:26px;background:var(--surface);border-radius:var(--radius)}.data-status h3{margin:12px 0}.data-status p{font-size:14px;color:var(--muted)}.status-label{font-size:12px;color:var(--accent)}.status-list{margin:25px 0 0;padding:0;list-style:none}.status-list li{display:flex;justify-content:space-between;gap:15px;padding:10px 0;font-size:14px;margin:0}.status-list span{color:var(--muted)}.data-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius)}table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th{background:var(--surface);font-weight:500;text-align:left;padding:12px 15px}td{padding:18px 15px}.empty-cell{height:145px;text-align:center;color:var(--muted);white-space:normal}.data-caption{margin-top:14px;font-size:13px;color:var(--muted)}
+    .likert-table{white-space:normal}.likert-table th{text-align:center;padding:12px 8px}.likert-table th[scope="row"]{text-align:left;background:transparent;font-weight:400;padding:12px 15px}.likert-table td{text-align:center;padding:12px 8px}.data-action{margin-top:24px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}.analysis-note{margin-top:33px;border-top:1px solid var(--line);padding-top:23px}.analysis-note p{font-size:14px;color:var(--muted);margin-top:10px}.reflection-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:65px}.reflection-prompts{padding:0;list-style:none;margin:0}.reflection-prompts li{margin:0 0 23px}.reflection-prompts strong{font-weight:500;display:block;font-size:17px}.reflection-prompts p{font-size:14px;color:var(--muted);margin-top:6px}.reflection-sheet{border:1px solid var(--line);border-radius:var(--radius);padding:27px}.reflection-sheet p{font-size:14px;color:var(--muted);margin-top:15px}.reflection-sheet dl{font-size:14px;margin:22px 0 0}.reflection-sheet dt{margin-top:17px;font-weight:600}.reflection-sheet dd{margin:5px 0 0;color:var(--muted)}.closing{margin-top:48px;background:var(--tint);padding:26px 30px;border-radius:var(--radius);display:flex;justify-content:space-between;align-items:center;gap:30px}.closing h3{font-size:20px}.closing p{font-size:14px;color:var(--muted);margin-top:6px}.footer{border-top:1px solid var(--line);padding:30px 0}.footer-top{display:flex;justify-content:space-between;gap:25px;font-size:14px}.footer p{color:var(--muted);font-size:12px;margin-top:13px;max-width:90ch}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);border-radius:8px;padding:11px 20px;font-size:14px;z-index:var(--menu-layer);max-width:calc(100% - 32px);text-align:center}.toast:empty{display:none}.noscript{padding:14px;text-align:center;font-size:14px;background:var(--surface)}
+    .data-layout>*{min-width:0}.section{scroll-margin-top:20px}
+    .table-figure{margin:0;min-width:0}.table-figure figcaption{font-size:17px;font-weight:600;margin-bottom:15px;line-height:1.6}.table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}.academic-table{width:100%;min-width:620px;white-space:normal;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);font-size:14px;line-height:1.8;table-layout:fixed}.academic-table thead{border-bottom:1px solid var(--ink)}.academic-table thead th{background:var(--surface);font-weight:600;padding:15px 18px;vertical-align:top}.academic-table tbody th,.academic-table td{padding:15px 18px;text-align:left;vertical-align:top;background:var(--panel)}.academic-table tbody th{font-weight:500}.academic-table tbody tr+tr{border-top:1px solid var(--line)}.academic-table small{display:block;font-size:12px;color:var(--muted);font-weight:400;margin-top:3px}.table-note{font-size:13px;color:var(--muted);line-height:1.8;margin-top:12px}.condition-table col:first-child{width:22%}.condition-table col:not(:first-child){width:39%}.metric-table col:nth-child(1){width:18%}.metric-table col:nth-child(2){width:18%}.metric-table col:nth-child(3){width:41%}.metric-table col:nth-child(4){width:23%}.table-section-title{margin:47px 0 23px}.score-tables{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;margin-top:33px;align-items:start}.score-tables .academic-table{min-width:0}.score-tables .academic-table col:first-child{width:30%}.score-tables .academic-table td:last-child{font-variant-numeric:tabular-nums}.score-tables .academic-table tfoot{border-top:1px solid var(--ink)}.score-tables .academic-table tfoot th,.score-tables .academic-table tfoot td{background:var(--panel);padding:13px 18px;font-weight:600}.score-tables .complex-score col:first-child{width:70%}.score-tables .complex-score td:last-child,.score-tables .complex-score thead th:last-child{text-align:right}.table-section{min-width:0}.fact-row{line-height:1.9}
+    @media(max-width:800px){.score-tables{grid-template-columns:1fr;gap:30px}.academic-table{font-size:13px}.academic-table thead th,.academic-table tbody th,.academic-table td{padding:12px 14px}.table-figure figcaption{font-size:16px}.table-note{font-size:12px}.score-tables .academic-table{font-size:14px}}
+    @media print{.table-scroll{overflow:visible}.academic-table{min-width:0;font-size:9pt}.academic-table thead th,.academic-table tbody th,.academic-table td{padding:7px 9px}.academic-table thead{display:table-header-group}.academic-table tr{break-inside:avoid}.table-figure{break-inside:auto}.table-figure figcaption{break-after:avoid;font-size:12pt}.table-note{font-size:9pt}.score-tables{grid-template-columns:1fr 1fr;gap:20px}.table-section-title{margin-top:25px}}
+    .brand-mark{background:var(--surface);color:var(--ink)}.button{background:var(--surface);border-color:var(--line);color:var(--ink)}.button:hover{background:var(--tint);color:var(--ink)}.diagram-group.ai{border-color:var(--line)}
+    @media(max-width:1100px){.nav-shell{gap:18px}.nav{gap:18px}.brand small{display:none}.hero-grid{gap:35px}.wrap{width:calc(100% - 64px)}.research-grid{gap:45px}}
+    @media(max-width:800px){html{scroll-padding-top:90px}.wrap{width:calc(100% - 40px)}.nav-shell{height:66px}.brand strong{font-size:16px}.nav-tools{margin-left:auto}.menu-toggle{display:block}.nav{display:none;position:absolute;top:66px;left:0;right:0;background:var(--bg);padding:12px 20px 20px;border-bottom:1px solid var(--line);z-index:var(--menu-layer);margin:0;gap:0;flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav a{padding:10px 12px}.nav a[aria-current="location"]:after{display:none}.nav a[aria-current="location"]{background:var(--tint);border-radius:8px}.hero{padding:45px 0 38px}.hero-grid{grid-template-columns:1fr;gap:35px}.hero h1{font-size:clamp(35px,7.5vw,52px);max-width:12em}.hero-copy>p{max-width:36em}.diagram{padding:25px;max-width:550px;width:100%}.study-strip{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:35px}.study-strip strong{display:block;margin:0}.section{padding:55px 0}.section-intro{margin-bottom:30px}.research-grid,.comparison,.measures,.data-layout,.reflection-grid{grid-template-columns:1fr;gap:30px}.audience{padding-top:19px}.procedure{grid-template-columns:1fr 1fr;gap:25px}.materials-layout{grid-template-columns:1fr;gap:20px}.material-tabs{display:flex;flex-direction:row;flex-wrap:wrap;gap:4px}.material-tabs button{padding:9px 11px;font-size:14px}.material-panel{padding:24px;min-height:0}.task-top{align-items:flex-start;flex-direction:column}.tasks{grid-template-columns:1fr}.closing{flex-direction:column;align-items:flex-start;padding:24px}.footer-top{flex-wrap:wrap}.measures{margin-top:35px}}
+    @media(max-width:420px){.wrap{width:calc(100% - 32px)}.brand{gap:8px}.brand-mark{width:30px;height:30px;font-size:13px}.brand strong{font-size:14px}.quiet-button{padding:7px 9px;font-size:12px}.nav-shell{gap:10px}.nav-tools{gap:5px}.hero h1{font-size:34px}.eyebrow{font-size:12px;gap:10px}.eyebrow span{padding-left:10px}.diagram{padding:21px 16px}.diagram-groups{gap:10px}.diagram-group{padding:17px 8px}.diagram-group strong{font-size:15px}.diagram-task{font-size:12px}.diagram-task strong{font-size:12px}.condition{padding:22px}.procedure{gap:24px 20px}.procedure h4{font-size:15px}.filter button{padding:6px 12px}.material-panel{padding:20px}.panel-heading{gap:10px}.panel-heading h3{font-size:19px}.scoring-list{grid-template-columns:1fr}.measure-list div{grid-template-columns:95px 1fr}.reflection-sheet{padding:22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.button:hover{transform:none}}
+    @media print{ :root{--bg:oklch(1 0 0);--surface:oklch(.96 0 0);--panel:oklch(1 0 0);--ink:oklch(.2 0 0);--muted:oklch(.4 0 0);--line:oklch(.8 0 0);--accent:oklch(0 0 0);--tint:oklch(.95 0 0);--on-accent:oklch(1 0 0);color-scheme:light}body{font-size:11pt}.wrap{width:100%}.header,.hero-actions,.nav-tools,.filter,.material-tabs,.material-footer,.data-action,.closing .button,.toast,.skip{display:none!important}.hero{padding:20px 0}.hero-grid{gap:25px}.hero h1{font-size:30pt}.section{padding:25px 0;scroll-margin:0}.section-intro{margin-bottom:20px}h2{font-size:22pt}h3{font-size:16pt}.materials-layout{display:block}.material-panel,.material-panel[hidden]{display:block!important;margin-bottom:18px;min-height:0}.task[hidden]{display:block}.task-body{display:block!important}.task:not([open])>*:not(summary){display:block!important}.task-top{margin-top:25px}.condition,.diagram,.material-panel,.reflection-sheet,.data-status,.task{break-inside:avoid}.footer{padding-top:20px}.study-strip{margin-top:25px}.footer-top a{display:none}.section-subheading{margin-top:25px}.closing{margin-top:25px}.material-panel p,.material-panel li{font-size:10pt}@page{size:A4;margin:16mm}}
+    .hero-grid.hero-only{grid-template-columns:1fr;max-width:760px}.design-overview{margin:0 0 42px}.upload-panel{border:1px dashed var(--line);padding:22px;background:var(--surface);border-radius:var(--radius)}.upload-panel input[type=file]{display:block;margin-top:14px;font-size:14px}.upload-list{list-style:none;padding:0;margin:18px 0 0}.upload-list li{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding:10px 0;font-size:14px;color:var(--muted)}
+    @media print{.material-panel[hidden]{display:none!important}}
+    #design .design-overview{margin-bottom:58px}
+    #design .table-section{margin-top:56px}
+    #design .table-section + .table-section{margin-top:68px}
+    #design .table-section + .table-figure{margin-top:52px}
+    #design .table-section-title{margin-top:0;margin-bottom:29px}
+    #design .table-figure + .table-figure{margin-top:48px}
+    #design .table-figure figcaption{margin-bottom:21px}
+    #design .design-matrix col:first-child{width:25%}
+    #design .design-matrix col:not(:first-child){width:37.5%}
+    #design .design-matrix td,#design .design-matrix tbody th{min-height:105px}
+    #design .design-matrix strong{font-weight:600;color:var(--ink)}
+    #design .metric-table col:nth-child(1){width:18%}
+    #design .metric-table col:nth-child(2){width:30%}
+    #design .metric-table col:nth-child(3){width:25%}
+    #design .metric-table col:nth-child(4){width:27%}
+    #design .fact-row{margin-top:31px}
+    #design .section-subheading{margin-top:58px}
+    .rationale-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:32px}
+    .evaluation-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:30px}
+    .rationale-item,.evaluation-item{border-top:1px solid var(--line);padding-top:18px}
+    .rationale-item h3,.evaluation-item h3{font-size:18px;margin-bottom:8px}
+    .rationale-item p,.evaluation-item p{font-size:14px;color:var(--muted)}
+    .rationale-item small,.evaluation-item small{display:block;color:var(--muted);font-size:12px;margin-top:8px}
+    .evaluation-item{display:grid;grid-template-columns:minmax(250px,.42fr) 1fr;column-gap:34px;align-items:start;border-top:1px solid var(--line);padding:22px 0}
+    .evaluation-item h3{grid-column:1;grid-row:1 / span 2;margin:0;font-size:18px}
+    .evaluation-item p{grid-column:2;grid-row:1;margin:0}
+    .evaluation-item small{grid-column:2;grid-row:2;margin-top:10px}
+    #design .score-tables{grid-template-columns:1fr 1fr;align-items:start}
+    #design .score-tables .table-figure{display:block;height:auto}
+    #design .score-tables .table-scroll{flex:none}
+    #design .score-tables .table-figure figcaption{min-height:52px;display:flex;align-items:flex-end}
+    #design .score-tables .academic-table{height:auto}
+    #design .score-tables + .table-note{clear:both;margin-top:26px}
+    .interview-list{display:grid;grid-template-columns:1fr;gap:0;list-style:none;padding:0;margin:18px 0 32px}
+    .interview-list li{display:grid;grid-template-columns:minmax(250px,.42fr) 1fr;column-gap:34px;align-items:start;border-top:1px solid var(--line);padding:20px 0;margin:0}
+    .interview-list li strong{display:block;font-size:15px;margin:0}
+    .interview-list li span{display:block;color:var(--muted);font-size:14px;line-height:1.85}
+    .interview-layout{margin-top:24px}
+    .interview-panels{min-width:0}
+    .interview-panels .material-panel{min-height:0}
+    #design .evaluation-grid + .table-figure{margin-top:42px}
+    #design .score-tables{margin-bottom:28px}
+    #data{display:none!important}
+    @media(max-width:800px){.rationale-grid{grid-template-columns:1fr}.evaluation-item,.interview-list li{grid-template-columns:1fr;row-gap:8px}.evaluation-item h3,.evaluation-item p,.evaluation-item small{grid-column:1;grid-row:auto}#design .score-tables{grid-template-columns:1fr}}
+
+    /* Refinement limited to the screenshot's introductory area. */
+    #top.hero{padding-top:52px;padding-bottom:44px}
+    #top .hero-grid{grid-template-columns:1fr;gap:34px;align-items:start;max-width:760px}
+    #top .hero-copy h1{font-size:40px;font-weight:600;line-height:1.35;letter-spacing:0;max-width:none;text-wrap:initial}
+    #top .hero-copy h1>span{display:block}
+    #top .eyebrow{font-size:13px;margin-bottom:16px}
+    #top .hero-copy>p{font-size:15px;margin-top:20px;line-height:1.95;max-width:34em}
+    #top .hero-actions{margin-top:24px;gap:24px}
+    #top .hero-actions a{font-size:14px;font-weight:400;line-height:1.8;background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:4px 0;color:var(--ink);transform:none}
+    #top .hero-actions .button>span{display:none}
+    #top .hero-actions a:hover{border-color:var(--ink)}
+    #top .diagram{background:transparent;border-radius:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}
+    #top .diagram figcaption{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:20px}
+    #top .diagram-start{font-size:16px;font-weight:500}
+    #top .diagram-group{background:var(--surface);border-radius:4px;border:0;padding:15px 12px}
+    #top .diagram-group strong{font-size:16px;font-weight:500}
+    #top .diagram-task{padding-top:18px}
+    #top .diagram-end{margin-top:12px;padding-top:12px}
+    #top .study-strip{margin-top:36px;padding-top:20px}
+    @media(max-width:1100px){#top .hero-grid{gap:36px}#top .hero-copy h1{font-size:35px}}
+    @media(max-width:800px){#top.hero{padding-top:36px;padding-bottom:32px}#top .hero-grid{grid-template-columns:1fr;gap:28px}#top .hero-copy h1{font-size:34px}#top .diagram{max-width:550px;width:100%;padding:18px 0}#top .study-strip{margin-top:28px}}
+    @media(max-width:420px){#top .hero-copy h1{font-size:29px}#top .eyebrow{font-size:12px}#top .hero-copy>p{font-size:14px}#top .hero-actions{gap:20px}#top .diagram-group{padding:14px 8px}}
+    @media print{#top.hero{padding:20px 0}#top .hero-copy h1{font-size:25pt}#top .hero-grid{gap:25px}#top .study-strip{margin-top:20px}}
+    /* Align the two research columns; other sections retain their layout. */
+    #research .research-grid{align-items:start}
+    @media(min-width:801px){#research .audience{border-top:0;padding-top:0}}
+
+    /* Scoped scoring-table layout correction. */
+    #design .score-section{margin-top:0}
+    #design #task-score-title{margin:48px 0 24px}
+    #design .score-tables{margin-top:0;align-items:start}
+    #design .score-tables>.table-figure{margin:0;padding:0;align-self:start;min-width:0}
+    #design .score-tables>.table-figure>figcaption{margin:0 0 21px;min-height:52px;line-height:1.6;display:flex;align-items:flex-end}
+    @media(max-width:800px){#design #task-score-title{margin:36px 0 20px}#design .score-tables{row-gap:30px}}
+    @media print{#design #task-score-title{margin:24px 0 16px}}
+
+    /* English content: retain the layout while allowing long labels to wrap. */
+    .academic-table th,.academic-table td{overflow-wrap:break-word}
+    #material-files[hidden]{display:none}
+    #choose-files{display:inline-block;margin-top:14px}
+    .materials-layout>*,.material-tabs,.material-panel{min-width:0}
+    .material-tabs button{max-width:100%;white-space:normal;overflow-wrap:break-word}
+    .panel-heading h3{min-width:0}
+    @media(max-width:420px){.panel-heading{flex-wrap:wrap}}
+    @media(min-width:801px){@supports(grid-template-rows:subgrid){
+      #design .score-tables{grid-template-rows:auto auto;row-gap:0}
+      #design .score-tables>.table-figure{display:grid;grid-template-rows:subgrid;grid-row:span 2;row-gap:0}
+    }}
+
+    /* One header offset for native anchors; scripted navigation aligns the heading. */
+    html{scroll-padding-top:var(--anchor-offset,100px)}
+    main>.section,#top{scroll-margin-top:0}
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="header">
+  <div class="wrap nav-shell">
+    <a class="brand" href="#top" aria-label="CMO study home"><span class="brand-mark" aria-hidden="true">CMO</span><strong>Campus AI Evaluation</strong><small>ADS401</small></a>
+    <nav class="nav" id="navigation" aria-label="Page navigation">
+      <a href="#research" title="Background and Research Questions">Research Questions</a><a href="#design" title="Experimental Design and Implementation Plan">Study Design</a><a href="#materials" title="Questionnaires and Supplementary Materials">Study Materials</a><a href="#interview" title="Semi-structured Interview Guide">Interviews</a><a href="#reflection" title="Study Implementation: Reflection and Limitations">Reflection</a>
+    </nav>
+    <div class="nav-tools"><button class="quiet-button menu-toggle" id="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button></div>
+  </div>
+</header>
+<noscript><p class="noscript">JavaScript is disabled. Study content remains readable; task filtering and material tabs require JavaScript.</p></noscript>
+<main id="main">
+  <div class="wrap hero" id="top">
+    <div class="hero-grid hero-only">
+      <div class="hero-copy">
+        <div class="eyebrow">XJTLU CMO AI <span>Campus Information Retrieval and Open-ended Planning</span></div>
+        <h1><span>CMO AI: Campus Information Retrieval</span><span>and Open-ended Campus Planning</span></h1>
+        <p>This study compares Baseline and CMO AI information-seeking conditions in campus information retrieval and open-ended planning, focusing on efficiency, accuracy, service discovery, information coverage and actionability.</p>
+        <div class="hero-actions"><a class="button" href="#research">Research Questions and Target Users <span aria-hidden="true">↗</span></a><a class="text-link" href="#materials">View Study Materials</a></div>
+      </div>
+    </div>
+    <div class="study-strip"><span>Document status<strong>Research design proposal</strong></span><span>Target users<strong>New undergraduate and postgraduate students</strong></span><span>Planned sample<strong>Approximately 60 participants</strong></span><span>Study results<strong>To be added by the group</strong></span></div>
+  </div>
+
+  <section class="section" id="research" aria-labelledby="research-title"><div class="wrap">
+    <div class="research-grid"><div>
+    <div class="section-intro"><h2 id="research-title">Background and Research Questions</h2><p>Campus service information is distributed across official websites, apps, WeChat accounts and departmental pages. This study examines whether CMO AI can answer explicit questions and help students discover campus services and planning requirements they have not yet considered.</p></div>
+      <article class="question"><div class="question-label">RQ1 · Simple Information Retrieval</div><h3>Does CMO AI improve the efficiency and accuracy of campus information retrieval?</h3><p>Compare task completion time, completion status and answer accuracy between the Baseline and CMO AI conditions.</p></article>
+      <article class="question"><div class="question-label">RQ2 · Open-ended Campus Planning</div><h3>Can CMO AI help students discover and integrate the campus services required for open-ended planning?</h3><p>The evaluation focuses on service discovery, information coverage, completeness, accuracy and actionability.</p></article>
+     </div><aside class="audience"><h3>Target Users</h3><p>The target population is newly enrolled XJTLU students, including:</p><ul><li>First-year undergraduate students</li><li>First-year postgraduate students</li></ul><p>New students have limited campus experience and may be unfamiliar with service entry points, application procedures and responsible departments.</p><div class="inline-note" style="margin-top:22px">Study objective: evaluate the assistance provided by CMO AI and identify information and procedures that require further verification.</div></aside></div>
+     <div class="section-intro" style="margin-top:60px;margin-bottom:0"><h2>Research Rationale</h2><p>The following four points bring together the motivation, target users, comparison conditions and task categories in the existing proposal.</p></div>
+     <div class="rationale-grid">
+       <article class="rationale-item"><h3>Why Study CMO AI?</h3><p>New students may not know where to find campus information, which department is responsible or which steps a service requires. Through natural-language interaction, CMO AI may help them retrieve and integrate campus service information.</p><small>Why this matters: campus information is distributed across multiple sources.</small></article>
+       <article class="rationale-item"><h3>Why Focus on New Students?</h3><p>New students have limited familiarity with campus services and may face unclear entry points, uncertain procedures and difficulty discovering relevant services.</p><small>Target group: first-year undergraduate and postgraduate students.</small></article>
+       <article class="rationale-item"><h3>Why Compare Baseline and CMO AI?</h3><p>The Baseline group uses existing campus information channels. The CMO AI group can also use CMO AI. This comparison is intended to estimate the additional value of access to CMO AI.</p><small>Rationale for the between-subjects factor.</small></article>
+       <article class="rationale-item"><h3>Why Include Two Task Types?</h3><p>Simple tasks assess retrieval when users already know what they need. Complex tasks assess whether users discover services they have not considered and integrate information into an actionable plan.</p><small>Rationale for the within-subjects task-type factor.</small></article>
+     </div>
+  </div></section>
+
+  <section class="section" id="design" aria-labelledby="design-title"><div class="wrap">
+    <div class="section-intro"><h2 id="design-title">Experimental Design and Implementation Plan</h2><p>The study uses a 2 × 2 mixed design. Information-seeking condition is the between-subjects factor, with Baseline and CMO AI levels. Task type is the within-subjects factor, with Simple retrieval and Complex open-ended planning levels. Each participant uses one information-seeking condition and completes both task types.</p></div>
+    <figure class="diagram design-overview" aria-label="A 2 × 2 mixed design: information-seeking condition is between subjects and task type is within subjects. Participants are randomly assigned to Baseline or CMO AI and complete three simple retrieval tasks and three complex open-ended planning tasks.">
+      <figcaption>Study Design Overview</figcaption>
+      <div class="diagram-start">New XJTLU Students</div><div class="diagram-route">Convenience recruitment → Random assignment</div>
+      <div class="diagram-groups"><div class="diagram-group"><strong>Baseline</strong><small>Browser + official information sources<br>Planned: 30 participants</small></div><div class="diagram-group ai"><strong>CMO AI</strong><small>Traditional channels + CMO AI<br>Planned: 30 participants</small></div></div>
+      <div class="diagram-task"><strong>Each participant</strong><span>3 simple tasks + 3 complex tasks</span></div>
+      <div class="diagram-end">Record completion time, completion status, accuracy, service discovery, information coverage, completeness and actionability.</div>
+    </figure>
+    <div class="table-section">
+      <h3 class="table-section-title">Variable Definitions and Research Hypotheses</h3>
+      <figure class="table-figure">
+        <figcaption id="variable-caption">Table 1. Independent, Dependent and Control Variables</figcaption>
+        <div class="table-scroll" role="region" aria-labelledby="variable-caption" tabindex="0">
+          <table class="academic-table metric-table" aria-labelledby="variable-caption">
+            <colgroup><col><col><col><col></colgroup>
+            <thead><tr><th scope="col">Variable role</th><th scope="col">Variable</th><th scope="col">Levels / measures</th><th scope="col">Description</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Between-subjects independent variable</th><td>Information-seeking condition</td><td>Baseline / CMO AI</td><td>Baseline uses browsers and official information sources; the CMO AI group also has access to CMO AI.</td></tr>
+              <tr><th scope="row">Within-subjects independent variable</th><td>Task type</td><td>Simple / Complex</td><td>Simple: single-service retrieval tasks S1–S3. Complex: open-ended campus planning tasks C1–C3.</td></tr>
+              <tr><th scope="row">Dependent variable</th><td>Task performance</td><td>Time, completion status and accuracy</td><td>Record completion time, whether the task was completed and agreement between the submitted answer and the reference answer.</td></tr>
+              <tr><th scope="row">Dependent variable</th><td>Open-ended planning quality</td><td>Service discovery, information coverage, completeness and actionability</td><td>Evaluate planning outputs against independently verified official reference answers and predefined scoring criteria.</td></tr>
+              <tr><th scope="row">Background variable</th><td>Prior experience</td><td>Subject area, information-seeking channels and difficulties, and prior AI experience</td><td>Record through the pre-study questionnaire to help interpret individual differences and study limitations.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </figure>
+      <figure class="table-figure design-matrix-figure" style="margin-top:42px">
+        <figcaption id="factor-caption">Table 2. 2 × 2 Mixed Experimental Design Matrix</figcaption>
+        <div class="table-scroll" role="region" aria-labelledby="factor-caption" tabindex="0">
+          <table class="academic-table design-matrix" aria-labelledby="factor-caption">
+            <colgroup><col><col><col></colgroup>
+            <thead><tr><th scope="col">Information-seeking condition / between subjects</th><th scope="col">Simple tasks / within subjects</th><th scope="col">Complex tasks / within subjects</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Group 1<br><small>Baseline: without CMO AI</small></th><td><strong>Group 1 + Simple</strong><br>S1–S3: single-service campus information retrieval</td><td><strong>Group 1 + Complex</strong><br>C1–C3: open-ended campus planning</td></tr>
+              <tr><th scope="row">Group 2<br><small>CMO AI: with CMO AI</small></th><td><strong>Group 2 + Simple</strong><br>S1–S3: single-service campus information retrieval</td><td><strong>Group 2 + Complex</strong><br>C1–C3: open-ended campus planning</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">Rows represent the assigned information-seeking condition; columns represent the two task types completed by every participant. The four cells form a 2 × 2 mixed factorial design.</p>
+      </figure>
+      <div class="comparison" style="margin-top:33px">
+        <article class="condition"><div class="condition-type">H1 · Main Effect of Information-seeking Condition</div><h3>Better Performance with CMO AI</h3><p>Compared with Baseline, the CMO AI group is expected to have shorter completion times, higher completion rates and greater accuracy.</p></article>
+        <article class="condition ai"><div class="condition-type">H2 · Interaction Effect</div><h3>Greater Assistance for Complex Tasks</h3><p>CMO AI is expected to provide greater benefits for service discovery, information coverage, completeness and actionability in Complex open-ended planning than in Simple tasks.</p></article>
+      </div>
+      <p class="table-note">A pilot study will check the feasibility of task difficulty, time limits and scoring criteria. Findings must be based on the data actually collected.</p>
+    </div>
+    <figure class="table-figure">
+      <figcaption id="condition-caption">Table 3. Experimental Conditions and Permitted Resources</figcaption>
+      <div class="table-scroll" role="region" aria-labelledby="condition-caption" tabindex="0">
+        <table class="academic-table condition-table" aria-labelledby="condition-caption">
+          <colgroup><col><col><col></colgroup>
+          <thead><tr><th scope="col">Comparison item</th><th scope="col">Traditional Search Group<small lang="en">Traditional / Baseline</small></th><th scope="col">CMO AI-assisted Group<small lang="en">CMO AI Assisted</small></th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Condition definition</th><td>Complete tasks using existing campus information channels.</td><td>Use CMO AI Agent in addition to the same traditional channels.</td></tr>
+            <tr><th scope="row">Official information channels</th><td>XJTLU website, official WeChat accounts and XJTLU App</td><td>XJTLU website, official WeChat accounts and XJTLU App</td></tr>
+            <tr><th scope="row">Standard browser search</th><td>Standard search results are permitted.</td><td>Standard search results are permitted.</td></tr>
+            <tr><th scope="row">CMO AI Agent</th><td>Not permitted</td><td>Permitted</td></tr>
+            <tr><th scope="row">Other AI tools</th><td>Not permitted, including browser AI summaries.</td><td>Not permitted; browser searches must use standard search results.</td></tr>
+            <tr><th scope="row">Planned sample size</th><td>Approximately 30 participants</td><td>Approximately 30 participants</td></tr>
+            <tr><th scope="row">Task allocation</th><td>Each participant completes three simple tasks (S1–S3) and three complex tasks (C1–C3).</td><td>Each participant completes three simple tasks (S1–S3) and three complex tasks (C1–C3).</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </figure>
+    <div class="fact-row"><span><b>Sampling method</b> Convenience sampling</span><span><b>Recruitment channels</b> New-student groups, student communities and campus social platforms</span><span><b>Assignment plan</b> Random assignment; approximately 30 participants per group</span></div>
+    <h3 class="section-subheading">Proposed Experimental Procedure</h3>
+    <ol class="procedure"><li><h4>Study Information and Informed Consent</h4><p>Explain the purpose, procedure, data collection, withdrawal rights and anonymisation arrangements.</p></li><li><h4>Pre-study Questionnaire and Random Assignment</h4><p>Record subject area, campus information-seeking channels and difficulties, prior AI experience and availability. Randomly assign participants to a condition.</p></li><li><h4>Six Tasks and Task-block Questionnaires</h4><p>Complete three simple tasks (S1–S3) and three complex tasks (C1–C3). Record time, completion status and submitted outputs for each task. Collect block questionnaires after S1–S3 and C1–C3, followed by the overall questionnaire.</p></li><li><h4>Answer Scoring and Issue Recording</h4><p>Evaluate outputs using official information, reference answers and scoring sheets. Record omissions, procedural errors and source issues.</p></li></ol>
+    <div class="task-top"><h3>Six Experimental Tasks: S1–S3 and C1–C3</h3><div class="filter" role="group" aria-label="Filter experimental tasks"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="simple" aria-pressed="false">Simple Tasks</button><button type="button" data-filter="complex" aria-pressed="false">Complex Tasks</button></div></div>
+    <div class="tasks">
+      <details class="task" data-kind="simple"><summary><span class="task-code">S1</span><strong>Student One-stop Contact Information</strong></summary><div class="task-body"><p>You need advice on a campus matter but are unsure which department to contact. Find the contact and office information for the Student One-stop service. Provide the telephone number, office location and publicly available service hours.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S2</span><strong>Overnight Study Room Information</strong></summary><div class="task-body"><p>You plan to study on campus during an exam-week evening. Find the usage requirements, opening arrangements and booking channel for overnight study rooms. Provide the requirements, opening hours or arrangements, and booking entry point.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S3</span><strong>Shuttle Services between Taicang and SIP</strong></summary><div class="task-body"><p>You need to travel between the Taicang and SIP campuses. Consult the official shuttle timetable and provide departure times and booking rules.</p></div></details>
+      <details class="task" data-kind="complex"><summary><span class="task-code">C1</span><strong>Open-ended Planning for a Day on Campus</strong></summary><div class="task-body"><p>You are a newly enrolled XJTLU student planning a Saturday on campus: study in a suitable place in the morning, play badminton with friends in the afternoon and hold a group discussion with three classmates in the evening. You are unfamiliar with campus services and want to prepare in advance so that the day runs smoothly.</p><p>Prepare an actionable schedule and find the campus services, requirements and procedures needed to carry it out. Explain the basis for your arrangements and identify matters that need advance confirmation.</p></div></details>
+      <details class="task" data-kind="complex"><summary><span class="task-code">C2</span><strong>Cross-service Planning for an External Speaker Event</strong></summary><div class="task-body"><p>Your student group plans to invite an external speaker to XJTLU next month for an afternoon talk attended by approximately 30 students. The event includes a presentation and student questions and will last about two hours. As the main organiser, you are unfamiliar with the relevant campus procedures and want to prepare in advance.</p><p>Prepare an actionable event preparation plan and find the campus services, requirements and procedures needed to implement it. Explain the basis for your arrangements and identify matters that need advance confirmation.</p></div></details>
+      <details class="task" data-kind="complex"><summary><span class="task-code">C3</span><strong>Welcome Activity Planning for New Students</strong></summary><div class="task-body"><p>You are organising a welcome activity for new students. Prepare the required campus arrangements, covering the venue, transport, catering and service support.</p></div></details>
+    </div>
+    <div class="table-section">
+      <h3 class="table-section-title">Evaluation Methods and Data Types</h3>
+      <p class="section-intro" style="margin-bottom:22px">
+        The evaluation follows the questionnaire: completion time, completion status and answer quality are recorded for S1–S3 and C1–C3. After each block, participants rate usefulness, ease of use, trust and workload from 1 to 7. The overall questionnaire covers continued use, recommendation, verification, usability and workload. Summaries include mean usefulness ratings, geometric mean completion times and the supplied overall measures. The five interview questions address participants’ experiences and improvement priorities.
+      </p>
+      <div class="evaluation-grid">
+        <article class="evaluation-item"><h3>1. Objective task performance</h3><p>Record completion time, completion status and answer accuracy. Compare Baseline and CMO AI on simple retrieval tasks S1–S3, and record completion times for C1–C3.</p><small>Key data: seconds, Completed / Partial / Failed, and accuracy scores.</small></article>
+        <article class="evaluation-item"><h3>2. Complex-task quality</h3><p>Compare service discovery, information coverage, completeness, accuracy and actionability in the final C1–C3 plans against independently verified official reference answers.</p><small>Key data: number of services discovered, required-information coverage, completeness and actionability.</small></article>
+        <article class="evaluation-item"><h3>3. Subjective and qualitative evaluation</h3><p>Use post-task questionnaires, open-ended responses, semi-structured interviews and participant comments to explain why participants add, revise or discard information.</p><small>Key data: block ratings, overall questionnaire responses and interview themes.</small></article>
+        <article class="evaluation-item"><h3>4. Query process and reasons</h3><p>Use semi-structured interviews, participant comments and available AI interaction records to understand why participants select, revise, verify or discard information.</p><small>Key data: search strategies, official-source verification, AI interaction patterns and error types.</small></article>
+      </div>
+      <figure class="table-figure">
+        <figcaption id="metric-caption">Table 4. Evaluation Dimensions, Recorded Data and Assessment Methods</figcaption>
+        <div class="table-scroll" role="region" aria-labelledby="metric-caption" tabindex="0">
+          <table class="academic-table metric-table" aria-labelledby="metric-caption">
+            <colgroup><col><col><col><col></colgroup>
+            <thead><tr><th scope="col">Evaluation dimension</th><th scope="col">Recorded data</th><th scope="col">Data sources</th><th scope="col">Assessment method</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Task performance</th><td>Completion time, completion status, answer accuracy and task scores</td><td>Task submissions and independently verified official reference answers</td><td>Compare Baseline and CMO AI performance on S1–S3 and C1–C3.</td></tr>
+              <tr><th scope="row">Complex-task quality</th><td>Service discovery, information coverage, completeness, accuracy and actionability</td><td>Final C1–C3 plans and official reference answers</td><td>Assess whether plans identify relevant services, cover required information and support implementation.</td></tr>
+              <tr><th scope="row">Subjective experience</th><td>Task-block usefulness, ease of use, trust and overall workload; overall intention to use again, willingness to recommend, verification counts, usability and workload</td><td>Task-block and overall questionnaires</td><td>Use 1–7 ratings for task-block and overall experience items, 1–5 ratings for the supplied usability items, and separate verification-count responses.</td></tr>
+              <tr><th scope="row">Search process and reasoning</th><td>Search strategies, information verification, sources of error and concerns about AI</td><td>Semi-structured interviews, participant comments and AI interaction records</td><td>Identify themes explaining why participants select, revise or discard information.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        
+      </figure>
+    <div class="table-section score-section">
+      <h3 class="table-section-title" id="task-score-title">Task Scoring Criteria (Draft)</h3>
+      <div class="score-tables">
+        <figure class="table-figure">
+          <figcaption id="simple-score-caption">Table 5. Simple-task Scoring Criteria</figcaption>
+          <div class="table-scroll" role="region" aria-labelledby="simple-score-caption" tabindex="0">
+            <table class="academic-table" aria-labelledby="simple-score-caption"><colgroup><col><col></colgroup><thead><tr><th scope="col">Score</th><th scope="col">Criterion</th></tr></thead><tbody><tr><th scope="row">0 points</th><td>Incorrect</td></tr><tr><th scope="row">1 point</th><td>Partially correct</td></tr><tr><th scope="row">2 points</th><td>Fully correct</td></tr></tbody></table>
+          </div>
+        </figure>
+        <figure class="table-figure">
+          <figcaption id="complex-score-caption">Table 6. Complex-task Scoring Dimensions and Points</figcaption>
+          <div class="table-scroll" role="region" aria-labelledby="complex-score-caption" tabindex="0">
+            <table class="academic-table complex-score" aria-labelledby="complex-score-caption"><colgroup><col><col></colgroup><thead><tr><th scope="col">Scoring dimension</th><th scope="col">Maximum points</th></tr></thead><tbody><tr><th scope="row">Correct identification of relevant services</th><td>5 points</td></tr><tr><th scope="row">Procedural completeness</th><td>5 points</td></tr><tr><th scope="row">Information accuracy</th><td>5 points</td></tr><tr><th scope="row">Information omissions</th><td>5 points</td></tr></tbody><tfoot><tr><th scope="row">Total</th><td>20 points</td></tr></tfoot></table>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section" id="materials" aria-labelledby="materials-title"><div class="wrap">
+    <div class="section-intro"><h2 id="materials-title">Questionnaires and Supplementary Materials</h2><p>This section presents the pre-study and post-task questionnaires. Other participant documents and approval materials are not displayed in full; they can be selected through the supplementary-materials panel.</p></div>
+    <div class="materials-layout">
+      <div class="material-tabs" role="tablist" aria-label="Questionnaires and Supplementary Materials" aria-orientation="vertical"><button id="tab-pre" role="tab" aria-selected="true" aria-controls="panel-pre" tabindex="0">Pre-study Questionnaire</button><button id="tab-post" role="tab" aria-selected="false" aria-controls="panel-post" tabindex="-1">During-task and Post-task Questionnaires</button><button id="tab-upload" role="tab" aria-selected="false" aria-controls="panel-upload" tabindex="-1">Supplementary Materials</button></div>
+      <div>
+        <article class="material-panel" id="panel-pre" role="tabpanel" aria-labelledby="tab-pre" tabindex="0"><div class="panel-heading"><h3>Pre-study Questionnaire: Campus Information-seeking Experience and Prior Views of AI Campus Assistants</h3><span class="badge">Full questionnaire</span></div><p>This questionnaire asks about your experience finding campus service information since enrolment and takes approximately five minutes. There are no right or wrong answers. Please answer independently based on the past 30 days or the period specified. Your responses will be kept confidential and used only for this study. CMO is XJTLU’s campus service AI assistant and can be accessed through <a class="text-link" href="https://aiagent.xjtlu.edu.cn/" target="_blank" rel="noopener noreferrer">aiagent.xjtlu.edu.cn</a>. Questionnaire responses are anonymous and used only for research analysis; participation does not affect course or service evaluations. Optional contact details are stored separately.</p><p class="small">Contact: <a class="text-link" href="mailto:Jiaming.Hao26@student.xjtlu.edu.cn">Jiaming.Hao26@student.xjtlu.edu.cn</a></p><ol class="questionnaire"><li><strong>Q1. Would you be willing to take part in a follow-up campus service task experiment lasting approximately 20 minutes?</strong><div class="option-line">○ Willing  ○ Not willing  ○ Not sure yet</div></li><li><strong>Q2. If you would like to be contacted about the follow-up experiment, please optionally provide your email address or WeChat ID. Contact details will be stored separately from questionnaire responses:</strong><div class="option-line">__________</div></li><li><strong>Q3. Your school / broad subject area:</strong><div class="option-line">__________ (abbreviations accepted)</div></li></ol><h4>1. Campus Information-seeking Behaviour and Baseline Validation</h4><ol class="questionnaire"><li><strong>Q4. Which channels do you usually use to find campus information? Select all that apply.</strong><div class="option-line">□ XJTLU website  □ XJTLU official WeChat accounts  □ XJTLU App  □ Standard browser search  □ Classmates / friends  □ Advisers / teachers / email  □ AI tools, such as ChatGPT or Doubao  □ XJTLU Junmou AI and its agents, such as CMO AI  □ Other: __________</div></li><li><strong>Q5. What difficulties do you usually encounter when finding campus information? Select all that apply.</strong><div class="option-line">□ Unsure which platform to use  □ Information scattered across platforms  □ Unsure of the full procedure  □ Unsure what to do next  □ Unclear required documents  □ Unclear responsible department  □ Difficulty with English / terminology  □ Too much information to filter  □ Other: __________</div></li></ol><h4>2. Prior Experience with Classroom / Room Booking</h4><ol class="questionnaire"><li><strong>Q6. Have you heard of CMO AI Agent, the campus service assistant?</strong><div class="option-line">○ Yes  ○ No  ○ Not sure</div></li><li><strong>Q7. If you have used CMO AI Agent, what did you use it for? Select all that apply; skip if you have not used it.</strong><div class="option-line">□ Classroom / room booking  □ Shuttle services  □ Visitor EID  □ Study rooms  □ Facility maintenance  □ Catering / medical services  □ CMO contact information  □ Service tickets  □ Other: __________</div></li><li><strong>Q8. Based on your previous experience with AI, rate the following statements (1 = strongly disagree / not at all familiar; 7 = strongly agree / very familiar).</strong><div class="data-table-wrap" tabindex="0" role="region" aria-label="AI campus assistant ratings, from 1 to 7; scroll horizontally"><table class="likert-table"><caption style="text-align:left;padding:14px 15px;font-weight:600">AI Campus Assistant Rating Items</caption><thead><tr><th scope="col">Item</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr></thead><tbody><tr><th scope="row">a. An AI campus assistant can help me find campus information faster.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">b. An AI campus assistant is easy to use.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">c. I trust the information provided by an AI campus assistant.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">d. I am concerned that AI information may be inaccurate.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">e. I am concerned when AI does not identify official information sources.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">f. I am willing to use an AI campus assistant for classroom / room booking queries.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><th scope="row">g. I expect an AI campus assistant to help me understand multi-step campus procedures.</th><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr></tbody></table></div></li><li><strong>Q9. What are your main concerns about using an AI campus assistant? Select all that apply.</strong><div class="option-line">□ Inaccurate information  □ Unclear sources  □ Privacy / data security  □ Unsure how to use it  □ Prefer staff assistance or official websites  □ AI may omit steps in complex procedures  □ No concerns  □ Other: __________</div></li></ol><h4>3. Follow-up Experiment Arrangements</h4><ol class="questionnaire"><li><strong>Q10. When would you usually be available for the follow-up experiment? Select all that apply.</strong><div class="option-line">□ Weekday mornings  □ Weekday afternoons  □ Weekday evenings  □ Weekend mornings  □ Weekend afternoons  □ Weekend evenings</div></li></ol></article>
+       <article class="material-panel" id="panel-post" role="tabpanel" aria-labelledby="tab-post" tabindex="0" hidden>
+          <div class="panel-heading"><h3>During-task and Post-task Questionnaires: Task-block and Overall Measures</h3><span class="badge">7-point / 5-point scales</span></div>
+          <p>This section includes study information and consent, the simple-task-block questionnaire (C-1), the complex-task-block questionnaire (C-2), the researcher verification sheet (B-2), the overall post-study questionnaire (overall evaluation / SUS / NASA-TLX) and targeted interviews. SUS items use a 1–5 scale; other rating scales use 1–7.</p>
+
+          <h4>Study Instructions</h4><p class="small">Research team: ADS-401 Group G<br>Participant ID (researcher): __________<br>Condition (researcher): □ Traditional search group　□ CMO AI-assisted group<br>Date: __________</p>
+          <ol class="questionnaire">
+            <li>1. Read this information and decide whether to consent.</li>
+            <li>2. You will complete six campus information tasks: three simple and three complex. Each task has a standard time limit. The experiment is expected to last approximately 20–25 minutes.</li>
+            <li>3. Complete the relevant questionnaire after each task block, then the overall questionnaire after all tasks.</li>
+            <li>4. Permitted tools: the traditional-search group may use the XJTLU website, official WeChat accounts, XJTLU App and standard browser search. The CMO AI group may also use CMO AI.</li>
+            <li>5. Data may include pre-study and post-study questionnaire responses; task completion times, completion status, submitted answers and quality scores; resource-use records; CMO AI prompts and responses for analysing AI use; and researcher observations, such as whether information was verified again.</li>
+            <li>6. Participation is voluntary. Tell the researcher if you wish to withdraw during the experiment. You may request deletion of questionnaire and task records that have not yet been anonymised and aggregated.</li>
+            <li>7. Tasks may cause mild fatigue or time pressure. You may pause or withdraw if you feel uncomfortable. This study does not involve physical risks, deception or sensitive personal data.</li>
+          </ol>
+          <p class="inline-note">I have read and understood this information and agree to participate. □</p>
+
+          <h4>C-1 Simple-task-block Questionnaire (after S1–S3)</h4>
+          <p>Answer based on your overall experience of the three simple tasks, S1–S3, that you have just completed.</p>
+          <ol class="questionnaire">
+            <li><strong>1. Usefulness</strong><span>To what extent did the information-seeking method you were allowed to use help you complete this task block?</span><div class="option-line">□ 1 Not at all helpful  □ 2 Slightly helpful  □ 3 Somewhat helpful  □ 4 Moderately helpful  □ 5 Quite helpful  □ 6 Very helpful  □ 7 Extremely helpful</div></li>
+            <li><strong>2. Ease of Use</strong><span>How easy was it to use the information-seeking method during the tasks?</span><div class="option-line">□ 1 Very difficult  □ 2 Difficult  □ 3 Somewhat difficult  □ 4 Neither difficult nor easy  □ 5 Somewhat easy  □ 6 Easy  □ 7 Very easy</div></li>
+            <li><strong>3. Trust</strong><span>I believe that the information I obtained by the end of the tasks was accurate.</span><div class="option-line">□ 1 Strongly disagree  □ 2 Disagree  □ 3 Somewhat disagree  □ 4 Neither agree nor disagree  □ 5 Somewhat agree  □ 6 Agree  □ 7 Strongly agree</div></li>
+            <li><strong>4. Overall Workload</strong><span>How much overall workload did you experience while completing this task block?</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+          </ol>
+
+          <h4>C-2 Complex-task-block Questionnaire (after C1–C3)</h4>
+          <p>Answer based on your overall experience of the three complex tasks, C1–C3, that you have just completed.</p>
+          <ol class="questionnaire">
+            <li><strong>1. Perceived Usefulness</strong><span>To what extent did the information-seeking method you were allowed to use help you complete this task block?</span><div class="option-line">□ 1 Not at all helpful  □ 2 Slightly helpful  □ 3 Somewhat helpful  □ 4 Moderately helpful  □ 5 Quite helpful  □ 6 Very helpful  □ 7 Extremely helpful</div></li>
+            <li><strong>2. Perceived Ease of Use</strong><span>How easy was the information-seeking method to use during this task block?</span><div class="option-line">□ 1 Very difficult  □ 2 Difficult  □ 3 Somewhat difficult  □ 4 Neither difficult nor easy  □ 5 Somewhat easy  □ 6 Easy  □ 7 Very easy</div></li>
+            <li><strong>3. Trust</strong><span>I believe that the information obtained during this task block was accurate.</span><div class="option-line">□ 1 Strongly disagree  □ 2 Disagree  □ 3 Somewhat disagree  □ 4 Neither agree nor disagree  □ 5 Somewhat agree  □ 6 Agree  □ 7 Strongly agree</div></li>
+            <li><strong>4. Overall Workload</strong><span>How much overall workload did you experience while completing this task block?</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+          </ol>
+
+          <h4>B-2 Researcher Verification Record</h4>
+          <p>The researcher completes this after each task. Store it separately from participant post-task questionnaires. Participant ID: __________</p>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="Researcher verification record; scroll horizontally">
+            <table>
+              <thead><tr><th scope="col">Task ID</th><th scope="col">Did the participant independently verify information through another official channel?</th><th scope="col">Comments</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">S1</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">S2</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">S3</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">C1</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">C2</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">C3</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Overall Post-study Questionnaire · Part 1: Overall Evaluation</h4>
+          <ol class="questionnaire">
+            <li><strong>1. Intention to Use Again</strong><span>Would you use the information-seeking method you were allowed to use again for a future campus query?</span><div class="option-line">□ 1 Very unwilling  □ 2 Unwilling  □ 3 Somewhat unwilling  □ 4 Neutral  □ 5 Somewhat willing  □ 6 Willing  □ 7 Very willing</div></li>
+            <li><strong>2. Willingness to Recommend</strong><span>Would you recommend this information-seeking method to other new students in your year?</span><div class="option-line">□ 1 Very unlikely to recommend  □ 2 Unlikely  □ 3 Somewhat unlikely  □ 4 Neutral  □ 5 Somewhat likely  □ 6 Likely  □ 7 Very likely to recommend</div></li>
+            <li><strong>3. Overall Verification Count</strong><span>Across the six tasks, approximately how many times did you need to verify information through another official channel?</span><div class="option-line">□ 0 times  □ 1 time  □ 2 times  □ 3 times  □ 4 times  □ 5 times  □ 6 times</div></li>
+          </ol>
+
+          <h4>Part 2: System Usability Scale (SUS)</h4>
+          <p>In this section, “the method” means the information-seeking method you were allowed to use. Rate each statement from 1 to 5 based on your experience.</p>
+          <p class="small">Options: 1 Strongly disagree; 2 Disagree; 3 Neutral; 4 Agree; 5 Strongly agree.</p>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="System Usability Scale ratings, from 1 to 5; scroll horizontally">
+            <table class="likert-table">
+              <thead><tr><th scope="col">Item No.</th><th scope="col">Statement</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">1</th><td>I think I would like to use this method frequently.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">2</th><td>I think this method is easy to use.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">3</th><td>I find that the functions of this method are well integrated.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">4</th><td>I think there is too much inconsistency in this method.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">5</th><td>I need more time to learn how to use this method.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">6</th><td>I find this method very cumbersome to use.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">7</th><td>I feel confident using this method.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+                <tr><th scope="row">8</th><td>I think most people would learn to use this method very quickly.</td><td>□</td><td>□</td><td>□</td><td>□</td><td>□</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Part 3: NASA-TLX Workload (Simplified 1–7 Version)</h4>
+          <p>Based on your overall experience of all six tasks, rate the following six dimensions from 1 to 7.</p>
+          <ol class="questionnaire">
+            <li><strong>1. Mental Demand</strong><span>The amount of thinking, remembering and judgement required</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+            <li><strong>2. Physical Demand</strong><span>The amount of physical activity or action required</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+            <li><strong>3. Time Pressure</strong><span>The extent to which you felt rushed</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+            <li><strong>4. Effort</strong><span>The amount of effort required</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+            <li><strong>5. Performance</strong><span>How successful do you think you were in achieving the task goals?</span><div class="option-line">□ 1 Very unsuccessful  □ 2 Unsuccessful  □ 3 Somewhat unsuccessful  □ 4 Neither unsuccessful nor successful  □ 5 Somewhat successful  □ 6 Successful  □ 7 Very successful</div></li>
+            <li><strong>6. Frustration</strong><span>The extent to which you felt frustrated or annoyed</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
+          </ol>
+
+          <p class="inline-note">Thank you for participating.</p>
+        </article>
+        <article class="material-panel" id="panel-upload" role="tabpanel" aria-labelledby="tab-upload" tabindex="0" hidden>
+          <div class="panel-heading"><h3>Supplementary Materials: Evaluation Tools</h3><span class="badge">Measures and Summary Definitions</span></div>
+          <p>This section summarises the evaluation measures: mean usefulness ratings, geometric mean completion time, overall SUS and NASA-TLX scores, frequent interview terms and verification counts. Results will be added after data collection and processing; the definitions and record structures are shown here.</p>
+
+          <h4>1. Mean Usefulness Rating (1–7; Higher Is Better) × 3</h4>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="Mean usefulness rating records; scroll horizontally">
+            <table>
+              <thead><tr><th scope="col">Group</th><th scope="col">Simple tasks S1–S3</th><th scope="col">Complex tasks C1–C3</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Baseline group (planned n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">CMO group (planned n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>2. Geometric Mean Completion Time (Seconds)</h4>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="Geometric mean completion time records; scroll horizontally">
+            <table>
+              <thead><tr><th scope="col">Group</th><th scope="col">Simple Tasks</th><th scope="col">Complex Tasks</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Baseline group</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">CMO group</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>3. Overall SUS and NASA-TLX Scores</h4>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="Overall SUS and NASA-TLX score records; scroll horizontally">
+            <table>
+              <thead><tr><th scope="col">Measure</th><th scope="col">Baseline mean (SD)</th><th scope="col">CMO mean (SD)</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">SUS（0–100）</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">Raw TLX（1–7）</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+                <tr><th scope="row">Intention to use again (1–7)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>4. Frequent Interview Terms</h4>
+          <p class="placeholder">Replace with frequent themes after interview transcription and coding.</p>
+
+          <h4>5. Verification Counts</h4>
+          <p class="placeholder">Complete after summarising participants’ independent information-verification actions in each task.</p>
+
+          <h4>References</h4>
+          <p class="small muted">Brooke, J. (1996). SUS: A “quick and dirty” usability scale. In P. W. Jordan, B. Thomas, B. A. Weerdmeester, &amp; I. L. McClelland (Eds.), Usability evaluation in industry (pp. 189–194). Taylor &amp; Francis.</p>
+          <p class="small muted">Hart, S. G., &amp; Staveland, L. E. (1988). Development of NASA-TLX (Task Load Index): Results of empirical and theoretical research. In P. A. Hancock &amp; N. Meshkati (Eds.), Human mental workload (pp. 139–183). North-Holland.</p>
+
+          <div class="upload-panel">
+            <label for="material-files"><strong>Select Additional Supplementary Materials</strong></label>
+            <p class="small">Select study files to supplement this page, such as original questionnaires or evaluation sheets. Files remain in the current browser page and are not automatically uploaded to a server.</p>
+            <button class="quiet-button" id="choose-files" type="button">Choose files</button><input id="material-files" hidden type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg">
+            <ul class="upload-list" id="upload-list"><li>No files selected</li></ul>
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section" id="interview" aria-labelledby="interview-title"><div class="wrap">
+    <div class="section-intro"><h2 id="interview-title">Semi-structured Interview Guide</h2><p>The five draft interview questions cover time spent on tasks, information verification, conflicting sources, complex-task information integration and priorities for improving campus AI.</p></div>
+    <div id="interview-destination">
+      <div id="interview-module" class="material-panel">
+        <div class="panel-heading"><h3>Targeted Interview Questions</h3><span class="badge">Draft prompts</span></div>
+        <ol class="questionnaire">
+          <li><strong>1. Time Spent on Tasks</strong><p>Which tasks took you the most time? Was most of that time spent finding information, judging whether it was trustworthy, or organising your answer?</p></li>
+          <li><strong>2. Currency and Applicability of Information</strong><p>How did you judge whether the information was up to date and applicable to XJTLU? Did you check the source, date or page hierarchy, or rely on prior experience?</p></li>
+          <li><strong>3. Conflicting Information</strong><p>If CMO and the official website provided conflicting information, which would you trust? How would you like CMO to display information sources or update dates?</p></li>
+          <li><strong>4. Integrating Complex-task Information</strong><p>In complex tasks, which information was hardest to integrate: venues, procedures, responsible departments, required documents, contact details or scheduling?</p></li>
+          <li><strong>5. Priorities for Improvement</strong><p>What do you think is the most important improvement needed for a campus service AI assistant?</p></li>
+        </ol>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section" id="data" aria-labelledby="data-title"><div class="wrap">
+    <div class="section-intro"><h2 id="data-title">Data Collection and Statistical Analysis</h2><p>Sample data and statistical results will be added after collection and processing. This page shows the record structure and contains no simulated participants or fabricated findings.</p></div>
+    <div class="data-layout"><aside class="data-status"><span class="status-label">Data status · Not yet provided</span><h3>Study Implementation and Sample Collection Status</h3><p>The planned sample is approximately 60 participants. Actual recruitment, completion and study dates must follow the group’s records.</p><ul class="status-list"><li>Actual participant count <span>To be completed</span></li><li>Valid record count <span>To be completed</span></li><li>Actual study dates <span>To be completed</span></li><li>Exclusions / missing data <span>To be explained</span></li></ul></aside><div><div class="data-table-wrap" tabindex="0" role="region" aria-label="Sample data record template; scroll horizontally"><table><caption style="text-align:left;padding:14px 15px;font-weight:600">Task-level Record Structure</caption><thead><tr><th scope="col">Participant ID</th><th scope="col">Group</th><th scope="col">Task</th><th scope="col">Time / seconds</th><th scope="col">Completion status</th><th scope="col">Score</th></tr></thead><tbody><tr><td class="empty-cell" colspan="6">No actual records yet<br><span class="small">Replace with anonymised participant records after data collection.</span></td></tr></tbody></table></div><div class="analysis-note"><h3>Statistical Analysis · To Be Confirmed by the Group</h3><p>Space is reserved for descriptive statistics, Baseline versus CMO AI comparisons, Simple versus Complex task comparisons, interaction effects and error-type summaries. Add statistics, effect estimates and interpretations after the group has selected the methods and completed the analysis.</p><p>Each participant completes multiple tasks; analysis must account for the relationship between repeated observations.</p></div></div></div>
+  </div></section>
+
   <section class="section" id="reflection" aria-labelledby="reflection-title"><div class="wrap">
     <div class="section-intro"><h2 id="reflection-title">Study Implementation: Reflection and Limitations</h2><p>This section covers implementation, departures from the plan, participant feedback and study limitations. The content below remains to be completed and does not report empirical findings.</p></div>
     <div class="reflection-grid"><ul class="reflection-prompts"><li><strong>Implementation of the Study Plan</strong><p>Describe differences between the actual procedure and the plan, and explain any adjustments.</p></li><li><strong>Participant Difficulties and Feedback</strong><p>Add observations and actual feedback, distinguishing tool-use difficulties from task-understanding difficulties.</p></li><li><strong>AI Information Accuracy and Procedural Completeness</strong><p>Use actual error records to describe omissions, procedural errors and source issues.</p></li><li><strong>Scope of the Findings</strong><p>Explain the limits of the findings in relation to convenience sampling, the new-student population and the selected tasks.</p></li></ul><aside class="reflection-sheet"><h3>Group Implementation Record</h3><p>Limitations of the current records and planned improvements.</p><dl><dt>Difficulty Locating Time Savings</dt><dd>The task-block questionnaires capture overall experience. They cannot identify which step of discussion room booking, if any, was faster with CMO AI.</dd><dt>Individual Task Records</dt><dd>Use consistent participant and task IDs to link each participant’s completion time, submitted answer and sources used to verify information.</dd><dt>Interview Follow-up</dt><dd>Reconstruct one actual discussion room query. Ask which step took the most time, how the booking entry point was found and which information was verified again. Preserve participants’ exact words.</dd></dl></aside></div>
     
   </div></section>
+</main>
+
+<script>
+  (() => {
+    'use strict';
+    const menu = document.getElementById('menu');
+    const navigation = document.getElementById('navigation');
+    const closeMenu = () => {navigation.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu';};
+    menu.addEventListener('click', () => {
+      const open = menu.getAttribute('aria-expanded') !== 'true';
+      navigation.classList.toggle('open', open);menu.setAttribute('aria-expanded', String(open));menu.textContent=open?'Close':'Menu';
+    });
+    navigation.querySelectorAll('a').forEach(a => a.addEventListener('click',closeMenu));
+    document.addEventListener('keydown', e => {if(e.key==='Escape' && navigation.classList.contains('open')){closeMenu();menu.focus();}});
+    window.matchMedia('(min-width: 801px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
+    const navLinks = [...navigation.querySelectorAll('a')];
+    const header = document.querySelector('.header');
+    const navItems = navLinks.map(link => ({link, section:document.getElementById(link.hash.slice(1))}));
+    const headingFor = section => section.querySelector('h1,h2,h3') || section;
+    const isVisible = element => element && element.getClientRects().length > 0;
+    let anchorOffset = 100;
+    let scrollFrame = 0;
+    let pendingNavigation = null;
+    const setCurrent = item => navItems.forEach(entry => {
+      if(entry === item) entry.link.setAttribute('aria-current','location');
+      else entry.link.removeAttribute('aria-current');
+    });
+    const updateCurrent = () => {
+      scrollFrame = 0;
+      const items = navItems.filter(item => isVisible(item.section));
+      if(pendingNavigation && Math.abs(window.scrollY-pendingNavigation.top)>2){
+        setCurrent(pendingNavigation.item);
+        return;
+      }
+      pendingNavigation = null;
+      let current = null;
+      for(const item of items){
+        if(headingFor(item.section).getBoundingClientRect().top<=anchorOffset+2) current=item;
+      }
+      if(window.scrollY>0 && window.scrollY+window.innerHeight>=document.documentElement.scrollHeight-2){
+        current=items[items.length-1] || current;
+      }
+      setCurrent(current);
+    };
+    const queueCurrent = () => {if(!scrollFrame) scrollFrame=requestAnimationFrame(updateCurrent);};
+    const measureHeader = () => {
+      anchorOffset=Math.ceil(header.getBoundingClientRect().height)+24;
+      document.documentElement.style.setProperty('--anchor-offset',anchorOffset+'px');
+      queueCurrent();
+    };
+    const navigateTo = (hash, {push=false, focus=false, smooth=false}={}) => {
+      const target=document.getElementById(hash.slice(1));
+      if(!isVisible(target) || !document.querySelector('main').contains(target)) return false;
+      closeMenu();
+      measureHeader();
+      const heading=headingFor(target);
+      const top=Math.min(Math.max(0,window.scrollY+heading.getBoundingClientRect().top-anchorOffset),
+        Math.max(0,document.documentElement.scrollHeight-window.innerHeight));
+      const item=navItems.find(entry=>entry.section===target) || null;
+      if(push && location.hash!==hash) history.pushState(null,'',hash);
+      pendingNavigation={item,top};
+      setCurrent(item);
+      if(focus){
+        if(!heading.hasAttribute('tabindex')) heading.setAttribute('tabindex','-1');
+        heading.focus({preventScroll:true});
+      }
+      const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top,behavior:smooth&&!reducedMotion?'smooth':'instant'});
+      queueCurrent();
+      return true;
+    };
+    document.querySelectorAll('#navigation a,.brand,.hero-actions a').forEach(link=>{
+      link.addEventListener('click',event=>{
+        if(event.defaultPrevented || event.button!==0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        if(navigateTo(link.hash,{push:true,focus:true,smooth:true})) event.preventDefault();
+      });
+    });
+    window.addEventListener('scroll',queueCurrent,{passive:true});
+    const cancelNavigation = () => {pendingNavigation=null;queueCurrent();};
+    window.addEventListener('wheel',cancelNavigation,{passive:true});
+    window.addEventListener('touchstart',cancelNavigation,{passive:true});
+    document.addEventListener('keydown',event=>{
+      if(['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].includes(event.key)) cancelNavigation();
+    });
+    window.addEventListener('scrollend',cancelNavigation);
+    window.addEventListener('resize',measureHeader);
+    if('ResizeObserver' in window){
+      new ResizeObserver(measureHeader).observe(header);
+      new ResizeObserver(queueCurrent).observe(document.querySelector('main'));
+    }
+    let historyFrame=0;
+    const followLocation = () => {
+      cancelAnimationFrame(historyFrame);
+      historyFrame=requestAnimationFrame(()=>{
+        if(!location.hash || !navigateTo(location.hash)) queueCurrent();
+      });
+    };
+    window.addEventListener('popstate',followLocation);
+    window.addEventListener('hashchange',followLocation);
+    measureHeader();
+    followLocation();
+    document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
+      const kind = button.dataset.filter;
+      document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed',String(b===button)));
+      document.querySelectorAll('.task').forEach(task => {task.hidden=kind!=='all' && task.dataset.kind!==kind;});
+    }));
+    const tabs = [...document.querySelectorAll('[role="tab"]')];
+    const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+    const activateTab = tab => {
+      tabs.forEach(t => {const active=t===tab;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;});
+      panels.forEach(panel => panel.hidden=panel.id!==tab.getAttribute('aria-controls'));
+    };
+    tabs.forEach((tab,index) => {
+      tab.addEventListener('click',()=>activateTab(tab));
+      tab.addEventListener('keydown',e=>{
+        let next;
+        if(e.key==='ArrowDown'||e.key==='ArrowRight')next=(index+1)%tabs.length;
+        if(e.key==='ArrowUp'||e.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;
+        if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;
+        if(next!==undefined){e.preventDefault();activateTab(tabs[next]);tabs[next].focus();}
+      });
+    });
+    const setTabOrientation=()=>document.querySelector('[role="tablist"]').setAttribute('aria-orientation',window.matchMedia('(max-width: 800px)').matches?'horizontal':'vertical');
+    setTabOrientation();window.matchMedia('(max-width: 800px)').addEventListener('change',setTabOrientation);
+    const materialFiles=document.getElementById('material-files');
+    const uploadList=document.getElementById('upload-list');
+    document.getElementById('choose-files').addEventListener('click',()=>materialFiles.click());
+    materialFiles.addEventListener('change',()=>{
+      uploadList.replaceChildren();
+      const files=[...materialFiles.files];
+      if(!files.length){const empty=document.createElement('li');empty.textContent='No files selected';uploadList.append(empty);return;}
+      files.forEach(file=>{
+        const item=document.createElement('li');
+        const name=document.createElement('span');
+        name.textContent=file.name;
+        const size=document.createElement('span');
+        size.textContent=Math.ceil(file.size/1024)+' KB';
+        item.append(name,size);
+        uploadList.append(item);
+      });
+    });
+    const openBeforePrint = new Map();
+    window.addEventListener('beforeprint',()=>document.querySelectorAll('.task').forEach(task=>{openBeforePrint.set(task,task.open);task.open=true;}));
+    window.addEventListener('afterprint',()=>{openBeforePrint.forEach((open,task)=>{task.open=open;});openBeforePrint.clear();});
+  })();
+</script>
+</body>
+</html>
 </main>
 
 <script>
