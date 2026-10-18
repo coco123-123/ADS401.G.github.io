@@ -140,6 +140,7 @@
         <div class="eyebrow">XJTLU CMO AI <span>Campus Information Retrieval and Open-ended Planning</span></div>
         <h1><span>CMO AI: Campus Information Retrieval</span><span>and Open-ended Campus Planning</span></h1>
         <p>This study compares Baseline and CMO AI information-seeking conditions in campus information retrieval and open-ended planning, focusing on efficiency, accuracy, service discovery, information coverage and actionability.</p>
+        <p>This study compares Baseline and CMO AI information-seeking conditions in campus information retrieval and open-ended planning, focusing on efficiency, accuracy and information coverage.</p>
         <div class="hero-actions"><a class="button" href="#research">Research Questions and Target Users <span aria-hidden="true">↗</span></a><a class="text-link" href="#materials">View Study Materials</a></div>
       </div>
     </div>
@@ -151,6 +152,7 @@
     <div class="section-intro"><h2 id="research-title">Background and Research Questions</h2><p>Campus service information is distributed across official websites, apps, WeChat accounts and departmental pages. This study examines whether CMO AI can answer explicit questions and help students discover campus services and planning requirements they have not yet considered.</p></div>
       <article class="question"><div class="question-label">RQ1 · Simple Information Retrieval</div><h3>Does CMO AI improve the efficiency and accuracy of campus information retrieval?</h3><p>Compare task completion time, completion status and answer accuracy between the Baseline and CMO AI conditions.</p></article>
       <article class="question"><div class="question-label">RQ2 · Open-ended Campus Planning</div><h3>Can CMO AI help students discover and integrate the campus services required for open-ended planning?</h3><p>The evaluation focuses on service discovery, information coverage, completeness, accuracy and actionability.</p></article>
+      <article class="question"><div class="question-label">RQ2 · Open-ended Campus Planning</div><h3>Can CMO AI help students discover and integrate the campus services required for open-ended planning?</h3><p>The primary evaluation focuses on information coverage and accuracy; omissions and incomplete procedures are recorded qualitatively.</p></article>
      </div><aside class="audience"><h3>Target Users</h3><p>The target population is newly enrolled XJTLU students, including:</p><ul><li>First-year undergraduate students</li><li>First-year postgraduate students</li></ul><p>New students have limited campus experience and may be unfamiliar with service entry points, application procedures and responsible departments.</p><div class="inline-note" style="margin-top:22px">Study objective: evaluate the assistance provided by CMO AI and identify information and procedures that require further verification.</div></aside></div>
      <div class="section-intro" style="margin-top:60px;margin-bottom:0"><h2>Research Rationale</h2><p>The following four points bring together the motivation, target users, comparison conditions and task categories in the existing proposal.</p></div>
      <div class="rationale-grid">
@@ -164,11 +166,14 @@
   <section class="section" id="design" aria-labelledby="design-title"><div class="wrap">
     <div class="section-intro"><h2 id="design-title">Experimental Design and Implementation Plan</h2><p>The study uses a 2 × 2 mixed design. Information-seeking condition is the between-subjects factor, with Baseline and CMO AI levels. Task type is the within-subjects factor, with Simple retrieval and Complex open-ended planning levels. Each participant uses one information-seeking condition and completes both task types.</p></div>
     <figure class="diagram design-overview" aria-label="A 2 × 2 mixed design: information-seeking condition is between subjects and task type is within subjects. Participants are randomly assigned to Baseline or CMO AI and complete three simple retrieval tasks and three complex open-ended planning tasks.">
+    <figure class="diagram design-overview" aria-label="A 2 × 2 mixed design: information-seeking condition is between subjects and task type is within subjects. Participants are randomly assigned to Baseline or CMO AI and complete six simple retrieval tasks and two complex open-ended planning tasks.">
       <figcaption>Study Design Overview</figcaption>
       <div class="diagram-start">New XJTLU Students</div><div class="diagram-route">Convenience recruitment → Random assignment</div>
       <div class="diagram-groups"><div class="diagram-group"><strong>Baseline</strong><small>Browser + official information sources<br>Planned: 30 participants</small></div><div class="diagram-group ai"><strong>CMO AI</strong><small>Traditional channels + CMO AI<br>Planned: 30 participants</small></div></div>
       <div class="diagram-task"><strong>Each participant</strong><span>3 simple tasks + 3 complex tasks</span></div>
       <div class="diagram-end">Record completion time, completion status, accuracy, service discovery, information coverage, completeness and actionability.</div>
+      <div class="diagram-task"><strong>Each participant</strong><span>6 simple tasks + 2 complex tasks</span></div>
+      <div class="diagram-end">Record completion time, completion status, accuracy and information coverage.</div>
     </figure>
     <div class="table-section">
       <h3 class="table-section-title">Variable Definitions and Research Hypotheses</h3>
@@ -181,8 +186,10 @@
             <tbody>
               <tr><th scope="row">Between-subjects independent variable</th><td>Information-seeking condition</td><td>Baseline / CMO AI</td><td>Baseline uses browsers and official information sources; the CMO AI group also has access to CMO AI.</td></tr>
               <tr><th scope="row">Within-subjects independent variable</th><td>Task type</td><td>Simple / Complex</td><td>Simple: single-service retrieval tasks S1–S3. Complex: open-ended campus planning tasks C1–C3.</td></tr>
+              <tr><th scope="row">Within-subjects independent variable</th><td>Task type</td><td>Simple / Complex</td><td>Simple: single-service retrieval tasks S1–S6. Complex: open-ended campus planning tasks C1–C2.</td></tr>
               <tr><th scope="row">Dependent variable</th><td>Task performance</td><td>Time, completion status and accuracy</td><td>Record completion time, whether the task was completed and agreement between the submitted answer and the reference answer.</td></tr>
               <tr><th scope="row">Dependent variable</th><td>Open-ended planning quality</td><td>Service discovery, information coverage, completeness and actionability</td><td>Evaluate planning outputs against independently verified official reference answers and predefined scoring criteria.</td></tr>
+              <tr><th scope="row">Dependent variable</th><td>Open-ended planning quality</td><td>Information coverage and accuracy</td><td>Evaluate planning outputs against independently verified official reference checklists.</td></tr>
               <tr><th scope="row">Background variable</th><td>Prior experience</td><td>Subject area, information-seeking channels and difficulties, and prior AI experience</td><td>Record through the pre-study questionnaire to help interpret individual differences and study limitations.</td></tr>
             </tbody>
           </table>
@@ -197,6 +204,8 @@
             <tbody>
               <tr><th scope="row">Group 1<br><small>Baseline: without CMO AI</small></th><td><strong>Group 1 + Simple</strong><br>S1–S3: single-service campus information retrieval</td><td><strong>Group 1 + Complex</strong><br>C1–C3: open-ended campus planning</td></tr>
               <tr><th scope="row">Group 2<br><small>CMO AI: with CMO AI</small></th><td><strong>Group 2 + Simple</strong><br>S1–S3: single-service campus information retrieval</td><td><strong>Group 2 + Complex</strong><br>C1–C3: open-ended campus planning</td></tr>
+              <tr><th scope="row">Group 1<br><small>Baseline: without CMO AI</small></th><td><strong>Group 1 + Simple</strong><br>S1–S6: single-service campus information retrieval</td><td><strong>Group 1 + Complex</strong><br>C1–C2: open-ended campus planning</td></tr>
+              <tr><th scope="row">Group 2<br><small>CMO AI: with CMO AI</small></th><td><strong>Group 2 + Simple</strong><br>S1–S6: single-service campus information retrieval</td><td><strong>Group 2 + Complex</strong><br>C1–C2: open-ended campus planning</td></tr>
             </tbody>
           </table>
         </div>
@@ -205,6 +214,7 @@
       <div class="comparison" style="margin-top:33px">
         <article class="condition"><div class="condition-type">H1 · Main Effect of Information-seeking Condition</div><h3>Better Performance with CMO AI</h3><p>Compared with Baseline, the CMO AI group is expected to have shorter completion times, higher completion rates and greater accuracy.</p></article>
         <article class="condition ai"><div class="condition-type">H2 · Interaction Effect</div><h3>Greater Assistance for Complex Tasks</h3><p>CMO AI is expected to provide greater benefits for service discovery, information coverage, completeness and actionability in Complex open-ended planning than in Simple tasks.</p></article>
+        <article class="condition ai"><div class="condition-type">H2 · Interaction Effect</div><h3>Greater Assistance for Complex Tasks</h3><p>CMO AI is expected to improve information coverage and accuracy more strongly in Complex open-ended planning than in Simple tasks.</p></article>
       </div>
       <p class="table-note">A pilot study will check the feasibility of task difficulty, time limits and scoring criteria. Findings must be based on the data actually collected.</p>
     </div>
@@ -222,6 +232,7 @@
             <tr><th scope="row">Other AI tools</th><td>Not permitted, including browser AI summaries.</td><td>Not permitted; browser searches must use standard search results.</td></tr>
             <tr><th scope="row">Planned sample size</th><td>Approximately 30 participants</td><td>Approximately 30 participants</td></tr>
             <tr><th scope="row">Task allocation</th><td>Each participant completes three simple tasks (S1–S3) and three complex tasks (C1–C3).</td><td>Each participant completes three simple tasks (S1–S3) and three complex tasks (C1–C3).</td></tr>
+            <tr><th scope="row">Task allocation</th><td>Each participant completes six simple tasks (S1–S6) and two complex tasks (C1–C2).</td><td>Each participant completes six simple tasks (S1–S6) and two complex tasks (C1–C2).</td></tr>
           </tbody>
         </table>
       </div>
@@ -231,10 +242,16 @@
     <h3 class="section-subheading">Proposed Experimental Procedure</h3>
     <ol class="procedure"><li><h4>Study Information and Informed Consent</h4><p>Explain the purpose, procedure, data collection, withdrawal rights and anonymisation arrangements.</p></li><li><h4>Pre-study Questionnaire and Random Assignment</h4><p>Record subject area, campus information-seeking channels and difficulties, prior AI experience and availability. Randomly assign participants to a condition.</p></li><li><h4>Six Tasks and Task-block Questionnaires</h4><p>Complete three simple tasks (S1–S3) and three complex tasks (C1–C3). Record time, completion status and submitted outputs for each task. Collect block questionnaires after S1–S3 and C1–C3, followed by the overall questionnaire.</p></li><li><h4>Answer Scoring and Issue Recording</h4><p>Evaluate outputs using official information, reference answers and scoring sheets. Record omissions, procedural errors and source issues.</p></li></ol>
     <div class="task-top"><h3>Six Experimental Tasks: S1–S3 and C1–C3</h3><div class="filter" role="group" aria-label="Filter experimental tasks"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="simple" aria-pressed="false">Simple Tasks</button><button type="button" data-filter="complex" aria-pressed="false">Complex Tasks</button></div></div>
+    <ol class="procedure"><li><h4>Study Information and Informed Consent</h4><p>Explain the purpose, procedure, data collection, withdrawal rights and anonymisation arrangements.</p></li><li><h4>Pre-study Questionnaire and Random Assignment</h4><p>Record subject area, campus information-seeking channels and difficulties, prior AI experience and availability. Randomly assign participants to a condition.</p></li><li><h4>Eight Tasks and Task-block Questionnaires</h4><p>Complete six simple tasks (S1–S6) and two complex tasks (C1–C2). Record time, completion status and submitted outputs for each task. Collect block questionnaires after S1–S6 and C1–C2, followed by the overall questionnaire.</p></li><li><h4>Answer Scoring and Issue Recording</h4><p>Evaluate outputs using official information, reference answers and scoring sheets. Record omissions, procedural errors and source issues.</p></li></ol>
+    <div class="task-top"><h3>Experimental Task Design: S1–S6 and C1–C2</h3><div class="filter" role="group" aria-label="Filter experimental tasks"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="simple" aria-pressed="false">Simple Tasks</button><button type="button" data-filter="complex" aria-pressed="false">Complex Tasks</button></div></div>
     <div class="tasks">
       <details class="task" data-kind="simple"><summary><span class="task-code">S1</span><strong>Student One-stop Contact Information</strong></summary><div class="task-body"><p>You need advice on a campus matter but are unsure which department to contact. Find the contact and office information for the Student One-stop service. Provide the telephone number, office location and publicly available service hours.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S1</span><strong>CMO Contact Information</strong></summary><div class="task-body"><p>You need to contact the Campus Management Office about a campus service issue. Find the CMO telephone number, office location and publicly available service hours.</p></div></details>
       <details class="task" data-kind="simple"><summary><span class="task-code">S2</span><strong>Overnight Study Room Information</strong></summary><div class="task-body"><p>You plan to study on campus during an exam-week evening. Find the usage requirements, opening arrangements and booking channel for overnight study rooms. Provide the requirements, opening hours or arrangements, and booking entry point.</p></div></details>
       <details class="task" data-kind="simple"><summary><span class="task-code">S3</span><strong>Shuttle Services between Taicang and SIP</strong></summary><div class="task-body"><p>You need to travel between the Taicang and SIP campuses. Consult the official shuttle timetable and provide departure times and booking rules.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S4</span><strong>Electric Vehicles, Registration and Licence-plate Changes</strong></summary><div class="task-body"><p>Find the eligibility requirements, application entry point and required information for electric-vehicle registration or changes to registered vehicle and licence-plate information.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S5</span><strong>Campus Facility Maintenance</strong></summary><div class="task-body"><p>A campus facility or piece of equipment needs repair. Find the official service-request entry point and the information that must be provided when submitting the request.</p></div></details>
+      <details class="task" data-kind="simple"><summary><span class="task-code">S6</span><strong>Group Discussion Room Booking</strong></summary><div class="task-body"><p>Find the booking requirements, booking steps and cancellation rules for a group discussion room.</p></div></details>
       <details class="task" data-kind="complex"><summary><span class="task-code">C1</span><strong>Open-ended Planning for a Day on Campus</strong></summary><div class="task-body"><p>You are a newly enrolled XJTLU student planning a Saturday on campus: study in a suitable place in the morning, play badminton with friends in the afternoon and hold a group discussion with three classmates in the evening. You are unfamiliar with campus services and want to prepare in advance so that the day runs smoothly.</p><p>Prepare an actionable schedule and find the campus services, requirements and procedures needed to carry it out. Explain the basis for your arrangements and identify matters that need advance confirmation.</p></div></details>
       <details class="task" data-kind="complex"><summary><span class="task-code">C2</span><strong>Cross-service Planning for an External Speaker Event</strong></summary><div class="task-body"><p>Your student group plans to invite an external speaker to XJTLU next month for an afternoon talk attended by approximately 30 students. The event includes a presentation and student questions and will last about two hours. As the main organiser, you are unfamiliar with the relevant campus procedures and want to prepare in advance.</p><p>Prepare an actionable event preparation plan and find the campus services, requirements and procedures needed to implement it. Explain the basis for your arrangements and identify matters that need advance confirmation.</p></div></details>
       <details class="task" data-kind="complex"><summary><span class="task-code">C3</span><strong>Welcome Activity Planning for New Students</strong></summary><div class="task-body"><p>You are organising a welcome activity for new students. Prepare the required campus arrangements, covering the venue, transport, catering and service support.</p></div></details>
@@ -242,10 +259,14 @@
     <div class="table-section">
       <h3 class="table-section-title">Evaluation Methods and Data Types</h3>
       <p class="section-intro" style="margin-bottom:22px">
+        The evaluation follows the questionnaire: completion time, completion status and answer quality are recorded for S1–S3 and C1–C3. After each block, participants rate usefulness, ease of use, trust and workload from 1 to 7. The overall questionnaire covers continued use, recommendation, verification, usability and workload. Summaries include mean usefulness ratings, geometric mean completion times and the supplied overall measures. The five interview questions address participants’ experiences and improvement priorities.
+        The evaluation follows the questionnaire: completion time, completion status and answer quality are recorded for S1–S6 and C1–C2. After each block, participants rate usefulness, ease of use, trust and workload from 1 to 7. Complex-task responses are evaluated primarily through information coverage and accuracy. The overall questionnaire and interviews provide subjective and qualitative evidence.
       </p>
       <div class="evaluation-grid">
         <article class="evaluation-item"><h3>1. Objective task performance</h3><p>Record completion time, completion status and answer accuracy. Compare Baseline and CMO AI on simple retrieval tasks S1–S3, and record completion times for C1–C3.</p><small>Key data: seconds, Completed / Partial / Failed, and accuracy scores.</small></article>
         <article class="evaluation-item"><h3>2. Complex-task quality</h3><p>Compare service discovery, information coverage, completeness, accuracy and actionability in the final C1–C3 plans against independently verified official reference answers.</p><small>Key data: number of services discovered, required-information coverage, completeness and actionability.</small></article>
+        <article class="evaluation-item"><h3>1. Objective task performance</h3><p>Record completion time, completion status and answer accuracy. Compare Baseline and CMO AI on simple retrieval tasks S1–S6, and record completion times for C1–C2.</p><small>Key data: seconds, Completed / Partial / Failed, and accuracy scores.</small></article>
+        <article class="evaluation-item"><h3>2. Complex-task quality</h3><p>Compare information coverage and accuracy in the final C1–C2 plans against independently verified official reference checklists.</p><small>Key data: valid information covered and factual accuracy.</small></article>
         <article class="evaluation-item"><h3>3. Subjective and qualitative evaluation</h3><p>Use post-task questionnaires, open-ended responses, semi-structured interviews and participant comments to explain why participants add, revise or discard information.</p><small>Key data: block ratings, overall questionnaire responses and interview themes.</small></article>
         <article class="evaluation-item"><h3>4. Query process and reasons</h3><p>Use semi-structured interviews, participant comments and available AI interaction records to understand why participants select, revise, verify or discard information.</p><small>Key data: search strategies, official-source verification, AI interaction patterns and error types.</small></article>
       </div>
@@ -258,6 +279,8 @@
             <tbody>
               <tr><th scope="row">Task performance</th><td>Completion time, completion status, answer accuracy and task scores</td><td>Task submissions and independently verified official reference answers</td><td>Compare Baseline and CMO AI performance on S1–S3 and C1–C3.</td></tr>
               <tr><th scope="row">Complex-task quality</th><td>Service discovery, information coverage, completeness, accuracy and actionability</td><td>Final C1–C3 plans and official reference answers</td><td>Assess whether plans identify relevant services, cover required information and support implementation.</td></tr>
+              <tr><th scope="row">Task performance</th><td>Completion time, completion status, answer accuracy and task scores</td><td>Task submissions and independently verified official reference answers</td><td>Compare Baseline and CMO AI performance on S1–S6 and C1–C2.</td></tr>
+              <tr><th scope="row">Complex-task quality</th><td>Information coverage and accuracy</td><td>Final C1–C2 plans and official reference checklists</td><td>Assess how much valid information is covered and whether the reported information is accurate.</td></tr>
               <tr><th scope="row">Subjective experience</th><td>Task-block usefulness, ease of use, trust and overall workload; overall intention to use again, willingness to recommend, verification counts, usability and workload</td><td>Task-block and overall questionnaires</td><td>Use 1–7 ratings for task-block and overall experience items, 1–5 ratings for the supplied usability items, and separate verification-count responses.</td></tr>
               <tr><th scope="row">Search process and reasoning</th><td>Search strategies, information verification, sources of error and concerns about AI</td><td>Semi-structured interviews, participant comments and AI interaction records</td><td>Identify themes explaining why participants select, revise or discard information.</td></tr>
             </tbody>
@@ -278,6 +301,7 @@
           <figcaption id="complex-score-caption">Table 6. Complex-task Scoring Dimensions and Points</figcaption>
           <div class="table-scroll" role="region" aria-labelledby="complex-score-caption" tabindex="0">
             <table class="academic-table complex-score" aria-labelledby="complex-score-caption"><colgroup><col><col></colgroup><thead><tr><th scope="col">Scoring dimension</th><th scope="col">Maximum points</th></tr></thead><tbody><tr><th scope="row">Correct identification of relevant services</th><td>5 points</td></tr><tr><th scope="row">Procedural completeness</th><td>5 points</td></tr><tr><th scope="row">Information accuracy</th><td>5 points</td></tr><tr><th scope="row">Information omissions</th><td>5 points</td></tr></tbody><tfoot><tr><th scope="row">Total</th><td>20 points</td></tr></tfoot></table>
+            <table class="academic-table complex-score" aria-labelledby="complex-score-caption"><colgroup><col><col></colgroup><thead><tr><th scope="col">Scoring dimension</th><th scope="col">Maximum points</th></tr></thead><tbody><tr><th scope="row">Information coverage</th><td>5 points</td></tr><tr><th scope="row">Information accuracy</th><td>5 points</td></tr></tbody><tfoot><tr><th scope="row">Total</th><td>10 points</td></tr></tfoot></table>
           </div>
         </figure>
       </div>
@@ -298,6 +322,7 @@
           <ol class="questionnaire">
             <li>1. Read this information and decide whether to consent.</li>
             <li>2. You will complete six campus information tasks: three simple and three complex. Each task has a standard time limit. The experiment is expected to last approximately 20–25 minutes.</li>
+            <li>2. You will complete eight campus information tasks: six simple and two complex. Each task has a standard time limit. The experiment is expected to last approximately 20–25 minutes.</li>
             <li>3. Complete the relevant questionnaire after each task block, then the overall questionnaire after all tasks.</li>
             <li>4. Permitted tools: the traditional-search group may use the XJTLU website, official WeChat accounts, XJTLU App and standard browser search. The CMO AI group may also use CMO AI.</li>
             <li>5. Data may include pre-study and post-study questionnaire responses; task completion times, completion status, submitted answers and quality scores; resource-use records; CMO AI prompts and responses for analysing AI use; and researcher observations, such as whether information was verified again.</li>
@@ -308,6 +333,8 @@
 
           <h4>C-1 Simple-task-block Questionnaire (after S1–S3)</h4>
           <p>Answer based on your overall experience of the three simple tasks, S1–S3, that you have just completed.</p>
+          <h4>C-1 Simple-task-block Questionnaire (after S1–S6)</h4>
+          <p>Answer based on your overall experience of the six simple tasks, S1–S6, that you have just completed.</p>
           <ol class="questionnaire">
             <li><strong>1. Usefulness</strong><span>To what extent did the information-seeking method you were allowed to use help you complete this task block?</span><div class="option-line">□ 1 Not at all helpful  □ 2 Slightly helpful  □ 3 Somewhat helpful  □ 4 Moderately helpful  □ 5 Quite helpful  □ 6 Very helpful  □ 7 Extremely helpful</div></li>
             <li><strong>2. Ease of Use</strong><span>How easy was it to use the information-seeking method during the tasks?</span><div class="option-line">□ 1 Very difficult  □ 2 Difficult  □ 3 Somewhat difficult  □ 4 Neither difficult nor easy  □ 5 Somewhat easy  □ 6 Easy  □ 7 Very easy</div></li>
@@ -317,6 +344,8 @@
 
           <h4>C-2 Complex-task-block Questionnaire (after C1–C3)</h4>
           <p>Answer based on your overall experience of the three complex tasks, C1–C3, that you have just completed.</p>
+          <h4>C-2 Complex-task-block Questionnaire (after C1–C2)</h4>
+          <p>Answer based on your overall experience of the two complex tasks, C1–C2, that you have just completed.</p>
           <ol class="questionnaire">
             <li><strong>1. Perceived Usefulness</strong><span>To what extent did the information-seeking method you were allowed to use help you complete this task block?</span><div class="option-line">□ 1 Not at all helpful  □ 2 Slightly helpful  □ 3 Somewhat helpful  □ 4 Moderately helpful  □ 5 Quite helpful  □ 6 Very helpful  □ 7 Extremely helpful</div></li>
             <li><strong>2. Perceived Ease of Use</strong><span>How easy was the information-seeking method to use during this task block?</span><div class="option-line">□ 1 Very difficult  □ 2 Difficult  □ 3 Somewhat difficult  □ 4 Neither difficult nor easy  □ 5 Somewhat easy  □ 6 Easy  □ 7 Very easy</div></li>
@@ -333,6 +362,9 @@
                 <tr><th scope="row">S1</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
                 <tr><th scope="row">S2</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
                 <tr><th scope="row">S3</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">S4</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">S5</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
+                <tr><th scope="row">S6</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
                 <tr><th scope="row">C1</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
                 <tr><th scope="row">C2</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
                 <tr><th scope="row">C3</th><td>□ Not needed  □ Verified 1 item  □ Verified 2 or more items  □ Unable to determine</td><td></td></tr>
@@ -345,6 +377,7 @@
             <li><strong>1. Intention to Use Again</strong><span>Would you use the information-seeking method you were allowed to use again for a future campus query?</span><div class="option-line">□ 1 Very unwilling  □ 2 Unwilling  □ 3 Somewhat unwilling  □ 4 Neutral  □ 5 Somewhat willing  □ 6 Willing  □ 7 Very willing</div></li>
             <li><strong>2. Willingness to Recommend</strong><span>Would you recommend this information-seeking method to other new students in your year?</span><div class="option-line">□ 1 Very unlikely to recommend  □ 2 Unlikely  □ 3 Somewhat unlikely  □ 4 Neutral  □ 5 Somewhat likely  □ 6 Likely  □ 7 Very likely to recommend</div></li>
             <li><strong>3. Overall Verification Count</strong><span>Across the six tasks, approximately how many times did you need to verify information through another official channel?</span><div class="option-line">□ 0 times  □ 1 time  □ 2 times  □ 3 times  □ 4 times  □ 5 times  □ 6 times</div></li>
+            <li><strong>3. Overall Verification Count</strong><span>Across the eight tasks, approximately how many times did you need to verify information through another official channel?</span><div class="option-line">□ 0 times  □ 1 time  □ 2 times  □ 3 times  □ 4 times  □ 5 times  □ 6 times  □ 7 times  □ 8 times</div></li>
           </ol>
 
           <h4>Part 2: System Usability Scale (SUS)</h4>
@@ -368,6 +401,7 @@
 
           <h4>Part 3: NASA-TLX Workload (Simplified 1–7 Version)</h4>
           <p>Based on your overall experience of all six tasks, rate the following six dimensions from 1 to 7.</p>
+          <p>Based on your overall experience of all eight tasks, rate the following six dimensions from 1 to 7.</p>
           <ol class="questionnaire">
             <li><strong>1. Mental Demand</strong><span>The amount of thinking, remembering and judgement required</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
             <li><strong>2. Physical Demand</strong><span>The amount of physical activity or action required</span><div class="option-line">□ 1 Very low  □ 2 Low  □ 3 Somewhat low  □ 4 Moderate  □ 5 Somewhat high  □ 6 High  □ 7 Very high</div></li>
@@ -387,6 +421,7 @@
           <div class="data-table-wrap" tabindex="0" role="region" aria-label="Mean usefulness rating records; scroll horizontally">
             <table>
               <thead><tr><th scope="col">Group</th><th scope="col">Simple tasks S1–S3</th><th scope="col">Complex tasks C1–C3</th></tr></thead>
+              <thead><tr><th scope="col">Group</th><th scope="col">Simple tasks S1–S6</th><th scope="col">Complex tasks C1–C2</th></tr></thead>
               <tbody>
                 <tr><th scope="row">Baseline group (planned n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
                 <tr><th scope="row">CMO group (planned n=30)</th><td class="muted">To be completed</td><td class="muted">To be completed</td></tr>
