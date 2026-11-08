@@ -119,6 +119,58 @@
     /* One header offset for native anchors; scripted navigation aligns the heading. */
     html{scroll-padding-top:var(--anchor-offset,100px)}
     main>.section,#top{scroll-margin-top:0}
+
+    /* Interim experimental results: matched to the existing monochrome layout. */
+    #results .results-overview{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:28px 0 42px}
+    #results .result-stat{min-width:0;padding:19px 20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+    #results .result-stat span{display:block;color:var(--muted);font-size:13px}
+    #results .result-stat strong{display:block;font-size:29px;font-weight:600;line-height:1.35;margin-top:5px;font-variant-numeric:tabular-nums}
+    #results .result-stat small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+    #results .pilot-panel{padding:27px 29px;background:var(--surface);border-radius:var(--radius);margin-bottom:48px}
+    #results .pilot-panel>p{font-size:14px;color:var(--muted);margin-top:12px}
+    #results .pilot-facts{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:23px}
+    #results .pilot-fact{border-top:1px solid var(--line);padding-top:14px}
+    #results .pilot-fact strong{display:block;font-size:15px;font-weight:600}
+    #results .pilot-fact p{font-size:14px;color:var(--muted);margin-top:6px}
+    #results .results-subheading{margin:46px 0 18px}
+    #results .results-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 30px;margin-top:25px}
+    #results .result-figure{min-width:0;margin:0;border-top:1px solid var(--line);padding-top:19px}
+    #results .result-figure figcaption{font-size:17px;font-weight:600;line-height:1.6;margin-bottom:15px}
+    #results .chart-slot{min-height:255px;padding:25px;border:1px dashed var(--line);border-radius:var(--radius);background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:9px}
+    #results .chart-slot strong{font-size:15px;font-weight:600}
+    #results .chart-slot span{font-size:13px;color:var(--muted);max-width:34em}
+    #results .chart-slot .chart-hint{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin-top:5px}
+    #results .result-chart-image{display:block;width:100%;height:auto;max-height:440px;object-fit:contain;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+    #results .result-explanation{font-size:14px;color:var(--muted);line-height:1.85;margin-top:14px}
+    #results .result-explanation strong{color:var(--ink);font-weight:600}
+    #results .result-caveat{font-size:12px;color:var(--muted);line-height:1.8;padding:12px 15px;background:var(--surface);border-radius:7px;margin-top:12px}
+    #results .interview-section{margin-top:58px}
+    #results .interview-intro{font-size:14px;color:var(--muted);margin-top:11px;max-width:70ch}
+    #results .interview-theme-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-top:22px}
+    #results .interview-theme{border-top:1px solid var(--line);padding:17px 0}
+    #results .interview-theme strong{display:block;font-size:15px;font-weight:600}
+    #results .interview-theme p{font-size:13px;color:var(--muted);margin-top:5px}
+    #results .interview-theme small{display:block;font-size:12px;color:var(--muted);margin-top:7px}
+    #results .results-summary{margin-top:55px;padding:27px 30px;background:var(--tint);border-radius:var(--radius)}
+    #results .results-summary>p{font-size:14px;color:var(--muted);margin-top:12px}
+    #results .results-summary ul{font-size:14px;color:var(--muted);margin:16px 0 0}
+    #results .results-summary strong{color:var(--ink);font-weight:600}
+    #results .results-limitations{margin-top:19px;padding-top:15px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+    @media(max-width:800px){
+      #results .results-overview{grid-template-columns:1fr 1fr;gap:10px}
+      #results .pilot-facts,#results .results-chart-grid,#results .interview-theme-grid{grid-template-columns:1fr}
+      #results .pilot-panel{padding:23px}
+      #results .results-summary{padding:23px}
+      #results .chart-slot{min-height:220px}
+    }
+    @media print{
+      #results .results-overview{grid-template-columns:repeat(4,1fr)}
+      #results .results-chart-grid{grid-template-columns:1fr 1fr;gap:24px}
+      #results .chart-slot{min-height:180px}
+      #results .pilot-panel,#results .results-summary{break-inside:avoid}
+      #results .result-figure{break-inside:avoid}
+    }
+
   </style>
 </head>
 <body>
@@ -127,7 +179,7 @@
   <div class="wrap nav-shell">
     <a class="brand" href="#top" aria-label="CMO study home"><span class="brand-mark" aria-hidden="true">CMO</span><strong>Campus AI Evaluation</strong><small>ADS401</small></a>
     <nav class="nav" id="navigation" aria-label="Page navigation">
-      <a href="#research" title="Background and Research Questions">Research Questions</a><a href="#design" title="Experimental Design and Implementation Plan">Study Design</a><a href="#materials" title="Questionnaires and Supplementary Materials">Study Materials</a><a href="#interview" title="Semi-structured Interview Guide">Interviews</a><a href="#reflection" title="Study Implementation: Reflection and Limitations">Reflection</a>
+      <a href="#research" title="Background and Research Questions">Research Questions</a><a href="#design" title="Experimental Design and Implementation Plan">Study Design</a><a href="#materials" title="Questionnaires and Supplementary Materials">Study Materials</a><a href="#interview" title="Semi-structured Interview Guide">Interviews</a><a href="#reflection" title="Study Implementation: Reflection and Limitations">Reflection</a><a href="#results" title="Interim Experimental Results">Results</a>
     </nav>
     <div class="nav-tools"><button class="quiet-button menu-toggle" id="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button></div>
   </div>
@@ -143,7 +195,7 @@
         <div class="hero-actions"><a class="button" href="#research">Research Questions and Target Users <span aria-hidden="true">↗</span></a><a class="text-link" href="#materials">View Study Materials</a></div>
       </div>
     </div>
-    <div class="study-strip"><span>Document status<strong>Research design proposal</strong></span><span>Target users<strong>New undergraduate and postgraduate students</strong></span><span>Planned sample<strong>Approximately 60 participants</strong></span><span>Study results<strong>To be added by the group</strong></span></div>
+    <div class="study-strip"><span>Document status<strong>Interim results update</strong></span><span>Target users<strong>New undergraduate and postgraduate students</strong></span><span>Tested participants<strong>12 participants</strong></span><span>Valid records<strong>10 (5 per condition)</strong></span></div>
   </div>
 
   <section class="section" id="research" aria-labelledby="research-title"><div class="wrap">
@@ -542,6 +594,204 @@
     </div>
   </div>
 </section>
+
+  <section class="section" id="results" aria-labelledby="results-title">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2 id="results-title">Interim Experimental Results</h2>
+        <p>
+          This section reports the current results from the implemented study.
+          The Study Design section above records the original proposal; after the
+          pilot, the task set was reduced to S1–S4 and C1. Data collection is
+          still ongoing, so the findings below are descriptive and preliminary.
+        </p>
+      </div>
+
+      <div class="results-overview" aria-label="Current study sample">
+        <div class="result-stat"><span>Participants tested</span><strong>12</strong><small>All testing sessions to date</small></div>
+        <div class="result-stat"><span>Valid records analysed</span><strong>10</strong><small>Included in the current workbook</small></div>
+        <div class="result-stat"><span>CMO AI group</span><strong>5</strong><small>Valid participants</small></div>
+        <div class="result-stat"><span>Non-AI group</span><strong>5</strong><small>Valid participants</small></div>
+      </div>
+
+      <div class="pilot-panel">
+        <div class="panel-heading">
+          <h3>Pilot Study and Task Refinement</h3>
+          <span class="badge">Internal pilot · 4 team members</span>
+        </div>
+        <p>
+          Before the formal study, the four team members conducted an internal
+          pilot to check the task workload and timing. The original plan included
+          six simple questions and two complex questions. The pilot showed that
+          this combination created too much testing pressure, so the task set
+          was shortened and the time limits were made more explicit.
+        </p>
+        <div class="pilot-facts">
+          <div class="pilot-fact">
+            <strong>Final task set</strong>
+            <p>Four simple retrieval tasks (S1–S4) and one complex open-ended planning task (C1).</p>
+          </div>
+          <div class="pilot-fact">
+            <strong>Time limits and scoring</strong>
+            <p>The four simple tasks share a total limit of 15 minutes. The complex task has a separate 15-minute limit. Responses submitted after the relevant time limit are not scored.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="results-subheading">Current Results and Chart Explanations</h3>
+      <p class="muted small">
+        Each chart below compares the five valid participants in the CMO AI
+        condition with the five valid participants in the Non-AI condition.
+        Replace each placeholder with the corresponding figure.
+      </p>
+
+      <div class="results-chart-grid">
+        <figure class="result-figure">
+          <figcaption>Figure 1. Task Scores (Score)</figcaption>
+          <div class="chart-slot" role="img" aria-label="Placeholder for the task score comparison chart">
+            <strong>Insert Score chart here</strong>
+            <span>Recommended: grouped bars for S1, S2, S3, S4 and C1, showing the mean score for each condition.</span>
+            <span class="chart-hint">Suggested image name: images/score.png</span>
+          </div>
+          <p class="result-explanation">
+            The CMO AI group achieved a higher average across the four simple
+            tasks: <strong>33.0/40 (82.5%)</strong>, compared with
+            <strong>21.2/40 (53.0%)</strong> in the Non-AI group. The AI group
+            scored higher on S1, S3 and S4, while the Non-AI group scored higher
+            on S2. For the complex task C1, the Non-AI group had a higher mean
+            score (<strong>5.6/10</strong>) than the AI group
+            (<strong>2.8/10</strong>).
+          </p>
+        </figure>
+
+        <figure class="result-figure">
+          <figcaption>Figure 2. Usability Ratings (SUS)</figcaption>
+          <div class="chart-slot" role="img" aria-label="Placeholder for the usability questionnaire chart">
+            <strong>Insert SUS chart here</strong>
+            <span>Recommended: compare the reverse-coded mean questionnaire rating for the CMO AI and Non-AI conditions.</span>
+            <span class="chart-hint">Suggested image name: images/sus.png</span>
+          </div>
+          <p class="result-explanation">
+            The CMO AI group recorded a higher adjusted mean usability rating
+            (<strong>3.95/5</strong>) than the Non-AI group
+            (<strong>3.33/5</strong>). This suggests a more positive perceived
+            user experience in the current AI sample.
+          </p>
+          <p class="result-caveat">
+            Measurement note: the uploaded questionnaire contains eight items,
+            rather than the standard ten-item SUS. Negatively worded items 4–6
+            were reverse-coded. The values are therefore reported as an
+            adjusted mean item rating, not as a standard SUS score out of 100.
+          </p>
+        </figure>
+
+        <figure class="result-figure">
+          <figcaption>Figure 3. Perceived Workload (Workload)</figcaption>
+          <div class="chart-slot" role="img" aria-label="Placeholder for the workload comparison chart">
+            <strong>Insert Workload chart here</strong>
+            <span>Recommended: compare the mean workload rating for the two conditions; higher values indicate greater perceived workload.</span>
+            <span class="chart-hint">Suggested image name: images/workload.png</span>
+          </div>
+          <p class="result-explanation">
+            The adjusted mean workload rating was lower in the CMO AI group
+            (<strong>2.13/6</strong>) than in the Non-AI group
+            (<strong>3.83/6</strong>). This indicates that participants in the
+            AI group reported less perceived workload in the current sample.
+          </p>
+          <p class="result-caveat">
+            Calculation note: the questionnaire uses a six-point response
+            scale. The fifth item asks about success in achieving goals, so it
+            was reverse-coded (7 minus the original response) to make higher
+            composite values consistently represent greater workload.
+          </p>
+        </figure>
+
+        <figure class="result-figure">
+          <figcaption>Figure 4. Task Completion Time (Time)</figcaption>
+          <div class="chart-slot" role="img" aria-label="Placeholder for the task completion time chart">
+            <strong>Insert Time chart here</strong>
+            <span>Recommended: compare task-level completion times for S1–S4 and C1, using a confirmed and consistent time unit.</span>
+            <span class="chart-hint">Suggested image name: images/time.png</span>
+          </div>
+          <p class="result-explanation">
+            Based on the recorded values, the CMO AI group had lower time values
+            for S1, S3, S4 and C1, while the Non-AI group had a lower value for
+            S2. This pattern is consistent with a possible time-saving benefit
+            for several tasks, but the time data need to be checked before a
+            precise interpretation is made.
+          </p>
+          <p class="result-caveat">
+            Data note: the spreadsheet does not specify whether the time entries
+            are decimal minutes or a minutes:seconds notation. Confirm the
+            format before calculating averages or labelling the chart axis.
+            If the entries are minutes:seconds, convert each value to seconds
+            before calculating the mean.
+          </p>
+        </figure>
+      </div>
+
+      <div class="interview-section" id="interview-summary" aria-labelledby="interview-summary-title">
+        <h3 id="interview-summary-title">Interview Summary</h3>
+        <p class="interview-intro">
+          This section is reserved for the synthesis of participant interviews.
+          The themes below are suggested coding categories based on the
+          interview guide; they are not findings and should be completed after
+          the interview responses have been reviewed.
+        </p>
+        <div class="interview-theme-grid">
+          <div class="interview-theme">
+            <strong>1. Task Strategies and Difficulties</strong>
+            <p>Summarise how participants searched for information, which tasks took the most effort and where they encountered difficulties.</p>
+            <small>Interview evidence: To be added</small>
+          </div>
+          <div class="interview-theme">
+            <strong>2. Trust and Source Verification</strong>
+            <p>Summarise how participants checked information accuracy, source reliability and consistency between CMO AI and official channels.</p>
+            <small>Interview evidence: To be added</small>
+          </div>
+          <div class="interview-theme">
+            <strong>3. Perceived Usefulness and Workload</strong>
+            <p>Summarise which parts of the task process felt easier or more difficult and how participants evaluated the assistance provided by CMO AI.</p>
+            <small>Interview evidence: To be added</small>
+          </div>
+          <div class="interview-theme">
+            <strong>4. Suggestions for Improvement</strong>
+            <p>Summarise participants' suggestions about information coverage, answer accuracy, source presentation and interaction design.</p>
+            <small>Interview evidence: To be added</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-summary">
+        <h3>Interim Summary</h3>
+        <p>
+          The current data show a promising pattern for CMO AI in simple campus
+          information retrieval. The AI group achieved higher overall simple-task
+          scores, received higher adjusted usability ratings and reported lower
+          workload. However, the Non-AI group achieved a higher score on the
+          complex planning task C1. This suggests that the benefit of AI
+          assistance may depend on task type: it appears more evident in
+          targeted information retrieval, while open-ended planning may still
+          require better information integration, coverage or answer accuracy.
+        </p>
+        <p>
+          These observations are preliminary. Only ten valid records are
+          included at this stage, with five participants in each condition.
+          Further data collection and interview analysis are needed before
+          drawing broader conclusions or making claims about statistical
+          significance.
+        </p>
+        <div class="results-limitations">
+          <strong>Data completeness note:</strong> Twelve people have completed
+          testing, but the current workbook contains ten valid records. The
+          reasons for excluding the other two records are not specified in the
+          workbook and should be documented in the final methodology or data
+          cleaning note.
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <script>
