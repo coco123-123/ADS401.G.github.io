@@ -140,6 +140,8 @@
     #results .chart-slot strong{font-size:15px;font-weight:600}
     #results .chart-slot span{font-size:13px;color:var(--muted);max-width:34em}
     #results .chart-slot .chart-hint{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin-top:5px}
+    #results .result-chart{display:block;line-height:0}
+    #results .result-chart:hover .result-chart-image{border-color:var(--muted)}
     #results .result-chart-image{display:block;width:100%;height:auto;max-height:440px;object-fit:contain;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
     #results .result-explanation{font-size:14px;color:var(--muted);line-height:1.85;margin-top:14px}
     #results .result-explanation strong{color:var(--ink);font-weight:600}
@@ -665,11 +667,10 @@
 
         <figure class="result-figure">
           <figcaption>Figure 2. Usability Ratings (SUS)</figcaption>
-          <div class="chart-slot" role="img" aria-label="Placeholder for the usability questionnaire chart">
-            <strong>Insert SUS chart here</strong>
-            <span>Recommended: compare the reverse-coded mean questionnaire rating for the CMO AI and Non-AI conditions.</span>
-            <span class="chart-hint">Suggested image name: images/sus.png</span>
-          </div>
+          <a class="result-chart" href="images/sus.png" target="_blank" rel="noopener">
+            <img class="result-chart-image" src="images/sus.png" width="1512" height="1024" loading="lazy"
+                 alt="Stacked bar chart showing SUS response distributions for the CMO AI and Non-AI groups across eight items, with item-level means.">
+          </a>
           <p class="result-explanation">
             The CMO AI group recorded a higher adjusted mean usability rating
             (<strong>3.95/5</strong>) than the Non-AI group
@@ -686,11 +687,10 @@
 
         <figure class="result-figure">
           <figcaption>Figure 3. Perceived Workload (Workload)</figcaption>
-          <div class="chart-slot" role="img" aria-label="Placeholder for the workload comparison chart">
-            <strong>Insert Workload chart here</strong>
-            <span>Recommended: compare the mean workload rating for the two conditions; higher values indicate greater perceived workload.</span>
-            <span class="chart-hint">Suggested image name: images/workload.png</span>
-          </div>
+          <a class="result-chart" href="images/workload.png" target="_blank" rel="noopener">
+            <img class="result-chart-image" src="images/workload.png" width="1512" height="890" loading="lazy"
+                 alt="Stacked bar chart showing NASA-TLX workload rating distributions for the CMO AI and Non-AI groups across six dimensions, with dimension-level means.">
+          </a>
           <p class="result-explanation">
             The adjusted mean workload rating was lower in the CMO AI group
             (<strong>2.13/6</strong>) than in the Non-AI group
